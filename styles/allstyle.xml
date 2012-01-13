@@ -1,0 +1,39 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio stile tab" icon="../../favicon.ico" loaddata="true">
+		<dsdock typeobj="ds" conn="conn6" dstable="dock" dskey="id" />
+		<dsmenu typeobj="ds" conn="conn6" dstable="menu"/>
+		<tabs0 typeobj="tabs" selected="tab01" height="autosize" width="autosize">
+			<tab01 typeobj="tab" label="STYLE DEFAULT">
+				<checkbox typeobj="checkbox" label="checkbox" labelalign="left" />
+				<btcheckbox typeobj="button" value="REWRITE CHECKBOX" onclick="AJAX.rewriteObj('checkbox', 'allstyle.php')" />
+
+				<radio typeobj="radio" label="\n\nradio" labelalign="left" />
+				<btradio typeobj="button" value="REWRITE RADIO" onclick="AJAX.rewriteObj('radio', 'allstyle.php')" />
+				
+				<dscombo typeobj="dscombo" label="\n\ndscombo" dsobjlist="dsdock" dsitemlist="name" dsitemkeylist="id" />
+				<btcombo typeobj="button" value="REWRITE DSCOMBO" onclick="AJAX.rewriteObj('dscombo', 'allstyle.php')" />
+				
+				<dsnav typeobj="dsnav" dsobj="dsdock"  label="\n\ndsnav" />
+				<btdsnav typeobj="button" value="REWRITE DSNAV" onclick="AJAX.rewriteObj('dsnav', 'allstyle.php')" />
+				
+<!-- 				<dsselect typeobj="dsselect" dsobjlist="dsdock" dsitemlist="name" dsitemkeylist="id" label="\n\ndsselect" /> -->
+ 				<dock typeobj="dock" dsobj="dsdock" valign="top" align="center"/>
+				<btdock typeobj="button" value="REWRITE DOCK" onclick="AJAX.rewriteObj('dock', 'allstyle.php')" />
+				
+				<gridds typeobj="gridds" dsobj="dsdock" width="autosize" height="200px">
+					<coloumn>
+						<col objtype="label" itemlabel="NAME" dsitem="name" colwidth="200px" />
+						<col objtype="text" itemlabel="IMG" dsitem="img" minlength="5" maxlength="5" colwidth="200px" />
+					</coloumn>
+				</gridds>
+				<btgridds typeobj="button" value="REWRITE GRIDDS" onclick="AJAX.rewriteObj('gridds', 'allstyle.php')" />
+				
+				<jmenu typeobj="jmenu" dsobj="dsmenu" />
+				<btjmenu typeobj="button" value="REWRITE JMENU" onclick="AJAX.rewriteObj('jmenu', 'allstyle.php')" />
+
+				<title1 typeobj="note" value="Note Utente: " style="font-weight: bold; font-size: 2em;"/>
+			</tab01>
+		</tabs0>
+	</page>
+</jamp>

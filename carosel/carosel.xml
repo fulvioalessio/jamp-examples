@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio jmenu" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="custom" scope="onelevel" base="/jamp/data" />
+		<lbox1 typeobj="lightbox" width="autosize" height="autosize" theme="grey" template="black">
+			<carosel1 typeobj="carosel" dsobj="ds1" width="autosize"/>
+		</lbox1>
+		<lbox2 typeobj="lightbox" width="autosize" height="autosize" theme="grey">
+			<carosel2 typeobj="carosel" dsobj="ds1" width="autosize" height="200px" speed="10"/>
+		</lbox2>
+		<lbox3 typeobj="lightbox" width="autosize" height="autosize" theme="grey">
+			<carosel3 typeobj="carosel" dsobj="ds1" width="500px" height="100px"/>
+		</lbox3>
+	</page>
+</jamp>

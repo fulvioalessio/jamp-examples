@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio Report" out="pdf" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="checkbox" dskey="id" />
+		<hd typeobj="label" label="REPORT HEADER" align="center" style="top: 0;font-family: Arial; font-size: 22; font-weight: bold; width: 0;" /> 
+		<header typeobj="header">
+			<hd1 typeobj="label" label="RIGHT LABEL: " value="PAGE HEADER" labelstyle="left: 190;top: 10;color: #00FF00;font-family: Arial; font-size: 22px; font-weight: bold;" style="left: 250;top: 10;color: #FF0000;font-family: Arial; font-size: 12; font-weight: bold; top: 10;" />
+			<hd2 typeobj="label" value="CENTER" align="center" style="top: 22;color: #0000FF;font-family: Arial; font-size: 22px; font-weight: bold; border: 1;width: 0px;" />
+			<hd3 typeobj="label" label="LEFT LABEL: " value="PAGE HEADER" align="left" style="left:0;top: 34;color: #FF0000;font-family: Arial; font-size: 12; font-weight: bold;"/>
+		</header>
+		<image1 typeobj="img" src="../resource/logo.jpeg" style="left: 10;top: 5"/>
+		<checkbox1 typeobj="checkbox" label="checkbox" dsobj="ds1" labelalign="left" dsitem="pomeriggio" style="top: 50; font-size: 32;width: 4; height: 4;border: 1" />
+		<checkbox2 typeobj="checkbox" label="checkbox" dsobj="ds1" labelalign="right" dsitem="pomeriggio" style="top: 70;border: 1;width:30;height:30" />
+		<checkbox3 typeobj="checkbox" label="checkbox" dsobj="ds1" labelalign="left" dsitem="pomeriggio" style="left: 0; top: 90; font-size: 12;border: 1" />
+		<checkbox4 typeobj="checkbox" label="checkbox" dsobj="ds1" labelalign="left" dsitem="pomeriggio" style="left: 50; top: 110; font-size: 12;border: 1;" />
+		<radio typeobj="radio" label="radio" dsobj="ds1" dsitem="sera" style="top: 80; left: 120;border: 1px" /> 
+		<gridds1 typeobj="gridds" dsobj="ds1" width="500" height="500">
+			<coloumn>	
+				<col objtype="label" itemlabel="mattino" dsitem="mattino" size="50" />
+				<col objtype="checkbox" itemlabel="mattino" dsitem="mattino" size="20" align="left" />
+				<col objtype="label" itemlabel="pomeriggio" dsitem="pomeriggio" size="50" />
+				<col objtype="checkbox" itemlabel="pomeriggio" dsitem="pomeriggio" size="20" align="center" style="width:4;height:4" />
+				<col objtype="label" itemlabel="sera" dsitem="sera" size="50" />
+ 				<col objtype="radio" itemlabel="sera" dsitem="sera" size="20" style="width:4;height:4" />
+			</coloumn>	
+		</gridds1>
+		<footer typeobj="footer" top="-15">
+ 			<foo1 typeobj="label" label="FOOTER PAGE" align="center" style="font-family: Arial; font-size: 10; font-weight: bold; width: 0;"/>
+- 		</footer>
+		<ft1 typeobj="label" label="REPORT FOOTER" align="center" style="top:170;font-family: Arial; font-size: 22; font-weight: bold;border:1;"/>
+	</page>
+</jamp>

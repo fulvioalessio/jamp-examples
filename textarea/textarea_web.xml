@@ -1,0 +1,17 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio editor WEB" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="eweb" dskey="key"/>
+		<dsnav1 typeobj="dsnav" dsobj="ds1" btPage="false" btTotal="false" btNew="false" btDelete="false" btPrint="false" btNav="false" btCancel="false" />
+		<tabs1 typeobj="tabs" width="autosize" height="autosize" selected="tab_web" align="left">
+		  <tab_web typeobj="tab" label="PAGINA WEB" style="padding: 10px;">
+				<textarea1 typeobj="textarea" labelwidth="150px" label="Text Editor Web:" dsobj="ds1" dsitem="code" editor-web="true" cols="50" rows="30" />
+		  </tab_web>
+		  <tab_web1 typeobj="tab" label="PAGINA WEB" style="padding: 10px;">
+				<textarea2 typeobj="textarea" labelwidth="150px" label="Text Editor Web:" dsobj="ds1" dsitem="code" editor-web="true" cols="50" rows="30" />
+		  </tab_web1>
+		</tabs1>
+</page>
+</jamp>
+
+

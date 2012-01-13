@@ -1,0 +1,14 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio gridds con dati in JOIN" icon="../../favicon.ico" loaddata="true">
+		<dsgiornate typeobj="ds" conn="conn6" selecteditems="data_giornata,giornate.descrizione,partite.descrizione AS partite" dstable="giornate,partite" dswhere="(giornate.id=partite.idgiornata)" joinsave="giornate" dskey="id" dslimit="10" />	
+		<dsnav1 typeobj="dsnav" dsobj="dsgiornate" btNew="false" objprint="gridds1" />
+		<gridds1 typeobj="gridds" dsobj="dsgiornate" width="autosize" height="250px">
+			<coloumn>
+				<col objtype="label" itemlabel="DATA" dsitem="data_giornata" colalign="center" />
+				<col objtype="label" itemlabel="GIORNATA" dsitem="descrizione" order="false" colwidth="300px" colalign="center" />
+				<col objtype="label" itemlabel="PARTITE" dsitem="partite" order="false" colwidth="300px" colalign="center"/>
+			</coloumn>
+		</gridds1>
+	</page>
+</jamp>

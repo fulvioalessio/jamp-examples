@@ -1,0 +1,79 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio stile tab" icon="../../favicon.ico" loaddata="true">
+		<col1 typeobj="div" style="float:left;" width="310px">
+			<tabs0 typeobj="tabs" selected="tab02" template="black" height="90px" width="autosize">
+				<tab01 typeobj="tab" label="CARTELLA A" />
+				<tab02 typeobj="tab" label="CARTELLA B" />
+				<tab03 typeobj="tab" label="CARTELLA C" />
+			</tabs0>
+			<tabs1 typeobj="tabs" selected="tab11" height="90px" width="300px">
+				<tab11 typeobj="tab" label="CARTELLA 1" />
+				<tab12 typeobj="tab" label="CARTELLA 2" />
+				<tab13 typeobj="tab" label="CARTELLA 3" />
+			</tabs1>
+			<tabs2 typeobj="tabs" selected="tab21" template="macstyle1" height="90px" width="300px">
+				<tab21 typeobj="tab" label="CARTELLA 1" />
+				<tab22 typeobj="tab" label="CARTELLA 2" />
+				<tab23 typeobj="tab" label="CARTELLA 3" />
+			</tabs2>
+			<tabs3 typeobj="tabs" selected="tab33" template="macstyle2" height="90px" width="300px">
+				<tab31 typeobj="tab" label="CARTELLA 1" />
+				<tab32 typeobj="tab" label="CARTELLA 2" />
+				<tab33 typeobj="tab" label="CARTELLA 3" />
+			</tabs3>
+			<tabs4 typeobj="tabs" selected="tab41" template="macstyle3" height="90px" width="300px">
+				<tab41 typeobj="tab" label="CARTELLA 1" />
+				<tab42 typeobj="tab" label="CARTELLA 2" />
+				<tab43 typeobj="tab" label="CARTELLA 3" />
+			</tabs4>
+			<tabs5 typeobj="tabs" selected="tab52" template="macstyle4" height="90px" width="300px">
+				<tab51 typeobj="tab" label="CARTELLA 1" />
+				<tab52 typeobj="tab" label="CARTELLA 2" />
+				<tab53 typeobj="tab" label="CARTELLA 3" />
+			</tabs5>
+			<tabs6 typeobj="tabs" selected="tab63" template="office" height="90px" width="300px">
+				<tab61 typeobj="tab" label="CARTELLA 1" />
+				<tab62 typeobj="tab" label="CARTELLA 2" />
+				<tab63 typeobj="tab" label="CARTELLA 3" />
+			</tabs6>
+		</col1>
+		<col2 typeobj="div">
+			<tabs1_2 typeobj="tabs" selected="tab11_2" height="90px" width="300px" tabswidth="100%">
+				<tab11_2 typeobj="tab" label="CARTELLA 1" />
+				<tab12_2 typeobj="tab" label="CARTELLA 2" />
+				<tab13_2 typeobj="tab" label="CARTELLA 3" />
+			</tabs1_2>
+			<tabs2_2 typeobj="tabs" selected="tab21_2" template="macstyle1" height="90px" width="300px" tabswidth="100%">
+				<tab21_2 typeobj="tab" label="CARTELLA 1" />
+				<tab22_2 typeobj="tab" label="CARTELLA 2" />
+				<tab23_2 typeobj="tab" label="CARTELLA 3" />
+			</tabs2_2>
+			<tabs3_2 typeobj="tabs" selected="tab33_2" template="macstyle2" height="90px" width="300px" tabswidth="100%">
+				<tab31_2 typeobj="tab" label="CARTELLA 1" />
+				<tab32_2 typeobj="tab" label="CARTELLA 2" />
+				<tab33_2 typeobj="tab" label="CARTELLA 3" />
+			</tabs3_2>
+			<tabs4_2 typeobj="tabs" selected="tab41_2" template="macstyle3" height="90px" width="300px" tabswidth="100%">
+				<tab41_2 typeobj="tab" label="CARTELLA 1" />
+				<tab42_2 typeobj="tab" label="CARTELLA 2" />
+				<tab43_2 typeobj="tab" label="CARTELLA 3" />
+			</tabs4_2>
+			<tabs5_2 typeobj="tabs" selected="tab52_2" template="macstyle4" height="90px" width="300px" tabswidth="100%">
+				<tab51_2 typeobj="tab" label="CARTELLA 1" />
+				<tab52_2 typeobj="tab" label="CARTELLA 2" />
+				<tab53_2 typeobj="tab" label="CARTELLA 3" />
+			</tabs5_2>
+			<tabs6_2 typeobj="tabs" selected="tab63_2" template="office" height="90px" width="300px" tabswidth="100%">
+				<tab61_2 typeobj="tab" label="CARTELLA 1" />
+				<tab62_2 typeobj="tab" label="CARTELLA 2" />
+				<tab63_2 typeobj="tab" label="CARTELLA 3" />
+			</tabs6_2>
+			<tabs7_2 typeobj="tabs" selected="tab73_2" template="vista" height="90px" width="300px" tabswidth="100%">
+				<tab71_2 typeobj="tab" label="CARTELLA 1" />
+				<tab72_2 typeobj="tab" label="CARTELLA 2" />
+				<tab73_2 typeobj="tab" label="CARTELLA 3" />
+			</tabs7_2>
+		</col2>
+	</page>
+</jamp>

@@ -1,0 +1,7 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio dscombo" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dsorder="DENOMINAZIONE_COMUNE" dslimit="20" />
+		<dscombo1 typeobj="dscombo" label="\nComune:" dsitemlabel="ID,DENOMINAZIONE_COMUNE" dsobjlist="ds1" dsitemlist="DENOMINAZIONE_COMUNE" dsitemkeylist="CAB" dssearch="`DENOMINAZIONE_COMUNE` LIKE '$$VALUE$$%'" style="max-width: 300px;" />
+	</page>
+</jamp>

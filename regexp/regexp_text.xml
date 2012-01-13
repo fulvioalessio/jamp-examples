@@ -1,0 +1,27 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio d'uso delle espressioni regolari" icon="../../favicon.ico" loaddata="true">
+		<tabs1 typeobj="tabs" width="600px" height="600px" selected="tab1" align="left" >
+			<tab1 typeobj="tab" label="Espressioni regolari(SUL SINGOLO CARATTERE)" >
+				<digit_number typeobj="text" label="\nSolo caratteri numerici:\n" keypress="number" size="50" />
+				<digit_nonumber typeobj="text" label="\nEscluso caratteri numerici:\n" keypress="nonumber" size="50" />
+				<digit_alphanumeric typeobj="text" label="\nSolo caratteri alphanumerici:\n" keypress="alphanumeric" size="50" />
+				<digit_noalphanumeric typeobj="text" label="\nEscluso caratteri alphanumerici:\n" keypress="noalphanumeric" size="50" />
+				<digit_alphabetic typeobj="text" label="\nSolo caratteri alfabetici:\n" keypress="alphabetic" size="50" />
+				<digit_loweralphabetic typeobj="text" label="\nSolo caratteri alfabetici minuscoli:\n" keypress="loweralphabetic" size="50" />
+				<digit_upperalphabetic typeobj="text" label="\nSolo caratteri alfabetici maiuscoli:\n" keypress="upperalphabetic" size="50" />
+				<digit_decimal typeobj="text" label="\nSolo caratteri decimali(separatori miglia e decine compresi):\n" keypress="decimal" size="50" />
+				<digit_free typeobj="text" label="\nEspessione regolare libera(esempio: solo lettere dalla a alla g):\n" keypress="[a-g]" size="50" />
+			</tab1>
+			<tab2 typeobj="tab" label="Espressioni regolari(SULLA STRINGA)" >
+				<word_number typeobj="text" label="\nSolo caratteri numerici:\n" blur="number" size="50" />
+				<word_decimal typeobj="text" label="\nSolo caratteri decimali:\n" blur="decimal" size="50" />
+				<word_ip typeobj="text" label="\nIndirizzo IP:\n" blur="ip" size="50" />
+				<word_email typeobj="text" label="\nIndirizzo e-mail:\n" blur="email" size="50" />
+				<word_cf typeobj="text" label="\nCodice fiscale:\n" blur="cf" size="50" />
+				<word_complete typeobj="text" label="\nMulti controllo(alfanumerici, codice fiscale, minimo 16, massimo 16):\n" blur="cf" keypress="alphanumeric" minlength="16" maxlength="16" size="50" />
+				<word_free typeobj="text" label="\nEspressione regolare libera(esempio: solo numeri da 0 a 4):\n" blur="^[0-4]{0,}$" size="50" />
+			</tab2>
+		</tabs1>
+	</page>
+</jamp>

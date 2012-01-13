@@ -1,0 +1,14 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="jamp" loaddata="true">
+		<dsgiornate typeobj="ds" conn="conn6" dstable="giornate" dskey="id" />
+		<dspartite typeobj="ds" conn="conn6" dstable="partite" dskey="id" dslimit="10" />
+		<dsnav1 typeobj="dsnav" dsobj="dspartite" btNew="false" objprint="gridds1" />
+		<gridds1 typeobj="gridds" dsobj="dspartite" width="500px" height="300px">
+			<coloumn>
+				<col objtype="label" itemlabel="PARTITE" dsitem="descrizione" colwidth="200px" colalign="center" />
+				<col objtype="dsselect" itemlabel="GIORNATE" dsobjlist="dsgiornate" dsitemlist="descrizione" dsitemkeylist="id" dsobj="dspartite" dsitem="idgiornata" order="false" colwidth="200px" />
+			</coloumn>
+		</gridds1>
+	</page>
+</jamp>

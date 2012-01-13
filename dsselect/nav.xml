@@ -1,0 +1,6 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="jamp" loaddata="true">
+		<dsselect3 typeobj="dsselect" label="Navigatore:\n" dsobjlist="ds1" dsitemlist="name" dsitemkeylist="id" nav="true" value="3" />
+	</page>
+</jamp>

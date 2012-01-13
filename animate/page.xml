@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Effetto Fade Pagina" loaddata="false" icon="../../favicon.ico" onload="ANIMATE.animate('page', 'opacity:1', '1000','', 'default');" style="opacity:0;filter:alpha(opacity=0);">
+		<ds1 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="15" />
+		<dsnav1 typeobj="dsnav" dsobj="ds1" objprint="gridds1" />
+		<gridds1 typeobj="gridds" dsobj="ds1" width="600px" height="300px" order="true" label="Elenco">
+			<coloumn>   
+				<col objtype="label" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px"/>
+				<col objtype="text" itemlabel="CAB" dsitem="CAB" minlength="5" maxlength="7" colwidth="200px"/>	
+			</coloumn>
+		</gridds1>
+	</page>
+</jamp>
+

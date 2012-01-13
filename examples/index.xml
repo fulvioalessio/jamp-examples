@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP" loaddata="false" style="margin: 10px;" icon="../favicon.ico">
+		<left typeobj="div" height="autosize" width="300" style="float:left;">
+			<title1 typeobj="label"/>
+			<div1 typeobj="div" height="200" width="300" style="overflow:auto;"/>
+			<title2 typeobj="label"/>
+			<div2 typeobj="div" height="autosize" width="300" style="overflow:auto;"/>
+		</left>
+		<div3 typeobj="div" height="autosize" width="autosize"  style="float:left;overflow:auto;padding:2px;"/>
+	</page>
+</jamp>

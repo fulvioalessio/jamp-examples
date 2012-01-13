@@ -1,0 +1,25 @@
+1      0                                                       Inserimento Dati                                             
+2      1./../../template/16x16/actions/button_ok.png           Seleziona Elezione            selezione.php                  
+3      1./../../template/16x16/actions/bookmarks_list_add.png  Affluenze                     affluenze.php                  
+4      1./../../template/16x16/actions/bookmark_add.png        Voti                          votilista.php                  
+5      0                                                       Configurazione                                               
+6      1./../../template/16x16/actions/dayview.png             Elezioni                      tornata.php                    
+7      1./../../template/16x16/actions/agt_home.png            Sedi / Sezioni                config.php                     
+8      1./../../template/16x16/actions/kopeteaway.png          Liste / Candidati             liste.php                      
+9      1./../../template/16x16/actions/irc_op.png              Sindaci                       sindaci.php                    
+10     1./../../template/16x16/actions/irc_op.png              Presidenti                    presidenti.php                 
+11     1./../../template/16x16/actions/lin_agt_wrench.png      Province Attive               province.php                   
+12     0                                                       Amministrazione                                              
+13     1./../../template/16x16/actions/kopeteavailable.png     Utenti Province               utentiprovince.php             
+14     1./../../template/16x16/actions/agt_forum.png           Utenti Comuni                 utenticomuni.php               
+15     1./../../template/16x16/actions/edit_user.png           Utenti                        utenti.php                     
+16     1./../../template/16x16/actions/lin_agt_wrench.png      Comuni Attivi                 comuni.php                     
+17     0                                                       Stampe                                                       
+18     1./../../template/16x16/apps/acroread.png               Affluenze                     print_affluenze.php            
+19     1./../../template/16x16/apps/acroread.png               Voti                                                         
+20     2./../../template/16x16/apps/acroread.png               Voti Presidente               print_presidente.php           
+21     2./../../template/16x16/apps/acroread.png               Voti Sindaco                  print_sindaco.php              
+22     2./../../template/16x16/apps/acroread.png               Voti Preferenze               print_votipreferenze.php       
+23     1./../../template/16x16/apps/acroread.png               Allegati                                                     
+24     2./../../template/16x16/apps/acroread.png               Allegato 5/P                  print_allegato5p_sindaco.php   
+25     2./../../template/16x16/apps/acroread.png               Allegato 5/P                  print_allegato5p_presidente.php

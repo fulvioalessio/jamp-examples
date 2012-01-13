@@ -1,0 +1,42 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio sulla formattazione dei dati" icon="../../favicon.ico" loaddata="true">
+ 		<ds1 typeobj="ds" conn="conn8" scope="tree" base="/jamp/data/date" dskey="key" readonly="true" /> 
+		<tabs1 typeobj="tabs" width="600px" height="autosize" selected="tab1" align="left">
+			<tab1 typeobj="tab" label="Formattazione stringhe">	
+				<f_stringa typeobj="text" dsobj="ds1" dsitem="stringa" label="Stringa originale:\n" size="40" />
+				<f_lower typeobj="text" dsobj="ds1" dsitem="stringa" label="\nTrasforma tutti i caratteri alfabetici in minuscolo:\n" size="40" format="string|lower"/>
+				<f_upper typeobj="text" dsobj="ds1" dsitem="stringa" label="\nTrasforma tutti i caratteri alfabetici in maiuscolo:\n" size="40" format="string|upper"/>
+				<f_trim typeobj="text" dsobj="ds1" dsitem="stringa" label="\nElimina gli spazi agli estremi:\n" size="40" format="string|trim"/>
+			</tab1>
+			<tab2 typeobj="tab" label="Formattazione numeri">
+				<number1 typeobj="text" dsobj="ds1" dsitem="number1" label="Formato originale(EN|,0.00):\n" size="30" />
+				<numer_ita typeobj="text" dsobj="ds1" dsitem="number1" label="\nFormato uscita(IT|.0,00)\n" format="number|EN|,0.00|IT|.0,00" readonly="true" size="30" />
+				<numer_ita2 typeobj="text" dsobj="ds1" dsitem="number1" label="\nFormato uscita(IT|.0,0000)\n" format="number|EN|,0.00|IT|.0,0000" readonly="true" size="30" />
+				<numer_ita3 typeobj="text" dsobj="ds1" dsitem="number1" label="\nFormato uscita(IT|.0,0)\n" format="number|EN|,0.00|IT|.0,0" readonly="true" size="30" />
+				<numer_ita4 typeobj="text" dsobj="ds1" dsitem="number1" label="\nFormato uscita(IT|.0000000,0)\n" format="number|EN|,0.00|IT|.0000000,0" readonly="true" size="30" />
+				
+				<number2 typeobj="text" dsobj="ds1" dsitem="number2" label="\nFormato originale(IT|.0,00):\n" size="30" />
+				<numer_en typeobj="text" dsobj="ds1" dsitem="number2" label="\nFormato uscita(EN|.0,00)\n" format="number|IT|.0,00|EN|,0.00" readonly="true" size="30" />
+				<numer_en2 typeobj="text" dsobj="ds1" dsitem="number2" label="\nFormato uscita(EN|.0,0000)\n" format="number|IT|.0,00|EN|,0.0000" readonly="true" size="30" />
+				<numer_en3 typeobj="text" dsobj="ds1" dsitem="number2" label="\nFormato uscita(EN|.0,0)\n" format="number|IT|.0,00|EN|,0.0" readonly="true" size="30" />
+				<numer_en4 typeobj="text" dsobj="ds1" dsitem="number2" label="\nFormato uscita(EN|.0000000,0)\n" format="number|IT|.0,00|EN|,0000000.0" readonly="true" size="30" />
+			</tab2>
+			<tab3 typeobj="tab" label="Formattazione date">
+				<date0 typeobj="text" dsobj="ds1" dsitem="date1" label="Formato originale(EN|yyyy-mmm-dd):\n" size="30" />
+				<date1 typeobj="text" dsobj="ds1" dsitem="date1" label="\nFormato uscita(IT|dd/mmm/yyyy)\n" format="date|EN|yyyy-mmm-dd|IT|dd/mmm/yyyy" readonly="true" size="30" />
+				
+				<date2 typeobj="text" dsobj="ds1" dsitem="date1" label="\nFormato uscita(EN|mm/dd/yyyy)\n" format="date|EN|yyyy-mmm-dd|EN|mm/dd/yyyy" readonly="true" size="30" />
+				
+				<date3 typeobj="text" dsobj="ds1" dsitem="date1" label="\nFormato uscita(IT|dddd dd/mmm/yyyy):\n" format="date|EN|yyyy-mmm-dd|IT|dddd dd/mmm/yyyy" readonly="true" size="30" />
+				
+				<date4 typeobj="text" dsobj="ds1" dsitem="date2" label="\nFormato originale:(IT|d/mmmm/yyyy)\n" size="30" />
+				<date5 typeobj="text" dsobj="ds1" dsitem="date2" label="\nFormato uscita(IT|dd mmm yyyy):\n" format="date|IT|d/mmmm/yyyy|IT|dd mmm yyyy" readonly="true" size="30" />
+				
+				<date6 typeobj="text" dsobj="ds1" dsitem="date2" label="\nFormato uscita(EN|dd-mmmm-yyyy):\n" format="date|IT|d/mmmm/yyyy|EN|dd-mmmm-yyyy" readonly="true" size="30" />
+				
+				<date7 typeobj="text" dsobj="ds1" dsitem="date2" label="\nFormato uscita(EN|mmm-dd-yyyy):\n" format="date|IT|d/mmmm/yyyy|EN|mmm-dd-yyyy" readonly="true" size="30" />
+			</tab3>
+		</tabs1>
+	</page>
+</jamp>

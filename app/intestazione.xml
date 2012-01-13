@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" keepalive="90">
+		<dsmenu typeobj="ds" conn="conn6" dstable="es2_menu" dsorder="id" store="jappmenu"/>
+		<title typeobj="div" class="header1">
+			<label_title typeobj="label" value="JApp"/>
+			<label_page typeobj="label" value="$$TITOLO$$" style="color:#807d6e;font-size:25px;font-weight:normal;"/>
+			<exit typeobj="img" src="./img/exit.png" align="right" alt="USCITA" href="index.php?logout" style="margin-top:3px;margin-right:2px;"/>
+		</title>			
+		<version typeobj="div" class="header2">			
+			<label_version typeobj="label" value="Versione: 1.5"/>
+			<div_user typeobj="div" style="float:right;font-size:12px;display:inline;">
+				<label_user typeobj="label" label="Utente Connesso: " labelstyle="color:#9C9C9C;" value="$$LOGIN-USER$$, $$GROUP$$" style="color:#807d6e;"/>
+				<label_login typeobj="label" label=" il : " labelstyle="color:#9C9C9C;" value="$$LOGIN-DATA$$" style="color:#807d6e;"/>
+			</div_user>
+		</version>
+		<top typeobj="div" height="52px"/>
+		<menu1 typeobj="div" width="100%" height="26px">
+			<jmenu1 typeobj="jmenu" dsobj="dsmenu"/>
+		</menu1>
+	</page>
+</jamp>

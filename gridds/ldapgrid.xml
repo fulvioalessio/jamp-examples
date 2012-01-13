@@ -1,0 +1,14 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio gridds collegata a LDAP" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn3" scope="onelevel" dskey="dn" base="ou=Groups,dc=jamp,dc=it" dslimit="10" />
+		<dsnav1 typeobj="dsnav" dsobj="ds1" btNew="false" objprint="gridds1" />
+		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize" >
+			<coloumn>   
+				<col objtype="text" itemlabel="parentdn" dsitem="parentdn" order="false" colwidth="200px" />
+				<col objtype="text" itemlabel="dn" dsitem="dn" order="false" colwidth="300px" />
+				<col objtype="text" itemlabel="entry" dsitem="entry" order="false" colwidth="200px" />
+			</coloumn>   
+		</gridds1>
+	</page>
+</jamp>

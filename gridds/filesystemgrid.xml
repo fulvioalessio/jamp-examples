@@ -1,0 +1,14 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio della gridds collegata a un filesystem" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn1" dskey="path" scope="onelevel" base="../.." dslimit="10" />
+		<dsnav1 typeobj="dsnav" dsobj="ds1" btNew="false" objprint="gridds1" />
+		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize" >
+			<coloumn>
+				<col objtype="label" itemlabel="Path" dsitem="path" order="false" colwidth="250px" />
+				<col objtype="text" itemlabel="Nome" dsitem="filename" order="false" colwidth="100px" />
+				<col objtype="label" itemlabel="Tipo" dsitem="type" order="false" colwidth="100px"/>
+			</coloumn>
+		</gridds1>
+	</page>
+</jamp>

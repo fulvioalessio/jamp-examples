@@ -1,0 +1,50 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio SMS: Status" icon="../../favicon.ico" loaddata="true">
+		<tabs1 typeobj="tabs" width="autosize" height="autosize" selected="tab1">
+			<tab1 typeobj="tab" label="Utente">    
+				<ds1 typeobj="ds" conn="conn17"/>
+				<dsnav1 typeobj="dsnav" dsobj="ds1" btNew="false" btSave="false" btDelete="false" btCancel="false" btNav="false" btTotal="false" btPrint="false" btPage="false"/>
+				<label1 typeobj="label" labelwidth="150px" label="Utente:" dsobj="ds1" dsitem="User"/>	
+				<label2 typeobj="label" labelwidth="150px" label="Credito:" dsobj="ds1" dsitem="Credit"/>	
+				<label3 typeobj="label" labelwidth="150px" label="Carrier:" dsobj="ds1" dsitem="CarrierGateway"/>	
+				<label4 typeobj="label" labelwidth="150px" dsobj="ds1" label="STATO:" dsitem="Status" value="Loading"/>
+			</tab1>
+			<tab2 typeobj="tab" label="Messaggi">   
+				<ds2 typeobj="ds" conn="conn17" loadall="false"/>
+				<dsnav2 typeobj="dsnav">
+					 <button>
+						  <bt onclick="AJAX.request('POST', 'info.php', 'data=load&amp;dsobjname=ds2&amp;info=GetMessageStatus&amp;MessageID=' +$('text1').value, false, true);" image="sms.png" title="Invia Richiesta"/>
+					 </button>
+				</dsnav2>
+				<text1 typeobj="text" labelwidth="150px" label="ID Messaggio:" dsitem="MessageID"/>	
+				<label5 typeobj="label" labelwidth="150px" label="Mittente:" dsobj="ds2" dsitem="OAdC"/>	
+				<label6 typeobj="label" labelwidth="150px" label="Destinatario:" dsobj="ds2" dsitem="AdC"/>	
+				<label7 typeobj="label" labelwidth="150px" label="Invio Differito:" dsobj="ds2" dsitem="DDT"/>	
+				<label8 typeobj="label" labelwidth="150px" label="Gateway:" dsobj="ds2" dsitem="Gateway"/>	
+				<label9 typeobj="label" labelwidth="150px" label="Stato:" dsobj="ds2" dsitem="Status"/>	
+				<label10 typeobj="label" labelwidth="150px" label="Desc. Stato:" dsobj="ds2" dsitem="StatusDescription"/>	
+				<label11 typeobj="label" labelwidth="150px" label="Dettaglio:" dsobj="ds2" dsitem="Reason"/>	
+
+			</tab2>
+			<tab3 typeobj="tab" label="Gateways">    
+				<ds3 typeobj="ds" conn="conn17" loadall="false"/>
+				<dsnav3 typeobj="dsnav">
+					 <button>
+						  <bt onclick="AJAX.request('POST', 'info.php', 'data=load&amp;dsobjname=ds3&amp;info=GetGateways', false, true);" image="sms.png" title="Invia Richiesta"/>
+					 </button>
+				</dsnav3>
+				<textarea1 typeobj="textarea" label="Gateways:\n" width="autosize" height="autosize" dsobj="ds3" dsitem="Gateways"/>	
+			</tab3>
+			<tab4 typeobj="tab" label="Carriers">    
+				<ds4 typeobj="ds" conn="conn17" loadall="false"/>
+				<dsnav4 typeobj="dsnav">
+					 <button>
+						  <bt onclick="AJAX.request('POST', 'info.php', 'data=load&amp;dsobjname=ds4&amp;info=GetCarriers', false, true);" image="sms.png" title="Invia Richiesta"/>
+					 </button>
+				</dsnav4>
+				<textarea2 typeobj="textarea" label="Carriers:\n" width="autosize" height="autosize" dsobj="ds4" dsitem="Carriers"/>	
+			</tab4>
+		</tabs1>
+	</page>
+</jamp>

@@ -1,0 +1,35 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio splitbar 2" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn1" dskey="path" scope="base" base="../.." alias="jamp" justthese="type,dirpath,path,filename" />
+		<ds2 typeobj="ds" conn="conn1" dskey="path" scope="base" base="../../develop" alias="dovelop" justthese="type,dirpath,path,filename" />
+		<divSX typeobj="div" style="float:left;" width="300px" height="autosize" >
+			<tree1 typeobj="tree" dsobj="ds1" refresh="brance" width="autosize" height="autosize" />
+		</divSX>
+		<split1 typeobj="splitbar" type="vertical"/>
+		<divCENTER typeobj="div" width="autosize_center" height="autosize" style="float:left;">
+			<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">
+				<coloumn>
+					<col objtype="label" itemlabel="Path" dsitem="path" order="false" colwidth="250px"/>
+					<col objtype="text" itemlabel="Nome" dsitem="filename" order="false"/>
+					<col objtype="label" itemlabel="Tipo" dsitem="type" order="false"/>
+				</coloumn>
+			</gridds1>
+		</divCENTER>
+		<split2 typeobj="splitbar" type="vertical"/>
+		<divDX typeobj="div" style="float:right;" width="200px" height="autosize">
+			<divDXTOP typeobj="div" width="autosize" height="100px">
+				<tree2 typeobj="tree" dsobj="ds2" refresh="always" width="autosize" height="autosize" />
+			</divDXTOP>
+			<split3 typeobj="splitbar" type="horizontal"/>
+			<divDXBOTTOM typeobj="div" width="autosize" height="autosize">
+				<win1 typeobj="window" width="autosize" height="autosize" label="Window 1" expanded="true">
+				</win1>
+				<win2 typeobj="window" width="autosize" height="100px" label="Window 2" expanded="false">
+				</win2>
+				<win3 typeobj="window" width="autosize" height="100px" label="Window 3" expanded="false">
+				</win3>
+			</divDXBOTTOM>
+		</divDX>
+	</page>
+</jamp>

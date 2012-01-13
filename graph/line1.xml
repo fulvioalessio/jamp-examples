@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Grafico lineare" out="html" icon="../../favicon.ico" loaddata="true">
+		<graphic3 typeobj="graphic" width="600" height="400" scale="linlin">
+			<parameter>
+				<plot objtype="plot" frame="false" margin="30,20,60,20" margincolor="white"  plotwidth="0.3" />
+				<title objtype="title" title="Using Builtin PlotMarks" font="FF_FONT1,FS_BOLD,14" />
+				<tabtitle objtype="tabtitle" title="Region 1" tabwidth="TABTITLE_WIDTHFULL" />
+				<ygrid1 objtype="ygrid" color="gray@0.5" />				
+				<xgrid1 objtype="xgrid" color="gray@0.5" />	
+				<legend1 objtype="legend" color="navy" fillcolor="lightgreen" lineweight="1" font="FF_FONT1,FS_BOLD,8" shadow="gray@0.4,3" abspos="5,70,right,bottom" />
+				<line1 objtype="line" data="2,6,7,12,13,18" color="red" fillcolor="yellow@0.5" weight="2" marktype="MARK_IMG_DIAMOND,5,0.6" legend="2006" />
+				<line2 objtype="line" data="5,12,12,19,25,20" color="darkgreen" linewidth="2" marktype="MARK_IMG_MBALL,red" legend="2001" />
+			</parameter>
+		</graphic3>
+	</page>
+</jamp>

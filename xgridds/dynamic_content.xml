@@ -1,0 +1,8 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio xgridds a contenuto dinamico" icon="../../favicon.ico" loaddata="true">
+		<dsgiornate typeobj="ds" conn="conn6" dstable="giornate" dskey="id" dslimit="10"  />	
+		<dsnav1 typeobj="dsnav" dsobj="dsgiornate" btNew="false" objprint="gridds1" />
+		<xgridds1 typeobj="xgridds" dsobj="dsgiornate" width="auto" height="350px" />
+	</page>
+</jamp>

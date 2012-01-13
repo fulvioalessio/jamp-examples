@@ -1,0 +1,6 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="jamp" loaddata="true">
+		<dsselect2 typeobj="dsselect" dsobjlist="ds1" dsitemlist="id,name" dsitemkeylist="id" value="" label="\nSelect da dsitemlist:\n" allselect="Seleziona" />
+	</page>
+</jamp>

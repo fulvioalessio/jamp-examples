@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JApp - $$TITOLO$$" loaddata="true">
+		<xmlpage typeobj="xmlpage" src="intestazione.xml" />
+		<div1 typeobj="div" width="autosize" height="autosize">
+			<img1 typeobj="img" src="img/background.jpg" width="100%" height="100%"/>
+			<div2 typeobj="div" style="z-index:2;position:absolute;top:50%;height:132px;margin-top:-24px;width:100%;">
+				<table typeobj="table" align="center">
+					<tr typeobj="tr">
+						<tdlx typeobj="td">
+							<logo typeobj="img" src="$$LOGO$$" align="left"/>
+						</tdlx>
+						<tdrx typeobj="td">
+							<label1 typeobj="label" value="$$CLIENT$$" style="font-weight: bold; font-size: 3em;"/>
+						</tdrx>
+					</tr>
+				</table>
+			</div2>
+		</div1>
+	</page>
+</jamp>
+

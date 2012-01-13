@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JPresenze" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="checkbox" dskey="id" />
+		<dsnav1 typeobj="dsnav" btNew="false" btCancel="false" btDelete="false" dsobj="ds1" />		
+		<gridds1 typeobj="gridds" dsobj="ds1" width="550" height="320">
+			<coloumn>	
+				<col objtype="label" dsitem="giorno" itemlabel="Giorno" colwidth="80px" />				
+				<col objtype="checkbox" dsitem="mattino" itemlabel="Mattino" align="center" colwidth="80px" />
+				<col objtype="checkbox" dsitem="pomeriggio" itemlabel="Pomeriggio" align="center" colwidth="80px"/>
+				<col objtype="checkbox" dsitem="sera" itemlabel="Sera" align="center" colwidth="80px"/>
+			</coloumn>	
+		</gridds1>		
+	</page>
+</jamp>

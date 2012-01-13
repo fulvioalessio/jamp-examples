@@ -1,0 +1,7 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio google maps, markers" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn10" scope="onelevel" dskey="key" base="/jamp/data" />
+		<map typeobj="map" dsobj="ds1" style="width: 70%; height: 480px; float:left; border: 1px solid black;" address="Roma" zoom="5" />
+	</page>
+</jamp>

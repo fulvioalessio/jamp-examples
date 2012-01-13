@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JPresenze" icon="../../favicon.ico" loaddata="true">
+		<checkbox1 typeobj="checkbox" label="Mattino(true)" labelwidth="150px" labelalign="left" value="2" tristate="0" uncheck="1" check="2" />
+		<checkbox2 typeobj="checkbox" label="Pomeriggio(false)" labelwidth="150px" labelalign="left" value="1" tristate="0" uncheck="1" check="2" />
+		<checkbox3 typeobj="checkbox" label="Sera(tristate)" labelwidth="150px" labelalign="left" value="0" tristate="0" uncheck="1" check="2" />
+	</page>
+</jamp>

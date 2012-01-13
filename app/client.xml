@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JApp - Anagrafica Clienti" loaddata="true">
+		<xmlpage typeobj="xmlpage" src="intestazione.xml" />
+		<ds1 typeobj="ds" conn="conn6" dstable="es2_client" dsorder="name" dslimit="20" focusnew="gridds1_1_$" dskey="key"/>
+		<dsnav1 typeobj="dsnav" dsobj="ds1"/>
+		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">			
+			<coloumn>	
+				<col objtype="text" dsitem="name" itemlabel="Ragione Sociale" maxlength="150" colwidth="200px"/>			
+				<col objtype="text" dsitem="address" itemlabel="Indirizzo" maxlength="150" colwidth="200px" />	
+				<col objtype="text" dsitem="city" itemlabel="Città" maxlength="150" colwidth="100px" />	
+				<col objtype="text" dsitem="postalcode" itemlabel="C.A.P." maxlength="5" keypressed="number" colwidth="200px" />	
+				<col objtype="text" dsitem="logo" itemlabel="Logo" maxlength="255" colwidth="100px" />	
+			</coloumn>	
+		</gridds1>				
+	</page>
+</jamp>

@@ -1,0 +1,39 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio avanzato per l'uso della gridds" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="fornitori" dskey="key" dslimit="20" focusnew="gridds1_1_$" dssavetype="table"/>
+		<ds2 typeobj="ds" conn="conn6" dstable="fornitori_articoli" dskey="key" dslimit="20" focusnew="gridds2_1_$"  dssavetype="table"/>
+		<ds3 typeobj="ds" conn="conn6" dstable="fornitori_vendita" dskey="key" dslimit="20" focusnew="gridds3_1_$"  dssavetype="table"/>
+		<ds4 typeobj="ds" conn="conn6" dstable="fornitori_articoli" dskey="key" loadall="false"/>
+		<tabs1 typeobj="tabs" width="autosize" height="autosize" selected="tab1" align="left">
+			<tab1 typeobj="tab" label="Elenco Fornitori" >
+				<dsnav1 typeobj="dsnav" dsobj="ds1" objprint="gridds1"/>
+				<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">
+					<coloumn>   
+						<col objtype="text" itemlabel="Fornitori" dsitem="fornitore" size="50" colwidth="400px" />
+					</coloumn>
+				</gridds1>
+			</tab1>
+			<tab2 typeobj="tab" label="Anagrafica Articoli" >
+				<dsnav2 typeobj="dsnav" dsobj="ds2" objprint="gridds2"/>
+				<gridds2 typeobj="gridds" dsobj="ds2" width="autosize" height="autosize">
+					<coloumn>   
+						<col objtype="dsselect" itemlabel="Fornitori" dsobjlist="ds1" dsitemlist="fornitore" dsitemkeylist="key" dsitem="idfornitore"  colwidth="200px"/>
+						<col objtype="text" itemlabel="Articoli" dsitem="articolo" size="50" colwidth="200px"/>
+						<col objtype="text" itemlabel="Prezzi" dsitem="prezzo" minlength="1" keypress="decimal" format="number|EN|0.00|IT|.0,00" blur="decimal" maxlength="8" label="€" colwidth="100px"/>
+					</coloumn>
+				</gridds2>
+			</tab2>
+			<tab3 typeobj="tab" label="Vendita" >
+				<dsnav3 typeobj="dsnav" dsobj="ds3" objprint="gridds3"/>
+				<gridds3 typeobj="gridds" dsobj="ds3" width="autosize" height="autosize">
+					<coloumn>   
+						<col objtype="dsselect" itemlabel="Fornitori" dsobjlist="ds1" dsitemlist="fornitore" dsitemkeylist="key" dsitem="idfornitore" colwidth="200px"/>
+						<col objtype="dscombo" itemlabel="Articoli" dsitemlist="articolo" dsitemkeylist="key" dsobjlist="ds4" dsitem="idarticolo" colwidth="400px"/>
+						<col objtype="text" itemlabel="Q.ta" dsitem="qta" minlength="1" keypress="number" blur="number" maxlength="8" colwidth="100px"/>
+					</coloumn>
+				</gridds3>
+			</tab3>
+		</tabs1>
+	</page>
+</jamp>

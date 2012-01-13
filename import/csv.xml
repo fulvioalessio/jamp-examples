@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio importazione dati da CSV" icon="../../favicon.ico" loaddata="false">
+		<ds1 typeobj="ds" conn="conn14" dskey="id" fieldseparator=";" fieldencloser='"'>		
+			<rows>
+				<field fieldname="id" /> 
+				<field fieldname="nome" /> 
+				<field fieldname="cognome" /> 
+				<field fieldname="data_nascita" /> 
+			</rows>
+		</ds1>
+		<ds2 typeobj="ds" conn="conn6" dstable="clienti" dskey="key" loadall="false" dssavetype="table" />
+		<import1 typeobj="import" from="ds1" to="ds2" method="error">
+			<mapping>
+				<field fieldFrom="id" fieldTo="key" /> 
+				<field fieldFrom="nome" fieldTo="nome" format="string|trim" /> 
+				<field fieldFrom="cognome" fieldTo="cognome" format="string|trim" /> 
+				<field fieldFrom="data_nascita" fieldTo="data_nascita" format="date|IT|dd/mm/yyyy|EN|yyyy-mm-dd" /> 
+			</mapping>
+		</import1>
+	</page>
+</jamp>

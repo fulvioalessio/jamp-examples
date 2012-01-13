@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Grafico lineare" out="html" icon="../../favicon.ico" loaddata="true">
+		<graphic2 typeobj="graphic" width="600" height="300" scale="textlin">
+			<parameter>
+				<plot objtype="plot" shadow="true" frame="true"  plotwidth="0.3" />
+				<title objtype="title" title="line" font="FF_FONT1,FS_BOLD" margin="3" />
+				<xaxis1 objtype="xaxis" title="asse x" font="FF_FONT1,FS_BOLD" label="Gen,Feb,Mar,Giu,Lug" />
+				<yaxis1 objtype="yaxis" title="asse y" font="FF_FONT1,FS_BOLD" label="AA,BB,CC,DD,EE" />
+				<legend1 objtype="legend" pos="0.02,0.15" shadow="darkgray@0.5" fillcolor="lightblue@0.3" />				
+				<ygrid1 objtype="ygrid" color="red@0.5" />				
+				<xgrid1 objtype="xgrid" color="red@0.5" />				
+				<line1 objtype="line" data="-8,8,9,3,5,6" markcolor="navy@0.7" markfillcolor="skyblue@0.5" color="navy@0.7" fillcolor="skyblue@0.5" linewidth="1" center="true" marktype="MARK_FILLEDCIRCLE" />
+				<line2 objtype="line" data="18,2,1,7,5,4" markcolor="navy@0.7" markfillcolor="skyblue@0.5" color="lightblue" fillcolor="blue@0.5" linewidth="1" center="true" marktype="MARK_FILLEDCIRCLE" />
+			</parameter>
+		</graphic2>
+	</page>
+</jamp>

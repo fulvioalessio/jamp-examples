@@ -1,0 +1,32 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio Invio SMS" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn17" focusnew="text1"/>
+		<tabs1 typeobj="tabs" width="autosize" height="autosize" selected="tab1">
+			<tab1 typeobj="tab" label="SMS">    
+				<dsnav typeobj="dsnav">
+					 <button>
+						  <bt onclick="DS.dssave('ds1');" image="sms.png" title="Invia SMS"/>
+					 </button>
+				</dsnav>
+				<text1 typeobj="text" label="Mittente:\n" dsobj="ds1" dsitem="OAdC" size="11" maxlength="11"/>	
+				<text2 typeobj="text" label="Consegna:" dsobj="ds1" dsitem="DDT" size="16" format="date|EN|yyyymmddHHii|IT|dd/mm/yyyy HH:ii"/>	
+				<text3 typeobj="textarea" label="\nDestinatario/i (uno per ogni riga):\n" rows="5" style="width:200px" dsobj="ds1" dsitem="AdCs"/>
+				<text4 typeobj="textarea" label="\nMessaggio:\n" rows="10" onkeyup="count(this, event);" style="width:200px" dsobj="ds1" dsitem="Message"/>
+				<label1 typeobj="label" value="\nCaratteri rimasti: 160MAX"/>
+				<text5 typeobj="label" label="\n\nMessaggi Inviati: " dsobj="ds1" dsitem="Sent"/>	
+				<text6 typeobj="label" label="\nMessaggi Falliti: " dsobj="ds1" dsitem="Errors"/>	
+			</tab1>
+			<tab2 typeobj="tab" label="Dettaglio Invio">    
+				<text7 typeobj="textarea" height="autosize" width="autosize" dsobj="ds1" dsitem="MessageSents"/>
+			</tab2>
+			<tab3 typeobj="tab" label="Dettaglio Gateway">    
+				<text8 typeobj="textarea" height="autosize" width="autosize" dsobj="ds1" dsitem="CarrierGateways"/>
+			</tab3>
+		</tabs1>
+      <status typeobj="div" style="position: absolute; background-color:#EFEDDE; height:16px; width:100%; left:0px; top:100%; margin-top: -16px; font-weight:bold;">
+			<labelstatus1 typeobj="label" dsobj="ds1" dsitem="Status" value="Loading"/>
+			<labelstatus2 typeobj="label" dsobj="ds1" label=" Credito: " dsitem="Credit"/>
+		</status>
+	</page>
+</jamp>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JApp - Home" icon="../../favicon.ico" loaddata="true">
+		<div1 typeobj="div" style="width : 100%;	height : 50px; position: absolute;	top: 50%; margin-top: -25px; margin-left: -2px; text-align:center;">
+			<logo1 typeobj="img" src="./examples/examples/jamp.gif" align="left"/>
+			<title1 typeobj="label" value="JApplication" style="margin-left: 5px; font-weight: bold; font-size: 2em;"/>
+			<user2 typeobj="label" label="\nUtente Connesso: " style="font-size: 1em;"/>
+			<user3 typeobj="label" value="$$LOGIN-USER$$" style="font-weight: bold; font-size: 1em;"/>
+			<user4 typeobj="label" label=" il : " value="$$LOGIN-DATA$$ ver. 1.0.0" style="font-size: 1em;"/>
+			<user5 typeobj="br" row="2"/>
+			<label1 typeobj="label" value="BENVENUTI IN JAMP" style="font-weight: bold; font-size: 3em;"/>
+		</div1>
+	</page>
+</jamp>

@@ -1,0 +1,9 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio editor WEB di sintassi" icon="../../favicon.ico" loaddata="true">
+		<ds2 typeobj="ds" conn="conn6" dstable="codepress" dskey="key"/>
+		<dsnav1 typeobj="dsnav" dsobj="ds2" btPage="false" objprint="textarea3_code" />
+		<textarea3 typeobj="textarea" label="\nText Code PHP:\n" cols="80" rows="20" editor-lang="php"  dsobj="ds2" dsitem="code"/>
+		<textarea4 typeobj="textarea" label="\nText XML da file:\n" cols="80" rows="20" editor-lang="jamp" editor-file="./textarea.xml"/>
+	</page>
+</jamp>
