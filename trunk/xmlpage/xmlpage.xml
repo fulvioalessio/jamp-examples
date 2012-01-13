@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio xmlpage" icon="../../favicon.ico" loaddata="true">
+ 		<xmlpage typeobj="xmlpage" src="intestazione.xml" />
+		<tabs1 typeobj="tabs" selected="tab11">
+			<tab11 typeobj="tab" label="CARTELLA 1" />
+			<tab12 typeobj="tab" label="CARTELLA 2" />
+			<tab13 typeobj="tab" label="CARTELLA 3" />
+		</tabs1>
+	</page>
+</jamp>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio di impaginazione" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dsorder="Cognome" dstable="Anagrafica" dskey="IDAssistito" focusnew="text1" dslimit="1" />
+		<tabs1 typeobj="tabs" width="430px" height="270px" selected="tab1" align="left">
+			<tab1 typeobj="tab" label="ANAGRAFICA" style="margin: 2px">	
+				<dsnav1 typeobj="dsnav" dsobj="ds1" objprint="tabs1" style="height: 30px"/>
+				<fieldset1 typeobj="fieldset" legend="Anagrafica" style="float: left; width: 380px; height: 160px;">			
+					<text6 typeobj="text" dsobj="ds1" dsitem="Cognome" label="Cognome:" maxlength="40" style="width: 150px" labelwidth="110px" />
+					<text4 typeobj="text" dsobj="ds1" dsitem="Nome" label="Nome:" maxlength="40" style="width: 150px" labelwidth="110px" />
+					<text5 typeobj="text" dsobj="ds1" dsitem="SecondoNome" label="Secondo Nome:" maxlength="30" style="width: 150px" labelwidth="110px" />
+					<text7 typeobj="text" dsobj="ds1" dsitem="CodiceFiscale" label="Codice fiscale:" maxlength="16" style="width: 150px" labelwidth="110px" />
+					<text8 typeobj="text" dsobj="ds1" dsitem="DataNascita" label="Data di nascita:" maxlength="12" style="width: 150px" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy" labelwidth="110px" />
+					<textcitta typeobj="text" dsobj="ds1" dsitem="Citta" label="Città di nascita:" maxlength="40" style="width: 150px;float:left" labelwidth="110px" onkeydown="Dialog(event, 'comuni_lbox', 115, 'comuni.php', 420, 340);" />
+					<labelcitta typeobj="label" label=" Premi-(F4)" labelwidth="10px" style="width: 150px;"/>
+				</fieldset1>
+			</tab1>
+		</tabs1>
+		<comuni_lbox typeobj="lightbox" width="700" height="autosize" modal="true" showclose="false"/>  
+	</page>
+</jamp>

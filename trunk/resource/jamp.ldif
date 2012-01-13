@@ -1,0 +1,172 @@
+dn: dc=jamp,dc=it
+objectClass: dcObject
+objectClass: organization
+dc: jamp
+o: jamp
+structuralObjectClass: organization
+
+dn: cn=admin,dc=jamp,dc=it
+cn: admin
+description: LDAP administrator
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+userPassword:: e1NTSEF9Yy9vYytHRXNLZkVYSXBuTUFNS3BjNUUyblA4UVlhKzY=
+
+dn: ou=Groups,dc=jamp,dc=it
+ou: Groups
+objectClass: organizationalUnit
+structuralObjectClass: organizationalUnit
+
+dn: cn=Backup Operators,ou=Groups,dc=jamp,dc=it
+cn: Backup Operators
+description: Netbios Domain Members can bypass file security to back up files
+displayName: Backup Operators
+gidNumber: 551
+sambaGroupType: 5
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-32-551
+structuralObjectClass: posixGroup
+
+dn: cn=Domain Admins,ou=Groups,dc=jamp,dc=it
+cn: Domain Admins
+description: Netbios Domain Administrators
+displayName: Domain Admins
+gidNumber: 512
+memberUid: Administrator
+sambaGroupType: 2
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-2805181036-1172385923-2253416680-512
+structuralObjectClass: posixGroup
+
+dn: cn=Domain Computers,ou=Groups,dc=jamp,dc=it
+cn: Domain Computers
+description: Netbios Domain Computers accounts
+displayName: Domain Computers
+gidNumber: 515
+sambaGroupType: 2
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-2805181036-1172385923-2253416680-515
+structuralObjectClass: posixGroup
+
+dn: cn=Domain Guests,ou=Groups,dc=jamp,dc=it
+cn: Domain Guests
+description: Netbios Domain Guests Users
+displayName: Domain Guests
+gidNumber: 514
+sambaGroupType: 2
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-2805181036-1172385923-2253416680-514
+
+dn: cn=Domain Users,ou=Groups,dc=jamp,dc=it
+cn: Domain Users
+description: Netbios Domain Users
+displayName: Domain Users
+gidNumber: 513
+sambaGroupType: 2
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-21-2805181036-1172385923-2253416680-513
+
+dn: cn=Print Operators,ou=Groups,dc=jamp,dc=it
+cn: Print Operators
+description: Netbios Domain Print Operators
+displayName: Print Operators
+gidNumber: 550
+sambaGroupType: 5
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-32-550
+
+dn: cn=Replicators,ou=Groups,dc=jamp,dc=it
+cn: Replicators
+description: Netbios Domain Supports file replication in a sambaDomainName
+displayName: Replicators
+gidNumber: 552
+sambaGroupType: 5
+objectClass: posixGroup
+objectClass: sambaGroupMapping
+sambaSID: S-1-5-32-552
+
+dn: ou=Hosts,dc=jamp,dc=it
+ou: Hosts
+objectClass: organizationalUnit
+structuralObjectClass: organizationalUnit
+
+dn: ou=Idmap,dc=jamp,dc=it
+ou: Idmap
+objectClass: organizationalUnit
+structuralObjectClass: organizationalUnit
+
+dn: ou=People,dc=jamp,dc=it
+ou: People
+objectClass: organizationalUnit
+structuralObjectClass: organizationalUnit
+
+dn: uid=nobody,ou=People,dc=jamp,dc=it
+cn: nobody
+homeDirectory: /dev/null
+sambaSID: S-1-5-21-2805181036-1172385923-2253416680-2996
+sn: nobody
+uid: nobody
+uidNumber: 999
+gidNumber: 514
+loginShell: /bin/false
+sambaAcctFlags: [XU         ]
+sambaHomeDrive: H:
+sambaHomePath: \\PDC-SMB3\homes\nobody\nobody
+sambaKickoffTime: 2147483647
+sambaLogoffTime: 2147483647
+sambaLMPassword: NO PASSWORDXXXXXXXXXXXXXXXXXXXXX
+sambaPrimaryGroupSID: S-1-5-21-2805181036-1172385923-2253416680-514
+sambaProfilePath: \\PDC-SMB3\profiles\nobody\nobody
+sambaPwdCanChange: 0
+sambaPwdLastSet: 0
+sambaPwdMustChange: 2147483647
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: shadowAccount
+structuralObjectClass: inetOrgPerson
+
+dn: uid=Administrator,ou=People,dc=jamp,dc=it
+cn: Administrator
+homeDirectory: /home/Administrator
+sambaSID: S-1-5-21-2805181036-1172385923-2253416680-2298
+sn: Administrator
+uid: Administrator
+uidNumber: 0
+gidNumber: 0
+gecos: Netbios Domain Administrator
+loginShell: /bin/false
+sambaAcctFlags: [XU         ]
+sambaHomeDrive: H:
+sambaHomePath: \\PDC-SMB3\homes\Administrator\Administrator
+sambaKickoffTime: 2147483647
+sambaLogoffTime: 2147483647
+sambaPrimaryGroupSID: S-1-5-21-2805181036-1172385923-2253416680-512
+sambaProfilePath: \\PDC-SMB3\profiles\Administrator\Administrator
+sambaPwdCanChange: 0
+sambaPwdLastSet: 0
+sambaPwdMustChange: 2147483647
+objectClass: inetOrgPerson
+objectClass: sambaSamAccount
+objectClass: posixAccount
+objectClass: shadowAccount
+sambaLMPassword: A1221F8E1270A9D58E5D533411003C5C
+sambaNTPassword: 68A33C81DC4715CC9A19D68216C34D37
+userPassword:: e1NTSEF9alZRdHNJbkxqR2hBNEl2ZllmR3BwUUw2ajV6STkyZmo=
+structuralObjectClass: inetOrgPerson
+
+dn: sambaDomainName=INTRANET,dc=jamp,dc=it
+gidNumber: 1000
+sambaDomainName: INTRANET
+sambaSID: S-1-5-21-2805181036-1172385923-2253416680
+uidNumber: 1000
+objectClass: sambaDomain
+objectClass: sambaUnixIdPool
+objectClass: top
+structuralObjectClass: sambaDomain

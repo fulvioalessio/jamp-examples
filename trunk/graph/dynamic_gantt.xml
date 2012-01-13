@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Grafico di Gantt" out="html" icon="../../favicon.ico" loaddata="true">
+	      <ds1 typeobj="ds" conn="conn6" dstable="gantt" dskey="key" />
+	      <div1 typeobj="div">	
+		      <graphic1 typeobj="graphic" width="700" height="200">
+			      <parameter>
+				      <plot objtype="plot" shadow="true" frame="true" xaxis="true" yaxis="true" />
+				      <title objtype="title" title="gantt" font="FF_FONT1,FS_BOLD" margin="3" header="GANTT_HYEAR | GANTT_HMONTH | GANTT_HDAY | GANTT_HWEEK" />
+				      <scale objtype="scale" weekstyle="WEEKSTYLE_FIRSTDAYWNBR" weekfont="FF_FONT1" />
+			    </parameter>
+		      </graphic1>
+	      </div1>
+	      <div2 typeobj="div" style="margin: 10px">	
+		      <dsnav1 typeobj="dsnav" dsobj="ds1" btPage="false" btNav="false" btPrint="false" />
+		      <gridds1 typeobj="gridds" dsobj="ds1" width="700" height="300">
+			      <coloumn>   
+				      <col objtype="dsselect" itemlabel="Type" dsitem="type" optionvalue="ACTYPE_NORMAL,ACTYPE_MILESTONE,ACTYPE_GROUP" colwidth="150px" />
+				      <col objtype="text" itemlabel="Label" dsitem="label" minlength="1" colwidth="250px" />
+				      <col objtype="text" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy" itemlabel="Begin" dsitem="begin" minlength="1" size="5" />
+				      <col objtype="text" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy" itemlabel="End" dsitem="end" minlength="1" size="5" />
+			      </coloumn>
+		      </gridds1>
+	      </div2>
+	</page>
+</jamp>

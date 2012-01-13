@@ -1,0 +1,6 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio visualizzatore XLS" icon="../../favicon.ico" loaddata="true">
+		<view typeobj="viewxls" src="../resource/example.xls" />	
+	</page>
+</jamp>

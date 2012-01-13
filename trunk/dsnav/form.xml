@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio di impaginazione" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dsorder="Cognome" dstable="Anagrafica" dskey="IDAssistito" focusnew="text1" dslimit="1" dsrefresh="ds2" />
+		<ds2 typeobj="ds" conn="conn6" dsorder="Cognome" dstable="Anagrafica" dskey="IDAssistito" focusnew="text1" dslimit="1" />
+
+		<tabs1 typeobj="tabs" width="770px" height="520px" selected="tab1" align="left">
+			<tab1 typeobj="tab" label="ANAGRAFICA">	
+				<dsnav1 typeobj="dsnav" dsobj="ds1" objprint="tabs1" style="height: 30px"/>
+				<divx typeobj="div">
+					<fieldset1 typeobj="fieldset" legend="Anagrafica" style="float: left; width: 330px; height: 200px;">			
+						<text3 typeobj="text" dsobj="ds1" dsitem="Prot_Amm" label="Prot Amm:" maxlength="5" size="5" labelwidth="110px" />
+						<text6 typeobj="text" dsobj="ds1" dsitem="Cognome" label="Cognome:" maxlength="40" size="20" labelwidth="110px" />
+						<text4 typeobj="text" dsobj="ds1" dsitem="Nome" label="Nome:" maxlength="40" size="20" labelwidth="110px" />
+						<text5 typeobj="text" dsobj="ds1" dsitem="SecondoNome" label="Secondo Nome:" maxlength="30" size="20" labelwidth="110px" />
+						<text7 typeobj="text" dsobj="ds1" dsitem="CodiceFiscale" label="Codice fiscale:" maxlength="16" size="20" labelwidth="110px" />
+						<text8 typeobj="text" dsobj="ds1" dsitem="DataNascita" label="Data di nascita:" maxlength="12" size="12" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy" labelwidth="110px" />
+						<textcitta typeobj="text" dsobj="ds1" dsitem="Citta" label="Città di nascita:" maxlength="40" size="20" labelwidth="110px" />
+						<dsselect1 typeobj="dsselect" dsobj="ds1" dsitem="sesso" label="Sesso:" labelwidth="110px" >
+							<options>
+								<opt1 optiontext="M" optionvalue="1"/>
+								<opt2 optiontext="F" optionvalue="2"/>
+							</options>
+						</dsselect1>
+					</fieldset1>
+					<fieldset2 typeobj="fieldset" legend="Recapiti" style="width: 370px; height: 200px">			
+						<text9 typeobj="text" dsobj="ds1" dsitem="Indirizzo" label="Indirizzo:" labelwidth="130px" maxlength="255" size="25" />
+						<textresidenza typeobj="text" dsobj="ds1" dsitem="Residenza" label="Residenza:" maxlength="40" size="20" labelwidth="130px" />
+						<textcit typeobj="text" dsobj="ds1" dsitem="Cittadinanza" label="Cittadinanza:" labelwidth="130px" maxlength="3" size="5" />
+						<text12 typeobj="text" dsobj="ds1" dsitem="StatoOProvincia" label="Stato o Provincia:" labelwidth="130px" maxlength="16" size="16" />
+						<text13 typeobj="text" dsobj="ds1" dsitem="CAP" label="CAP:" labelwidth="130px" maxlength="5" size="8" />
+						<text14 typeobj="text" dsobj="ds1" dsitem="TelefonoAbitazione" label="Telefono Abitazione:" labelwidth="130px" maxlength="12" size="20" />
+						<text1 typeobj="checkbox" check="0" uncheck="-1" dsobj="ds1" dsitem="esenzione" label="Esenzione:" labelwidth="130px" labelalign="left" style="margin-bottom: 10px;" />
+					</fieldset2>
+					<fieldset3 typeobj="fieldset" legend="Usl" style="float: left; width: 330px; height: 200px">
+						<textusl typeobj="text" dsobj="ds1" dsitem="Usl" label="Usl:" maxlength="30" size="25" labelwidth="100px" />
+						<textuslp typeobj="text" dsobj="ds1" dsitem="Uslp" label="Distretto:" maxlength="30" size="25" labelwidth="100px" />
+						<textcomune typeobj="text" dsobj="ds1" dsitem="tracomune" label="Comune:" maxlength="30" size="25" labelwidth="100px" />
+						<text16 typeobj="text" dsobj="ds1" dsitem="nimpegnativa" label="impegnativa:" maxlength="30" size="25" labelwidth="100px" />
+						<text17 typeobj="text" dsobj="ds1" dsitem="dataimpegna" label="dataimpegna:" maxlength="12" size="12" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy" labelwidth="100px" />
+						<textarea1 typeobj="textarea" dsobj="ds1" dsitem="Note" label="Note:" labelwidth="100px" cols="22" rows="3" />
+					</fieldset3>	
+					<fieldset4 typeobj="fieldset" legend="Generale" style="width: 370px; height: 200px">	
+						<dsselect4 typeobj="dsselect" dsobjlist="ds3" dsobj="ds1" dsitem="IdIntervento" label="Tipo intervento:" labelwidth="160px" style="width: 190px; margin-bottom: 3px;">
+							<options>
+								<opt1 optionvalue="1" optiontext="AMB. ED EXTRAMURALE"/>
+								<opt2 optionvalue="2" optiontext="INT. GRAVE" />
+								<opt3 optionvalue="3" optiontext="INTERNATO" />
+								<opt4 optionvalue="4" optiontext="SEMI INT. GRAVE" />
+								<opt5 optionvalue="5" optiontext="SEMI INTERNATO" />
+							</options>
+						</dsselect4>	
+						<dsselect5 typeobj="dsselect" dsobj="ds1" dsitem="regime" label="Regime:" labelwidth="160px" style="width: 190px; margin-bottom: 3px;">
+							<options>
+								<opt1 optiontext="Residenziale" optionvalue="1"/>
+								<opt2 optiontext="Semiresidenziale" optionvalue="2"/>
+								<opt3 optiontext="altro" optionvalue="3"/>
+							</options>
+						</dsselect5>	
+						<text18 typeobj="text" dsobj="ds1" dsitem="numero_autorizzazione" label="Numero autorizione:" labelwidth="160px" maxlength="6" size="10"  />
+						<text19 typeobj="text" dsobj="ds1" dsitem="data_autorizzazione" label="Data autorizione:" labelwidth="160px" maxlength="12" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy" defaultvalue="$$DATE$$" size="10" />
+						<text21 typeobj="text" dsobj="ds1" dsitem="diagnosi" label="Codice ICD-9 CM:" maxlength="5" size="10" labelwidth="160px" />
+						<dsselect6 typeobj="dsselect" dsobj="ds1" dsitem="provenienza" label="Provenienza:" labelwidth="160px" style="width: 190px; margin-bottom: 3px;">
+							<options>
+								<opt1 optiontext="Abitazione" optionvalue="1"/>
+								<opt2 optiontext="Struttura protetta socio-sanitaria" optionvalue="2"/>
+								<opt3 optiontext="Struttura sociale" optionvalue="3"/>
+								<opt4 optiontext="Struttura ospedaliera" optionvalue="4"/>
+								<opt5 optiontext="Struttura di riabilitazione" optionvalue="5"/>
+							</options>
+						</dsselect6>	
+						<dsselect7 typeobj="dsselect" dsobj="ds1" dsitem="dimissione" label="Modalità di dimissione:" labelwidth="160px" style="width: 190px; margin-bottom: 3px;">
+							<options>
+								<opt1 optiontext="Domicilio senza assistenza" optionvalue="1"/>
+								<opt2 optiontext="Domicilio con assistenza" optionvalue="2"/>
+								<opt3 optiontext="Struttura ospedaliera per acuti" optionvalue="3"/>
+								<opt4 optiontext="Altra tipologia di residenza" optionvalue="4"/>
+								<opt5 optiontext="Decesso" optionvalue="5"/>
+							</options>
+						</dsselect7>	
+						<text24 typeobj="text" dsobj="ds1" dsitem="periodi_autorizzati" label="Periodi autorizzati:" labelwidth="160px" maxlength="3" size="12" />
+					</fieldset4>
+				</divx>
+			</tab1>
+		</tabs1>
+	</page>
+</jamp>

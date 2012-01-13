@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="radio" dskey="id" />
+		<dsnav1 typeobj="dsnav" btNew="false" btCancel="false" btDelete="false" dsobj="ds1" />		
+		<gridds1 typeobj="gridds" dsobj="ds1" width="380" height="320">
+			<coloumn>	
+				<col objtype="label" dsitem="id" itemlabel="Cognome" colwidth="80px" />
+				<col objtype="label" dsitem="giorno" itemlabel="Giorno" colwidth="80px" />
+				<col objtype="radio" dsitem="attivo" itemlabel="Attivo" align="center" colwidth="50px" value="1" />
+				<col objtype="radio" dsitem="attivo" itemlabel="Disattivo" align="center" colwidth="50px" value="0" />
+			</coloumn>	
+		</gridds1>		
+	</page>
+</jamp>

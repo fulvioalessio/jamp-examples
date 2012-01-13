@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio per la gestione degli errori" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn000" dslimit="10" />
+	</page>
+</jamp>

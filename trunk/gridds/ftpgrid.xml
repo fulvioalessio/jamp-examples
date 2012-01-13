@@ -1,0 +1,14 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio della gridds collegata a una fonte ftp" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn9" dskey="path" scope="onelevel" base="/jamp.alyx.it/jamp/plugin" />
+		<dsnav1 typeobj="dsnav" dsobj="ds1" objprint="gridds1" />
+		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize" >
+			<coloumn>
+				<col objtype="text" itemlabel="Path" dsitem="path" order="false" size="50" colwidth="200px" />
+				<col objtype="text" itemlabel="Nome" dsitem="filename" order="false" size="20" />
+				<col objtype="text" itemlabel="Tipo" dsitem="type" order="false" size="15"/>
+			</coloumn>
+		</gridds1>
+	</page>
+</jamp>

@@ -1,0 +1,10 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio immagini lightbox" icon="../../favicon.ico" loaddata="true">
+		<lightbox typeobj="lightbox" theme="grey">
+			<a typeobj="a" href="../resource/tux/picture1.jpg" rel="lightbox" rev="width: 465px; height: 225px; scrolling: no;" label="Click">
+				<img typeobj="img" src="../resource/tux/picture1.jpg" width="64" height="64" />
+			</a>
+		</lightbox>
+	</page>
+</jamp>

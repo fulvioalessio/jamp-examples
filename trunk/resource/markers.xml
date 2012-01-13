@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jamp>
+	<data>
+		<record1 address="Ancona, Italia" html="&lt;b&gt;Ancona&lt;&#47;b&gt; &lt;br&#47;&gt; Marche" icon="../resource/flag2/marche.gif" />		
+		<record2 address="Aosta, Italia" html="&lt;b&gt;Aosta&lt;&#47;b&gt; &lt;br&#47;&gt; Valle d'Aosta" icon="../resource/flag2/valle_aosta.gif"/>
+		<record3 address="Bari, Italia" html="&lt;b&gt;Bari&lt;&#47;b&gt; &lt;br&#47;&gt; Puglia" icon="../resource/flag2/puglia.gif"/>
+		<record4 address="Bologna, Italia" html="&lt;b&gt;Bologna&lt;&#47;b&gt; &lt;br&#47;&gt; Emilia Romagna" icon="../resource/flag2/emilia_romagna.gif"/>
+		<record5 lat="39.214903" lng="9.109499" html="&lt;b&gt;Cagliari&lt;&#47;b&gt; &lt;br&#47;&gt; Sardegna" icon="../resource/flag2/sardegna.gif"/>		
+		<record6 address="Campobasso, Italia" html="&lt;b&gt;Campobasso&lt;&#47;b&gt; &lt;br&#47;&gt; Molise" icon="../resource/flag2/molise.gif"/>
+		<record7 address="Catanzaro, Italia" html="&lt;b&gt;Catanzaro&lt;&#47;b&gt; &lt;br&#47;&gt; Calabria" icon="../resource/flag2/calabria.gif"/>
+		<record8 address="Firenze, Italia" html="&lt;b&gt;Firenze&lt;&#47;b&gt; &lt;br&#47;&gt; Toscana" icon="../resource/flag2/toscana.gif"/>
+		<record9 lat="44.407062" lng="8.933989" html="&lt;b&gt;Genova&lt;&#47;b&gt; &lt;br&#47;&gt; Liguria" icon="../resource/flag2/liguria.gif" />
+		<record10 address="L'Aquila, Italia" html="&lt;b&gt;L'Aquila&lt;&#47;b&gt; &lt;br&#47;&gt; Abruzzo" icon="../resource/flag2/abruzzo.gif"/>
+		<record11 address="Milano, Italia" html="&lt;b&gt;Milano&lt;&#47;b&gt; &lt;br&#47;&gt; Lombardia" icon="../resource/flag2/lombardia.gif"/>
+		<record12 address="Napoli, Italia" html="&lt;b&gt;Napoli&lt;&#47;b&gt; &lt;br&#47;&gt; Campania" icon="../resource/flag2/campania.gif"/>
+		<record13 address="Palermo, Italia" html="&lt;b&gt;Palermo&lt;&#47;b&gt; &lt;br&#47;&gt; Sicilia" icon="../resource/flag2/sicilia.gif"/>
+		<record14 lat="43.110701" lng="12.389172" html="&lt;b&gt;Perugia&lt;&#47;b&gt; &lt;br&#47;&gt; Umbria" icon="../resource/flag2/umbria.gif"/>
+		<record15 address="Potenza, Italia" html="&lt;b&gt;Potenza&lt;&#47;b&gt; &lt;br&#47;&gt; Basilicata" icon="../resource/flag2/basilicata.gif"/>		
+		<record16 address="Roma, Italia" html="&lt;b&gt;Roma&lt;&#47;b&gt; &lt;br&#47;&gt; Lazio" icon="../resource/flag2/lazio.gif"/>
+		<record17 lat="45.070603" lng="7.68671" html="&lt;b&gt;Torino&lt;&#47;b&gt; &lt;br&#47;&gt; Piemonte" icon="../resource/flag2/piemonte.gif"/>
+		<record18 address="Trento, Italia" html="&lt;b&gt;Trento&lt;&#47;b&gt; &lt;br&#47;&gt; Trentino Alto Adige" icon="../resource/flag2/trentino_alto_adige.gif"/>
+		<record19 address="Trieste, Italia" html="&lt;b&gt;Trieste&lt;&#47;b&gt; &lt;br&#47;&gt; Friuli Venezia Giulia" icon="../resource/flag2/friuli_venezia_giulia.gif"/>
+		<record20 address="Venezia, Italia" html="&lt;b&gt;Venezia&lt;&#47;b&gt; &lt;br&#47;&gt; Veneto" icon="../resource/flag2/veneto.gif"/>
+	</data>
+</jamp>

@@ -1,0 +1,8 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio textarea" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="dock" dskey="id"/>
+		<textarea1 typeobj="textarea" labelwidth="150px" label="Textarea Semplice:" value="valoretext" cols="50" rows="5" maxlength="20" />	
+		<textarea2 typeobj="textarea" labelwidth="150px" label="Textarea DS:" cols="50" rows="5" dsobj="ds1" dsitem="name"/>	
+	</page>
+</jamp>

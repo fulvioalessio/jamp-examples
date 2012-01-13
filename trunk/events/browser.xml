@@ -1,0 +1,13 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio per il riconoscimento del browser" icon="../../favicon.ico">
+		<label1 typeobj="label" labelwidth="200px" label="Internet Explorer" />
+		<label2 typeobj="label" labelwidth="200px" label="Opera" />
+		<label3 typeobj="label" labelwidth="200px" label="Safari" />
+		<label4 typeobj="label" labelwidth="200px" label="Firefox" />
+		<label5 typeobj="label" labelwidth="200px" label="Chrome" />
+		<label6 typeobj="label" labelwidth="200px" label="Gecko" />
+		<label7 typeobj="label" labelwidth="200px" label="KHTML" />
+		<label8 typeobj="label" labelwidth="200px" label="Versione" />
+	</page>
+</jamp>

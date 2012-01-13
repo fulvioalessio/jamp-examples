@@ -1,0 +1,22 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio sulla formattazione dei dati" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="es1_marca" dskey="key" dsrefresh="ds2"/>
+		<select1 typeobj="dsselect" dsobjlist="ds1" dsitemlist="marca" dsitemkeylist="key" label="\nTrasforma tutti i caratteri alfabetici in maiuscolo:\n" format="string|upper"/>
+		<select2 typeobj="dsselect" label="\nCambia il formato delle date da yyyy-mm-dd a dd/mm/yyyy:\n" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy">
+			<options>
+				<opt optionvalue="" />
+				<opt optionvalue="2010-12-01" />
+				<opt optionvalue="2010-11-01" />
+				<opt optionvalue="2010-10-01" />
+				<opt optionvalue="2010-09-01" />
+				<opt optionvalue="2010-08-01" />
+				<opt optionvalue="2010-07-01" />
+				<opt optionvalue="2010-06-01" />
+				<opt optionvalue="2010-05-01" />
+				<opt optionvalue="2010-04-01" />
+				<opt optionvalue="2010-03-01" />
+			</options>
+		</select2>
+	</page>
+</jamp>

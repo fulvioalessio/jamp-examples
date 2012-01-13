@@ -1,0 +1,18 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio Xgridds" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dsquery_select="SELECT SQL_CALC_FOUND_ROWS * FROM immobili" dskey="id" dslimit="3" />
+		<dsnav1 typeobj="dsnav" dsobj="ds1" objprint="gridds1" />
+		<gridds1 typeobj="xgridds" dsobj="ds1" width="520px" height="450px">
+			<body>			
+				<col objtype="image" dsitem="foto" readonly="true" width="150" height="112" style="margin-top:10px" onclick="Dialog('zoom', 1, 'zoom_'+$('ds1').DSresult[$('ds1').DSpos]['foto'], 520, 400);" />
+				<col objtype="label" dsitem="titolo" style="display:inline-block;width:350px;height:20px;position:relative;left:170px;top:-110px;color:#005A9B;font-size:13px;font-weight:bold;" />
+				<col objtype="label" dsitem="comune" style="display:inline-block;width:250px;height:0px;position:relative;left:170px;top:-110px;color:#000000;font-size:12px;font-weight:bold;" />
+				<col objtype="label" dsitem="descrizione" style="display:inline-block;width:350px;height:0px;position:relative;left:170px;top:-90px;color:#000000;font-size:12px;" />
+  				<col objtype="label" value="€." style="display:inline-block;width:350px;height:0px;position:relative;left:170px;top:-25px;color:#000000;font-size:12px;font-weight:bold" />
+ 				<col objtype="label" dsitem="prezzo" style="display:inline-block;width:300px;height:0px;position:relative;left:185px;top:-25px;color:#000000;font-size:12px;font-weight:bold" format="number|EN|,0.00|IT|.0" />
+			</body>
+		</gridds1>
+		<zoom typeobj="lightbox" />  
+	</page>
+</jamp>

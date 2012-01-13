@@ -1,0 +1,11 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio text" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dsorder="DENOMINAZIONE_COMUNE" dslimit="10" loadall="false"/>
+		<ds2 typeobj="ds" conn="conn6" dstable="colori" dsorder="colore" dslimit="10" loadall="false"/>
+		<text1 typeobj="text" label="\nComune:\n" dsobjlist="ds1" dsitemlist="DENOMINAZIONE_COMUNE" dssearch="`DENOMINAZIONE_COMUNE` LIKE '$$VALUE$$%'"/>
+		<label1 typeobj="label" value="CLICCA QUI' PER TOGLIERE IL FOCUS"/>
+		<text2 typeobj="text" label="\n\nComune con ricerca dopo il terzo carattere:\n" dsobjlist="ds1" dsitemlist="DENOMINAZIONE_COMUNE" dssearch="`DENOMINAZIONE_COMUNE` LIKE '$$VALUE$$%'" minsearch="3"/>
+		<text3 typeobj="text" label="\nColori con salvataggio delle nuove voci inserite alla perdita del focus:\n" dsobjlist="ds2" dsitemlist="colore" dssearch="`colore` LIKE '$$VALUE$$%'" savesearch="true"/>
+	</page>
+</jamp>

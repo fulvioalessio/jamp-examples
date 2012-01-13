@@ -1,0 +1,27 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio d'uso delle espressioni regolari" icon="../../favicon.ico" loaddata="true">
+		<tabs1 typeobj="tabs" width="600px" height="600px" selected="tab1" align="left" >
+			<tab1 typeobj="tab" label="Espressioni regolari(SUL SINGOLO CARATTERE)" >
+				<digit_number typeobj="textarea" label="\nSolo caratteri numerici:\n" keypress="number" cols="50" rows="3" />
+				<digit_nonumber typeobj="textarea" label="\nEscluso caratteri numerici:\n" keypress="nonumber" cols="50" rows="3" />
+				<digit_alphanumeric typeobj="textarea" label="\nSolo caratteri alphanumerici:\n" keypress="alphanumeric" cols="50" rows="3" />
+				<digit_noalphanumeric typeobj="textarea" label="\nEscluso caratteri alphanumerici:\n" keypress="noalphanumeric" cols="50" rows="3" />
+				<digit_alphabetic typeobj="textarea" label="\nSolo caratteri alfabetici:\n" keypress="alphabetic" cols="50" rows="3" />
+				<digit_loweralphabetic typeobj="textarea" label="\nSolo caratteri alfabetici minuscoli:\n" keypress="loweralphabetic" cols="50" rows="3" />
+				<digit_upperalphabetic typeobj="textarea" label="\nSolo caratteri alfabetici maiuscoli:\n" keypress="upperalphabetic" cols="50" rows="3" />
+				<digit_decimal typeobj="textarea" label="\nSolo caratteri decimali(separatori miglia e decine compresi):\n" keypress="decimal" cols="50" rows="3" />
+				<digit_free typeobj="textarea" label="\nEspessione regolare libera(esempio: solo lettere dalla a alla g):\n" keypress="[a-g]" cols="50" rows="3" />
+			</tab1>
+			<tab2 typeobj="tab" label="Espressioni regolari(SULLA STRINGA)" >
+				<word_number typeobj="textarea" label="\nSolo caratteri numerici:\n" blur="number" cols="50" rows="3" />
+				<word_decimal typeobj="textarea" label="\nSolo caratteri decimali:\n" blur="decimal" cols="50" rows="3" />
+				<word_ip typeobj="textarea" label="\nIndirizzo IP:\n" blur="ip" cols="50" rows="3" />
+				<word_email typeobj="textarea" label="\nIndirizzo e-mail:\n" blur="email" cols="50" rows="3" />
+				<word_cf typeobj="textarea" label="\nCodice fiscale:\n" blur="cf" cols="50" rows="3" />
+				<word_complete typeobj="textarea" label="\nMulti controllo(alfanumerici, codice fiscale, minimo 16, massimo 16):\n" blur="cf" keypress="alphanumeric" minlength="16" maxlength="16" cols="50" rows="3" />
+				<word_free typeobj="textarea" label="\nEspressione regolare libera(esempio: solo numeri da 0 a 4):\n" blur="^[0-4]{0,}$" cols="50" rows="3" />
+			</tab2>
+		</tabs1>
+	</page>
+</jamp>

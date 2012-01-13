@@ -1,0 +1,13 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio Autosize 1" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="10" />
+		<dsnav1 typeobj="dsnav" dsobj="ds1" btNew="false" objprint="gridds1" />
+		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">
+			<coloumn>
+				<col objtype="label" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px" />
+				<col objtype="text" itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px" />
+			</coloumn>
+		</gridds1>
+	</page>
+</jamp>

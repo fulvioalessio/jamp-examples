@@ -1,0 +1,6 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio dsnav per la navigazione dei dati" icon="../../favicon.ico" loaddata="true">
+		<tabs1 typeobj="tabs" selected="tab1" />
+	</page>
+</jamp>

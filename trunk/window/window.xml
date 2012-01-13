@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio Window" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="15" />
+		<window1 typeobj="window" width="600px" height="300px" expanded="false" label="Window" />
+		<window2 typeobj="window" width="600px" height="300px" expanded="false" label="Window" type="horizontal"/>
+		<window3 typeobj="window" width="600px" height="200px" expanded="true" label="Window">
+			 <gridds1 typeobj="gridds" dsobj="ds1" width="600px" height="300px" order="true" label="Elenco">
+				<coloumn>   
+					 <col objtype="text" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px"/>
+					 <col objtype="text" itemlabel="CAB" dsitem="CAB" minlength="5" maxlength="7" colwidth="200px"/>	
+				</coloumn>
+			 </gridds1>
+		</window3>
+	</page>
+</jamp>

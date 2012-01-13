@@ -1,0 +1,18 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio Xgridds" loaddata="true" out="pdf">
+		<ds0 typeobj="ds" conn="conn6" dstable="sex" dskey="key"/>
+		<ds1 typeobj="ds" conn="conn6" dstable="Anagrafica" dsorder="Cognome" dskey="IDAssistito" />
+		<xgridds1 typeobj="xgridds" dsobj="ds1" width="autosize" height="autosize">
+			<body>			
+				<text6 objtype="label" dsitem="Cognome" label="\nCognome:" labelstyle="font-size: 12; font-weight: bold; left: 10;" style="font-size: 12;color: #FF0000; left: 50px;" />
+				<text4 objtype="label" dsitem="Nome" label="\nNome:" labelstyle="font-size: 12; font-weight: bold; left: 10;" style="font-size: 12;color: #FF0000; left: 50px;" />
+				<text5 objtype="label" dsitem="SecondoNome" label="\nSecondo Nome:" labelstyle="font-size: 12; font-weight: bold; left: 10;" style="font-size: 12;color: #FF0000; left: 50px;" />
+				<text7 objtype="label" dsitem="CodiceFiscale" label="\nCodice fiscale:" labelstyle="font-size: 12; font-weight: bold; left: 10;" style="font-size: 12;color: #FF0000; left: 50px;"/>
+				<text8 objtype="label" dsitem="DataNascita" label="\nData di nascita:" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy" labelstyle="font-size: 12; font-weight: bold; left: 10;" style="font-size: 12;color: #FF0000; left: 50px;" />
+				<textcitta objtype="label" dsitem="Citta" label="\nCAB Città nascita:" labelstyle="font-size: 12; font-weight: bold; left: 10;" style="font-size: 12;color: #FF0000; left: 50px;" />
+				<dsselect1 objtype="dsselect" dsobj="ds1" dsitem="sesso" label="\nSesso:" labelwidth="110" optionvalue="1,2" optiontext="M,F" labelstyle="font-size: 12; font-weight: bold; left: 10;" style="font-size: 12;color: #FF0000; left: 50px;" />
+			</body>
+		</xgridds1>
+	</page>
+</jamp>

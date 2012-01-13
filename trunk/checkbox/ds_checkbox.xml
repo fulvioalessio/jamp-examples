@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JPresenze" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="checkbox" dskey="id" />
+		<dsnav1 typeobj="dsnav" btNew="false" btCancel="false" btDelete="false" dsobj="ds1" />
+		<label typeobj="label" dsobj="ds1" dsitem="giorno" label="Giorno\n" />
+		<checkbox1 typeobj="checkbox" dsobj="ds1" dsitem="mattino" label="Mattino" labelwidth="100px" labelalign="right" tristate="0" uncheck="1" check="2"  />
+		<br1 typeobj="br" />
+		<checkbox2 typeobj="checkbox" dsobj="ds1" dsitem="pomeriggio" label="Pomeriggio" labelwidth="100px" labelalign="right" tristate="0" uncheck="1" check="2" />
+		<br2 typeobj="br" />
+		<checkbox3 typeobj="checkbox" dsobj="ds1" dsitem="sera" label="Sera" labelwidth="100px" labelalign="right" tristate="0" uncheck="1" check="2"  />
+	</page>
+</jamp>

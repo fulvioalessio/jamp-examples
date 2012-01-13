@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Effetto Animazione Label" loaddata="true" icon="../../favicon.ico" out="html">
+		<frame1 typeobj="fieldset" legend="Pannello di Controllo">
+			<select1 typeobj="dsselect" onchange="getCSS1();" label="Proprietà: "/>
+			<text1 typeobj="text" label=":"/>
+			<select2 typeobj="dsselect" label="Algoritmo: " optionvalue="default,sin,cos"/>
+			<text2 typeobj="text" size="5" label="Durata ms:" value="1000" keypress="number"/>
+			<text3 typeobj="text" size="3" label="fps:" value="25" keypress="number" onchange="ANIMATE.fps = this.value;"/>
+			<button1 typeobj="button"  onclick="startanimate();" value="START"/>
+			<select1_1 typeobj="dsselect" onchange="getCSS2();" label="\nProprietà: "/>
+			<text1_1 typeobj="text" label=":"/>
+			<label1 typeobj="label" value="-" label="\nCodice JS:\n"/>
+		</frame1>
+		<obj1 typeobj="label" value="Testo Animazione!" style="position:absolute;"/>
+	</page>
+</jamp>

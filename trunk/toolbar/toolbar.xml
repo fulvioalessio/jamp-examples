@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio toolbar" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="toolbar"/>
+		<jtoobar1 typeobj="toolbar" dsobj="ds1" />
+	</page>
+</jamp>

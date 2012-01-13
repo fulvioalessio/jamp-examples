@@ -1,0 +1,23 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio Autosize 3" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="10"/>
+		<dsnav1 typeobj="dsnav" dsobj="ds1" btNew="false" objprint="gridds1"/>
+		<divTOP typeobj="div" width="autosize" height="autosize">
+			<divSX typeobj="div" width="150px" height="autosize" style="float:left; overflow:hidden;">
+				<win typeobj="window" width="autosize" height="autosize" label="Finestra" expanded="yes">
+					<label typeobj="label" value="Inserire il testo desiderato"/>
+				</win>
+			</divSX>
+			<divDX typeobj="div" width="autosize" height="autosize" style="float:left; overflow:hidden;">
+				<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">
+					<coloumn>   
+						<col objtype="label" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px"/>
+						<col objtype="text" itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px"/>
+					</coloumn>
+				</gridds1>
+			</divDX>
+		</divTOP>
+		<status typeobj="div" style="position: absolute; background-color:#EFEDDE; height:16px; width:100%; left:0px; top:100%; margin-top: -16px;  font-weight:bold;" value="Loading Page" />
+	</page>
+</jamp>

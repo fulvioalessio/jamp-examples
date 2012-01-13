@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio tree collegata a una fonte xml" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn2" dskey="key" scope="base" base="/jamp/data" alias="jamp" />
+		<tree1 typeobj="tree" dsobj="ds1" refresh="brance" width="300px" height="autosize" dragable="true"/>
+	</page>
+</jamp>

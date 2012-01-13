@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAmp - Accesso Negato">
+		<div1 typeobj="div" style="height : 150px; top : 50%; position : absolute; width:100%; margin-left: -2px; margin-top : -50px;">
+			<table1 typeobj="table" align="center">
+				<tr1 typeobj="tr">
+					<td1 typeobj="td">
+						<img1 typeobj="img" src="./img/gpg.png"/>
+					</td1>
+					<td2 typeobj="td">
+						<label1 typeobj="label" value="JApp:" style="font-weight: bold; font-size: 2em;"/>
+						<label2 typeobj="label" value="\nUtente non autorizzato!\n" style="font-weight: bold; font-size: 2em; color : #ad0707;"/>
+						<login typeobj="a" href="index.php" text="Esegui il login..."/>
+					</td2>
+				</tr1>
+			</table1>
+		</div1>
+	</page>
+</jamp>

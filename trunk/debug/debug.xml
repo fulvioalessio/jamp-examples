@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio di Debug" icon="../../favicon.ico" loaddata="true" debug="true">
+		<ds1 typeobj="ds" conn="conn7" dslimit="10">
+			<record>
+				<field1 recname="id" reclength="7" />
+				<field2 recname="level" reclength="1" />
+				<field3 recname="image" reclength="55" />
+				<field4 recname="text" reclength="30" />
+				<field5 recname="url" reclength="32" />
+			</record>
+		</ds1>
+		<dsnav1 typeobj="dsnav" dsobj="ds1" btNew="false" objprint="gridds1" />
+		<gridds1 typeobj="gridds" dsobj="ds1" width="800" height="autosize">
+			<coloumn>
+				<col objtype="label" itemlabel="ID"  dsitem="id" size="8" />
+				<col objtype="label" itemlabel="LEVEL"  dsitem="level" size="2" />
+				<col objtype="label" itemlabel="IMAGE"  dsitem="image" size="45" colwidth="300px" />
+				<col objtype="label" itemlabel="TEXT"  dsitem="text" size="15" colwidth="150px" />
+				<col objtype="label" itemlabel="URL"  dsitem="url" size="15" colwidth="150px" />
+			</coloumn>
+		</gridds1>
+	</page>
+</jamp>

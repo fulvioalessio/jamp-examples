@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jamp>
+	<data>
+		<record1 provincia="AG" citta="Agrigento" regione="Sicilia"/>
+		<record2 provincia="AL" citta="Alessandria" regione="Piemonte"/>
+		<record3 provincia="AN" citta="Ancona" regione="Marche"/>
+		<record4 provincia="AO" citta="Aosta" regione="Valle d'Aosta"/>
+		<record5 provincia="AQ" citta="Aquila" regione="Abruzzo"/>
+		<record6 provincia="AR" citta="Arezzo" regione="Toscana"/>
+		<record7 provincia="AP" citta="Ascoli-Piceno" regione="Marche"/>
+		<record8 provincia="AT" citta="Asti" regione="Piemonte"/>
+		<record9 provincia="AV" citta="Avellino" regione="Campania"/>
+		<record10 provincia="BA" citta="Bari" regione="Puglia" type="file"/>
+		<record11 provincia="BT" citta="Barletta Andria Trani" regione="Puglia"/>
+		<record12 provincia="BL" citta="Belluno" regione="Veneto"/>
+		<record13 provincia="BN" citta="Benevento" regione="Campania"/>
+		<record14 provincia="BG" citta="Bergamo" regione="Lombardia"/>
+		<record15 provincia="BI" citta="Biella" regione="Piemonte"/>
+		<record16 provincia="BO" citta="Bologna" regione="Emilia Romagna"/>
+		<record17 provincia="BZ" citta="Bolzano" regione="Trentino Alto Adige"/>
+		<record18 provincia="BS" citta="Brescia" regione="Lombardia"/>
+		<record19 provincia="BR" citta="Brindisi" regione="Puglia"/>
+		<record20 provincia="CA" citta="Cagliari" regione="Sardegna"/>
+		<record21 provincia="CL" citta="Caltanissetta" regione="Sicilia"/>
+		<record22 provincia="CB" citta="Campobasso" regione="Molise"/>
+		<record23 provincia="CE" citta="Caserta" regione="Campania"/>
+		<record24 provincia="CT" citta="Catania" regione="Sicilia"/>
+		<record25 provincia="CZ" citta="Catanzaro" regione="Calabria"/>
+		<record26 provincia="CH" citta="Chieti" regione="Abruzzo"/>
+		<record27 provincia="CO" citta="Como" regione="Lombardia"/>
+		<record28 provincia="CS" citta="Cosenza" regione="Calabria"/>
+		<record29 provincia="CR" citta="Cremona" regione="Lombardia"/>
+		<record30 provincia="KR" citta="Crotone" regione="Calabria"/>
+		<record31 provincia="CN" citta="Cuneo" regione="Piemonte"/>
+		<record32 provincia="FM" citta="Fermo" regione="Marche"/>
+		<record33 provincia="EN" citta="Enna" regione="Sicilia"/>
+		<record34 provincia="FE" citta="Ferrara" regione="Emilia Romagna"/>
+		<record35 provincia="FI" citta="Firenze" regione="Toscana"/>
+		<record36 provincia="FG" citta="Foggia" regione="Puglia"/>
+		<record37 provincia="FC" citta="Forli-Cesena" regione="Emilia Romagna"/>
+		<record38 provincia="FR" citta="Frosinone" regione="Lazio"/>
+		<record39 provincia="GE" citta="Genova" regione="Liguria"/>
+		<record40 provincia="GO" citta="Gorizia" regione="Friuli Venezia Giulia"/>
+		<record41 provincia="GR" citta="Grosseto" regione="Toscana"/>
+		<record42 provincia="IM" citta="Imperia" regione="Liguria"/>
+		<record43 provincia="IS" citta="Isernia" regione="Molise"/>
+		<record44 provincia="SP" citta="La-Spezia" regione="Liguria"/>
+		<record45 provincia="LT" citta="Latina" regione="Lazio"/>
+		<record46 provincia="LE" citta="Lecce" regione="Puglia"/>
+		<record47 provincia="LC" citta="Lecco" regione="Lombardia"/>
+		<record48 provincia="LI" citta="Livorno" regione="Toscana"/>
+		<record49 provincia="LO" citta="Lodi" regione="Lombardia"/>
+		<record50 provincia="LU" citta="Lucca" regione="Toscana"/>
+		<record51 provincia="MC" citta="Macerata" regione="Marche"/>
+		<record52 provincia="MN" citta="Mantova" regione="Lombardia"/>
+		<record53 provincia="MS" citta="Massa-Carrara" regione="Toscana"/>
+		<record54 provincia="MT" citta="Matera" regione="Basilicata"/>
+		<record55 provincia="ME" citta="Messina" regione="Sicilia"/>
+		<record56 provincia="MI" citta="Milano" regione="Lombardia"/>
+		<record57 provincia="MO" citta="Modena" regione="Emilia Romagna"/>
+		<record58 provincia="MB" citta="Monza Brianza" regione="Lombardia"/>
+		<record59 provincia="NA" citta="Napoli" regione="Campania"/>
+		<record60 provincia="NO" citta="Novara" regione="Piemonte"/>
+		<record61 provincia="NU" citta="Nuoro" regione="Sardegna"/>
+		<record62 provincia="OR" citta="Oristano" regione="Sardegna"/>
+		<record63 provincia="PD" citta="Padova" regione="Veneto"/>
+		<record64 provincia="PA" citta="Palermo" regione="Sicilia"/>
+		<record65 provincia="PR" citta="Parma" regione="Emilia Romagna"/>
+		<record66 provincia="PV" citta="Pavia" regione="Lombardia"/>
+		<record67 provincia="PG" citta="Perugia" regione="Umbria"/>
+		<record68 provincia="PU" citta="Pesaro-Urbino" regione="Marche"/>
+		<record69 provincia="PE" citta="Pescara" regione="Abruzzo"/>
+		<record70 provincia="PC" citta="Piacenza" regione="Emilia Romagna"/>
+		<record71 provincia="PI" citta="Pisa" regione="Toscana"/>
+		<record72 provincia="PT" citta="Pistoia" regione="Toscana"/>
+		<record73 provincia="PN" citta="Pordenone" regione="Friuli Venezia Giulia"/>
+		<record74 provincia="PZ" citta="Potenza" regione="Basilicata"/>
+		<record75 provincia="PO" citta="Prato" regione="Toscana"/>
+		<record76 provincia="RG" citta="Ragusa" regione="Sicilia"/>
+		<record77 provincia="RA" citta="Ravenna" regione="Emilia Romagna"/>
+		<record78 provincia="RC" citta="Reggio-Calabria" regione="Calabria"/>
+		<record79 provincia="RE" citta="Reggio-Emilia" regione="Emilia Romagna"/>
+		<record80 provincia="RI" citta="Rieti" regione="Lazio"/>
+		<record81 provincia="RN" citta="Rimini" regione="Emilia Romagna"/>
+		<record82 provincia="ROMA" citta="Roma" regione="Lazio"/>
+		<record83 provincia="RO" citta="Rovigo" regione="Veneto"/>
+		<record84 provincia="SA" citta="Salerno" regione="Campania"/>
+		<record85 provincia="SS" citta="Sassari" regione="Sardegna"/>
+		<record86 provincia="SV" citta="Savona" regione="Liguria"/>
+		<record87 provincia="SI" citta="Siena" regione="Toscana"/>
+		<record88 provincia="SR" citta="Siracusa" regione="Sicilia"/>
+		<record89 provincia="SO" citta="Sondrio" regione="Lombardia"/>
+		<record90 provincia="TA" citta="Taranto" regione="Puglia"/>
+		<record91 provincia="TE" citta="Teramo" regione="Abruzzo"/>
+		<record92 provincia="TR" citta="Terni" regione="Umbria"/>
+		<record93 provincia="TO" citta="Torino" regione="Piemonte"/>
+		<record94 provincia="TP" citta="Trapani" regione="Sicilia"/>
+		<record95 provincia="TN" citta="Trento" regione="Trentino Alto Adige"/>
+		<record96 provincia="TV" citta="Treviso" regione="Veneto"/>
+		<record97 provincia="TS" citta="Trieste" regione="Friuli Venezia Giulia"/>
+		<record98 provincia="UD" citta="Udine" regione="Friuli Venezia Giulia"/>
+		<record99 provincia="VA" citta="Varese" regione="Lombardia"/>
+		<record100 provincia="VE" citta="Venezia" regione="Veneto"/>
+		<record101 provincia="VB" citta="Verbania" regione="Piemonte"/>
+		<record102 provincia="VC" citta="Vercelli" regione="Piemonte"/>
+		<record103 provincia="VR" citta="Verona" regione="Veneto"/>
+		<record104 provincia="VV" citta="Vibo-Valentia" regione="Calabria"/>
+		<record105 provincia="VI" citta="Vicenza" regione="Veneto"/>
+		<record106 provincia="VT" citta="Viterbo" regione="Lazio"/>
+	</data>
+</jamp>

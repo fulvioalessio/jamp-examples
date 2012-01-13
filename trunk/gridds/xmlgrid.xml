@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio gridds collegata a una fonte XML" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn4" scope="onelevel" dskey="key" base="/jamp/data" dslimit="10" />
+		<dsnav1 typeobj="dsnav" dsobj="ds1" btNew="false" objprint="gridds1" />
+		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize" >
+			<coloumn>   
+				<col objtype="text" itemlabel="Citta" dsitem="citta" order="false" colwidth="150px" />
+				<col objtype="text" itemlabel="Provincia" dsitem="provincia" order="false" colwidth="150px" />
+				<col objtype="text" itemlabel="Regione" dsitem="regione" order="false" colwidth="150px" />
+			</coloumn>
+		</gridds1>
+	</page>
+</jamp>

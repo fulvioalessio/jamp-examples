@@ -1,0 +1,19 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio per la gestione degli eventi della dsselect" icon="../../favicon.ico">
+		<dsselect1 typeobj="dsselect" label="\nSelect:">
+			<options>
+				<opt1 optiontext="Samba" optionvalue="1"/>
+				<opt2 optiontext="web" optionvalue="2"/>
+				<opt3 optiontext="Contatti" optionvalue="3" optionselected="true"/>
+				<opt4 optiontext="KPaint" optionvalue="4"/>
+				<opt5 optiontext="KPilot" optionvalue="5"/>
+				<opt6 optiontext="KWallet" optionvalue="6"/>
+				<opt7 optiontext="KWrite" optionvalue="7"/>
+				<opt8 optiontext="lassists" optionvalue="8"/>
+				<opt9 optiontext="launch" optionvalue="9"/>
+				<opt10 optiontext="mac" optionvalue="10"/>
+			</options>
+		</dsselect1>
+	</page>
+</jamp>

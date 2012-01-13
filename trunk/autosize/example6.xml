@@ -1,0 +1,18 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio Autosize 6" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="codepress" dskey="key"/>
+		<dsnav1 typeobj="dsnav" dsobj="ds1" btNew="false" objprint="gridds1"/>
+		<divTOP typeobj="div" width="autosize" height="autosize">
+			<tabs1 typeobj="tabs" width="autosize" height="autosize" selected="tab1" align="left">
+				<tab1 typeobj="tab" label="code">
+					<textarea1 typeobj="textarea" height="autosize" width="autosize" editor-lang="php" dsobj="ds1" dsitem="code"/>
+				</tab1>
+				<tab2 typeobj="tab" label="example6.xml">
+					<textarea2 typeobj="textarea" height="autosize" width="autosize" editor-lang="jamp" editor-file="./example6.xml"/>
+				</tab2>
+			</tabs1>
+		</divTOP>
+		<status typeobj="div" style="position: absolute; background-color:#EFEDDE; height:16px; width:100%; left:0px; top:100%; margin-top: -16px;  font-weight:bold;" value="Loading Page" />
+	</page>
+</jamp>
