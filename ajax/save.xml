@@ -1,0 +1,26 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio transazione AJAX per il salvataggio" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn6" dstable="translation" dskey="key" dslimit="20" dssavetype="table" />
+		<fieldset1 typeobj="fieldset" legend="Action" style="float: left; width: 150px; height: 110px;">			
+			<button1 typeobj="button" value="New" onclick="javascript: sendRequest('new');" style="width: 140px" />
+			<button2 typeobj="button" value="Update" onclick="javascript: sendRequest('update');" style="width: 140px" />
+			<button3 typeobj="button" value="Delete" onclick="javascript: sendRequest('delete');" style="width: 140px" />
+		</fieldset1>
+		<fieldset2 typeobj="fieldset" legend="Result" style="width: 200px; height: 110px;">			
+			<label1 typeobj="label" label="data: " value=" " labelwidth="100px" style="margin-left: 5px; font-weight: bold; font-size: 1em;"/>	
+			<label2 typeobj="label" label="dsobjname: " value=" " labelwidth="100px" style="margin-left: 5px; font-weight: bold; font-size: 1em;"/>	
+			<label3 typeobj="label" label="keyname: " value=" " labelwidth="100px" style="margin-left: 5px; font-weight: bold; font-size: 1em;"/>	
+			<label4 typeobj="label" label="keynamevalue: " value=" " labelwidth="100px" style="margin-left: 5px; font-weight: bold; font-size: 1em;"/>	
+			<label5 typeobj="label" label="param1: " value=" " labelwidth="100px" style="margin-left: 5px; font-weight: bold; font-size: 1em;"/>	
+			<label6 typeobj="label" label="param2: " value=" " labelwidth="100px" style="margin-left: 5px; font-weight: bold; font-size: 1em;"/>	
+		</fieldset2>
+		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">
+			<coloumn>
+				<col objtype="label" itemlabel="key" dsitem="key" />
+				<col objtype="text" itemlabel="field1" dsitem="field1" />
+				<col objtype="text" itemlabel="field2" dsitem="field2" />
+			</coloumn>
+		</gridds1>
+	</page>
+</jamp>
