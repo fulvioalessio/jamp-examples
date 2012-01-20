@@ -7,7 +7,7 @@
 * @license GNU Public License
 */
 
-require_once("./../../class/system.class.php");
+require_once("../require.inc.php");
 $system = new ClsSystem(true);
 $xml = new ClsXML("grid_save_table.xml");
 $event = new ClsEvent($xml);

@@ -10,7 +10,7 @@
 * http://jamp.alyx.it/
 */
 
-require_once("../class/system.class.php");
+require_once("require.inc.php");
 require_once("sintax.php");
 
 $system = new ClsSystem(true);

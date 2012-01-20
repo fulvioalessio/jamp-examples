@@ -13,7 +13,7 @@ ob_start();
 $firephp = FirePHP::getInstance(true);
  
 
-require_once("./../../class/system.class.php");
+require_once("../require.inc.php");
 $system = new ClsSystem(true);
 
 $firephp->log($system);
