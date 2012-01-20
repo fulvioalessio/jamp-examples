@@ -160,7 +160,7 @@ INSERT INTO `codepress` (`key`,`code`) VALUES
 * @license GNU Public License
 */
 
-require_once("./../../class/system.class.php");
+require_once("../require.inc.php");
 $system = new ClsSystem(true);
 $xml = new ClsXML("textarea.xml");
 $event =s new ClsEvent($xml);
