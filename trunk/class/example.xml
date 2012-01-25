@@ -1,0 +1,28 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio dsselect" icon="../../favicon.ico" loaddata="true">
+		<ds1 typeobj="ds" conn="conn18">
+			<rows>
+				<field fieldname="key" /> 
+				<field fieldname="nome" /> 
+			</rows>
+		</ds1>
+		<ds2 typeobj="ds" conn="conn19" fieldseparator=";" >
+			<rows>
+				<field fieldname="key" /> 
+				<field fieldname="nome" /> 
+			</rows>
+		</ds2>
+		<dsselect1 typeobj="dsselect" label="Dati da file1.csv:\n" dsobjlist="ds1" dsitemkeylist="key" dsitemlist="nome"/>
+		<dsselect2 typeobj="dsselect" label="\nDati da file2.csv:\n" dsobjlist="ds2" dsitemkeylist="key" dsitemlist="nome"/>
+
+		<ds3 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="15" focusnew="gridds1_1_$"/>
+		<dsnav1 typeobj="dsnav" dsobj="ds3" objprint="gridds1" />
+		<gridds1 typeobj="gridds" dsobj="ds3" width="600px" height="300px" order="true" label="Elenco">
+			<coloumn>   
+				<col objtype="text" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px"/>
+				<col objtype="text" itemlabel="CAB" dsitem="CAB" minlength="5" maxlength="7" colwidth="200px"/>	
+			</coloumn>
+		</gridds1>
+	</page>
+</jamp>

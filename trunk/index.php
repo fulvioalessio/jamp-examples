@@ -119,7 +119,20 @@ function html_load()
 	unset($dirs[1]);
 	foreach($dirs as $dir)
 	{
-		if ($dir != "examples" && $dir != "resource" && $dir != "index.php" && $dir != "sintax.php")	$code .= "<a href=\"javascript:getDIR('$dir');\" style=\"text-decoration:none;\"><img src=\"./examples/dir.png\" alt=\"DIR\" border=\"0\" style=\"text-decoration:none;\"> $dir</a><br>";
+		switch($dir) {
+			case 'trunk':
+			case 'conf':
+			case 'examples':
+			case 'resource':
+			case 'sintax.php':
+			case '.svn':
+				break;
+			default:
+				if (is_dir($dir)) {
+					$code .= "<a href=\"javascript:getDIR('$dir');\" style=\"text-decoration:none;\"><img src=\"./examples/dir.png\" alt=\"DIR\" border=\"0\" style=\"text-decoration:none;\"> $dir</a><br>";
+				}
+				break;
+		}
 	}
 	$title1 = $xml->getObjById("title1");
 	$title1->setProperty("value", Title("Directory:", "dirs.png"));
