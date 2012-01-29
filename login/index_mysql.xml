@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
 	<page typeobj="page" title="JAMP - Esempio di Autenticazione" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="utenti" dskey="key" event="none" dswhere="`key`='-1'" encpwd="md5" />
+		<ds1 typeobj="ds" conn="conn6" dstable="utenti" dskey="key" event="none" load="false" encpwd="md5" />
 			<div1 typeobj="div" style="height : 150px; top : 50%; position : absolute; width:99%; margin-top : -50px;">
 			<table1 typeobj="table" align="center">
 				<tr1 typeobj="tr">

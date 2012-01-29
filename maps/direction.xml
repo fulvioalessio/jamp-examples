@@ -2,7 +2,7 @@
 <jamp>
 	<page typeobj="page" title="JAMP - Esempio google maps, itinerario" icon="../../favicon.ico" loaddata="true">
 		<ds1 typeobj="ds" conn="conn11" scope="onelevel" dskey="key" base="/jamp/data" />
-		<map typeobj="map" dsobj="ds1" style="width: 70%; height: 480px; float:left; border: 1px solid black;" address="Siracusa" zoom="13" traffic="true" route="viewroute" lang="it" />
+		<map typeobj="map" dsobj="ds1" style="width: 70%; height: 480px; float:left; border: 1px solid black;" address="Siracusa" zoom="13" traffic="true" route="viewroute" lang="it" dsmarker="true" />
 		<viewroute typeobj="div" style="width: 25%; height:480px; float:right; border; 1px solid black;" />
 	</page>
 </jamp>

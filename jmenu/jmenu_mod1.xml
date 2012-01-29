@@ -2,7 +2,6 @@
 <jamp>
 	<page typeobj="page" title="JAMP - Esempio jmenu" icon="../../favicon.ico" loaddata="true">
 		<ds1 typeobj="ds" conn="conn6" dstable="menu"/>
-		<jmenu1 typeobj="jmenu" dsobj="ds1" template="vista" />
-		<dsbuttona typeobj="button" value="CHANGE TEMPLATE" onclick="AJAX.rewriteObj('jmenu1', 'jmenu_mod1.php')" labelwidth="100px" />
+		<jmenu1 typeobj="jmenu" dsobj="ds1" />
 	</page>
 </jamp>
