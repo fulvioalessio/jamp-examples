@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
 	<page typeobj="page" title="JApp" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="es2_login" dskey="key" event="none" encpwd="md5" dswhere="`key`='-1'"/>
+		<ds1 typeobj="ds" conn="conn6" dstable="es2_login" dskey="key" event="none" encpwd="md5" load="false" />
 		<title typeobj="div" class="header1">
 			<label_title typeobj="label" value="JApp"/>
 		</title>			

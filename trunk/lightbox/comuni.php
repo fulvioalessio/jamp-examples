@@ -19,11 +19,11 @@ function html_load()
     $code = "
       function SelectRow(ds)
       {
-	  var value =  ds.DSresult[ds.DSpos]['DENOMINAZIONE_COMUNE'];
-	  var obj = window.parent.$('textcitta');
-	  window.parent.TEXT.setDsValue(obj, value)
-	  obj.focus();
-	  window.parent.LIGHTBOX.end();
+			 var value =  ds.DSresult[ds.DSpos]['DENOMINAZIONE_COMUNE'];
+			 var obj = window.parent.$('textcitta');
+			 window.parent.TEXT.setDsValue(obj, value)
+			 obj.focus();
+			 window.parent.LIGHTBOX.end();
       }";
     $event->setCodeJs($code);
 }
