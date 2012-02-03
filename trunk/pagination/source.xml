@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jamp>
+	<data>
+		<row
+			type="projects"
+			period="2011"
+			title="titolo1"
+			content="content.html"
+			tags="php, mysql"
+			photo="foto.png"
+		/>
+		<row
+			type="projects"
+			period="2012"
+			title="titolo2"
+			content="content.html"
+			tags="php, mysql"
+			photo=""
+		/>
+		<row
+			type="projects"
+			period="2011"
+			title="titolo3"
+			content="content.html"
+			tags="php, mysql"
+			photo=""
+		/>
+		<row
+			type="projects"
+			period="2011"
+			title="titolo4"
+			content="content.html"
+			tags="php, mysql"
+			photo=""
+		/>
+		<row
+			type="projects"
+			period="2011"
+			title="titolo5"
+			content="content.html"
+			tags="php, mysql"
+			photo=""
+		/>
+		<row
+			type="projects"
+			period="2011"
+			title="titolo6"
+			content="content.html"
+			tags="php, mysql"
+			photo=""
+		/>
+	</data>
+</jamp> 
