@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jamp>
+	<page typeobj="page" title="JAMP - Esempio gridds collegata a una fonte MySQL" icon="../../favicon.ico" loaddata="true">
+	<dsProjects typeobj="ds" conn="project" scope="onelevel" base="/jamp/data" dslimit="2"/>
+	<pagination typeobj="pagination" dsobj="dsProjects" dsitem="2"/>
+	<projects typeobj="xgridds" dsobj="dsProjects" width="500px" height="300px">
+		 <coloumn >
+			  <col objtype="label" dsitem="period" colalign="left" readonly="true" label="campo1: " style="font-size: 1.2em; color: blue;"/>
+			  <col objtype="label" dsitem="title" colalign="left" readonly="true" label="campo2: " style="font-size: 1.2em; color: blue;"/>
+		 </coloumn>
+	</projects> 
+	</page>
+</jamp>
