@@ -1,14 +1,14 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio gridds collegata a una fonte MySQL" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="clienti" dskey="key" dslimit="30" dssavetype="table" focusnew="gridds1_2_$" />
-		<dsnav1 typeobj="dsnav" dsobj="ds1" objprint="gridds1" />
- 		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize" order="true" label="Elenco">
-			<coloumn>   
-				<col objtype="text" itemlabel="KEY" dsitem="key" colwidth="200px" />
-				<col objtype="text" itemlabel="Nome" dsitem="nome" colwidth="200px" />	
-				<col objtype="text" itemlabel="Cognome" dsitem="cognome" colwidth="200px" />	
+	<page id="page" title="JAMP - Esempio gridds collegata a una fonte MySQL" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="clienti" dskey="key" dslimit="30" dssavetype="table" focusnew="gridds1_2_$" />
+		<dsnav id="dsnav1" dsobj="ds1" objprint="gridds1" />
+		<gridds id="gridds1" dsobj="ds1" width="autosize" height="autosize" order="true" label="Elenco">
+			<coloumn>
+				<text itemlabel="KEY" dsitem="key" colwidth="200px" />
+				<text itemlabel="Nome" dsitem="nome" colwidth="200px" />
+				<text itemlabel="Cognome" dsitem="cognome" colwidth="200px" />
 			</coloumn>
-		</gridds1>
+		</gridds>
 	</page>
 </jamp>

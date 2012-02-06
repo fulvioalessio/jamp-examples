@@ -1,7 +1,7 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio tree collegata a un filesystem" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn1" dskey="path" scope="base" base="../.." alias="jamp" />
-		<tree1 typeobj="tree" dsobj="ds1" refresh="brance" width="300px" height="autosize" />
+	<page id="page" title="JAMP - Esempio tree collegata a un filesystem" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn1" dskey="path" scope="base" base="../.." alias="jamp" />
+		<tree id="tree1" dsobj="ds1" refresh="brance" width="300px" height="autosize" />
 	</page>
 </jamp>

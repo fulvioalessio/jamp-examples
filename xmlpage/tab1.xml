@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-   <page typeobj="page">
-      <tab1 typeobj="tab" label="UNO">
-      </tab1>
-   </page>
-</jamp> 
+	<page id="page">
+		<tab id="tab1" label="UNO" />
+	</page>
+</jamp>

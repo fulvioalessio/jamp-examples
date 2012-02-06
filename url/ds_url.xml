@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP URL + DS" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="menu"/>
- 		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize" order="true" label="Elenco">
-			<coloumn>   
-				<col objtype="label" itemlabel="Text" dsitem="text" colwidth="200px" />
-				<url objtype="url" dsitem="url" itemlabel="Url" target="destination" action="page.php" actionparam="paramename" />
-		  </coloumn>
-		</gridds1>
+	<page id="page" title="JAMP URL + DS" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="menu" />
+		<gridds id="gridds1" dsobj="ds1" width="autosize" height="autosize" order="true" label="Elenco">
+			<coloumn>
+				<label itemlabel="Text" dsitem="text" colwidth="200px" />
+				<url dsitem="url" itemlabel="Url" target="destination" action="page.php" actionparam="paramename" />
+			</coloumn>
+		</gridds>
 	</page>
 </jamp>

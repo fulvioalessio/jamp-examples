@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JDevelop" icon="../../favicon.ico" loaddata="true">
-		<note typeobj="note" value="Note Utente: " style="font-weight: bold; font-size: 2em;"/>
+	<page id="page" title="JDevelop" icon="../../favicon.ico" loaddata="true">
+		<note id="note" value="Note Utente: " style="font-weight: bold; font-size: 2em;" />
 	</page>
 </jamp>

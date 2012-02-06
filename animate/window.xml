@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio Oggetto" loaddata="true" icon="../../favicon.ico">
-		<window1 typeobj="window" width="600px" height="300px" expanded="false" label="Effetto: Default Duration: 1000 ms" duration="1000"/>
-		<window2 typeobj="window" width="600px" height="300px" expanded="false" label="Effetto: Sin Duration: 1000 ms" duration="1000" alg="sin"/>
-		<window3 typeobj="window" width="600px" height="300px" expanded="false" label="Effetto: Cos Duration: 1000 ms" duration="1000" alg="cos"/>
-		<window4 typeobj="window" width="600px" height="300px" expanded="false" label="Effetto: Default Durata: 500 ms" duration="500"/>
-		<window5 typeobj="window" width="600px" height="300px" expanded="false" label="Effetto: Sin Durata:500ms" duration="500" alg="sin"/>
-		<window6 typeobj="window" width="600px" height="300px" expanded="false" label="Effetto: Cos Durata:500ms" duration="500" alg="cos"/>
+	<page id="page" title="JAMP - Esempio Oggetto" loaddata="true" icon="../../favicon.ico">
+		<window id="window1" width="600px" height="300px" expanded="false" label="Effetto: Default Duration: 1000 ms" duration="1000" />
+		<window id="window2" width="600px" height="300px" expanded="false" label="Effetto: Sin Duration: 1000 ms" duration="1000" alg="sin" />
+		<window id="window3" width="600px" height="300px" expanded="false" label="Effetto: Cos Duration: 1000 ms" duration="1000" alg="cos" />
+		<window id="window4" width="600px" height="300px" expanded="false" label="Effetto: Default Durata: 500 ms" duration="500" />
+		<window id="window5" width="600px" height="300px" expanded="false" label="Effetto: Sin Durata:500ms" duration="500" alg="sin" />
+		<window id="window6" width="600px" height="300px" expanded="false" label="Effetto: Cos Durata:500ms" duration="500" alg="cos" />
 	</page>
 </jamp>

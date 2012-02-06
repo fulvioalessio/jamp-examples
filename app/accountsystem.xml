@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JApp - Gestione Account di Sistema" loaddata="true">
-		<xmlpage typeobj="xmlpage" src="intestazione.xml" />
-		<ds1 typeobj="ds" conn="conn6" dstable="es2_account" dsorder="username" dswhere="`group`='1'" dslimit="20" focusnew="gridds1_1_$" dskey="key"/>
-		<dsnav1 typeobj="dsnav" dsobj="ds1" label="Utente:" dssearch="`group`='1' and `username` LIKE '$$VALUE$$%'"/>
-		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">					
-			<coloumn>	
-				<col objtype="text" dsitem="username" itemlabel="Utente" maxlength="20" colwidth="100px" minlength="4"/>			
-				<col objtype="text" dsitem="cn" itemlabel="Nome Completo" maxlength="100" colwidth="200px"/>	
-				<col objtype="text" dsitem="mail" itemlabel="E-Mail" maxlength="255" colwidth="200px" blur="email" minlength="1"/>
-				<col objtype="button" value="AZZERA" itemlabel="PASSWORD" size="15" onclick="ResetPWD(this.row)" />
-			</coloumn>	
-		</gridds1>				
+	<page id="page" title="JApp - Gestione Account di Sistema" loaddata="true">
+		<xmlpage id="xmlpage" src="intestazione.xml" />
+		<ds id="ds1" conn="conn6" dstable="es2_account" dsorder="username" dswhere="`group`='1'" dslimit="20" focusnew="gridds1_1_$" dskey="key" />
+		<dsnav id="dsnav1" dsobj="ds1" label="Utente:" dssearch="`group`='1' and `username` LIKE '$$VALUE$$%'" />
+		<gridds id="gridds1" dsobj="ds1" width="autosize" height="autosize">
+			<coloumn>
+				<text dsitem="username" itemlabel="Utente" maxlength="20" colwidth="100px" minlength="4" />
+				<text dsitem="cn" itemlabel="Nome Completo" maxlength="100" colwidth="200px" />
+				<text dsitem="mail" itemlabel="E-Mail" maxlength="255" colwidth="200px" blur="email" minlength="1" />
+				<button value="AZZERA" itemlabel="PASSWORD" size="15" onclick="ResetPWD(this.row)" />
+			</coloumn>
+		</gridds>
 	</page>
 </jamp>

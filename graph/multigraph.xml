@@ -1,36 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Grafico Multiplo" out="html" icon="../../favicon.ico" loaddata="true">
-		
-		<!-- Graphic Bar -->
-		<graphic1 typeobj="graphic" width="500" height="300" scale="textlin" hide="true">
+	<page id="page" title="JAMP - Grafico Multiplo" out="html" icon="../../favicon.ico" loaddata="true">
+		<graphic id="graphic1" width="500" height="300" scale="textlin" hide="true">
 			<parameter>
-				<plot objtype="plot" shadow="false" frame="false" margin="40,10,30,10" />
-				<title objtype="title" title="bar" font="FF_FONT1,FS_BOLD" margin="3" />
-				<ygrid1 objtype="ygrid" color="gray" fill="true,#DDDDDD@0.5,#BBBBBB@0.5" linestyle="dashed" />
-				<xgrid1 objtype="xgrid" color="gray" linestyle="dashed" />		
-				<bar objtype="bar" data="18,2,1,7,5,4" fillcolor="orange" shadow="orange@0.4" fillgradient="#440000,#FF9090,GRAD_LEFT_REFLECTION" />
+				<plot shadow="false" frame="false" margin="40,10,30,10" />
+				<title title="bar" font="FF_FONT1,FS_BOLD" margin="3" />
+				<ygrid color="gray" fill="true,#DDDDDD@0.5,#BBBBBB@0.5" linestyle="dashed" />
+				<xgrid color="gray" linestyle="dashed" />
+				<bar data="18,2,1,7,5,4" fillcolor="orange" shadow="orange@0.4" fillgradient="#440000,#FF9090,GRAD_LEFT_REFLECTION" />
 			</parameter>
-		</graphic1>
-
-		<!-- Graphic line -->
-		<graphic2 typeobj="graphic" width="500" height="300" scale="textlin" hide="true">
+		</graphic>
+		<graphic id="graphic2" width="500" height="300" scale="textlin" hide="true">
 			<parameter>
-				<plot objtype="plot" shadow="false" frame="false" />
-				<title objtype="title" title="line" font="FF_FONT1,FS_BOLD" margin="3" />
-				<ygrid1 objtype="ygrid" color="gray" fill="true,#DDDDDD@0.5,#BBBBBB@0.5" linestyle="dashed" />
-				<xgrid1 objtype="xgrid" color="gray" linestyle="dashed" />		
-				<line1 objtype="line" data="-8,8,9,3,5,6" markcolor="navy@0.7" markfillcolor="skyblue@0.5" color="navy@0.7" fillcolor="skyblue@0.5" linewidth="1" center="true" marktype="MARK_FILLEDCIRCLE" />
-				<line2 objtype="line" data="18,2,1,7,5,4" markcolor="navy@0.7" markfillcolor="skyblue@0.5" color="lightblue" fillcolor="blue@0.5" linewidth="1" center="true" marktype="MARK_FILLEDCIRCLE" />
+				<plot shadow="false" frame="false" />
+				<title title="line" font="FF_FONT1,FS_BOLD" margin="3" />
+				<ygrid color="gray" fill="true,#DDDDDD@0.5,#BBBBBB@0.5" linestyle="dashed" />
+				<xgrid color="gray" linestyle="dashed" />
+				<line data="-8,8,9,3,5,6" markcolor="navy@0.7" markfillcolor="skyblue@0.5" color="navy@0.7" fillcolor="skyblue@0.5" linewidth="1" center="true" marktype="MARK_FILLEDCIRCLE" />
+				<line data="18,2,1,7,5,4" markcolor="navy@0.7" markfillcolor="skyblue@0.5" color="lightblue" fillcolor="blue@0.5" linewidth="1" center="true" marktype="MARK_FILLEDCIRCLE" />
 			</parameter>
-		</graphic2>
-		
-		<!-- Graphic multigraph -->
-		<graphic3 typeobj="graphic" width="500" height="620">
+		</graphic>
+		<graphic id="graphic3" width="500" height="620">
 			<parameter>
-				<multiple objtype="multigraph" idgraphic="graphic1" />
-				<multiple objtype="multigraph" idgraphic="graphic2" left="0" top="310" />
+				<multigraph idgraphic="graphic1" />
+				<multigraph idgraphic="graphic2" left="0" top="310" />
 			</parameter>
-		</graphic3>
+		</graphic>
 	</page>
 </jamp>

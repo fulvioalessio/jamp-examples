@@ -1,6 +1,6 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="jamp" loaddata="true">
-		<dsselect5 typeobj="dsselect" dsobjlist="ds1" dsitemlist="name" dsitemkeylist="id" value="1" label="\n\nSelezione multipla da dsitemlist:" multiple="multiple" />
+	<page id="page" title="jamp" loaddata="true">
+		<dsselect id="dsselect5" dsobjlist="ds1" dsitemlist="name" dsitemkeylist="id" value="1" label="\n\nSelezione multipla da dsitemlist:" multiple="multiple" />
 	</page>
 </jamp>

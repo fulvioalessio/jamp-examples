@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Grafico di Gantt" out="html" icon="../../favicon.ico" loaddata="true">
-		<graphic9 typeobj="graphic" width="600" height="200">
+	<page id="page" title="JAMP - Grafico di Gantt" out="html" icon="../../favicon.ico" loaddata="true">
+		<graphic id="graphic9" width="600" height="200">
 			<parameter>
-				<plot objtype="plot" shadow="true" frame="true" xaxis="true" yaxis="true" />
-				<title objtype="title" title="gantt" font="FF_FONT1,FS_BOLD" margin="3" header="GANTT_HYEAR | GANTT_HMONTH | GANTT_HDAY | GANTT_HWEEK" />
-				<scale objtype="scale" weekstyle="WEEKSTYLE_FIRSTDAYWNBR" weekfont="FF_FONT1" />
-				<gantt1 objtype="gantt" data="ACTYPE_GROUP,Phase 1,2001-10-26,2001-11-23,,#1,Go home" />
-				<gantt2 objtype="gantt" type="ACTYPE_NORMAL" label="   Label 2" start="2001-10-26" end="2001-11-16" />
-				<gantt3 objtype="gantt" type="ACTYPE_NORMAL" label="   Label 3" start="2001-11-20" end="2001-11-22" />
-				<gantt4 objtype="gantt" type="ACTYPE_MILESTONE" label="  Phase 1 Done" start="2001-11-23" end="M2" />
+				<plot shadow="true" frame="true" xaxis="true" yaxis="true" />
+				<title title="gantt" font="FF_FONT1,FS_BOLD" margin="3" header="GANTT_HYEAR | GANTT_HMONTH | GANTT_HDAY | GANTT_HWEEK" />
+				<scale weekstyle="WEEKSTYLE_FIRSTDAYWNBR" weekfont="FF_FONT1" />
+				<gantt data="ACTYPE_GROUP,Phase 1,2001-10-26,2001-11-23,,#1,Go home" />
+				<gantt type="ACTYPE_NORMAL" label="   Label 2" start="2001-10-26" end="2001-11-16" />
+				<gantt type="ACTYPE_NORMAL" label="   Label 3" start="2001-11-20" end="2001-11-22" />
+				<gantt type="ACTYPE_MILESTONE" label="  Phase 1 Done" start="2001-11-23" end="M2" />
 			</parameter>
-		</graphic9>
+		</graphic>
 	</page>
 </jamp>

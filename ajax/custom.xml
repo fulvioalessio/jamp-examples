@@ -1,16 +1,16 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio transazione AJAX personalizzata" icon="../../favicon.ico" loaddata="false">
-		<fieldset1 typeobj="fieldset" legend="Result" style="float: left; width: 200px; height: 90px;">			
-			<number1 typeobj="text" label="number1: " value="5" minlength="1" maxlength="3" keypress="number" size="5" style="margin-left: 5px; font-weight: bold; font-size: 1em;" labelwidth="90px" />	
-			<number2 typeobj="text" label="number2: " value="3" minlength="1" maxlength="3" keypress="number" size="5" style="margin-left: 5px; font-weight: bold; font-size: 1em;" labelwidth="90px"/>	
-			<hr typeobj="hr" />
-			<result typeobj="label" label="result: " value="" style="margin-left: 5px; font-weight: bold; font-size: 1em;" />	
-		</fieldset1>
-		<fieldset2 typeobj="fieldset" legend="Action" style="float: left; width: 150px; height: 90px;">			
-			<button1 typeobj="button" value="Addition" onclick="javascript: sendRequest('addition');" style="width: 140px" />
-			<button2 typeobj="button" value="Subtraction" onclick="javascript: sendRequest('subtraction');" style="width: 140px" />
-			<button3 typeobj="button" value="Multiplication" onclick="javascript: sendRequest('multiplication');" style="width: 140px" />
-		</fieldset2>
+	<page id="page" title="JAMP - Esempio transazione AJAX personalizzata" icon="../../favicon.ico" loaddata="false">
+		<fieldset id="fieldset1" legend="Result" style="float: left; width: 200px; height: 90px;">
+			<text id="number1" label="number1: " value="5" minlength="1" maxlength="3" keypress="number" size="5" style="margin-left: 5px; font-weight: bold; font-size: 1em;" labelwidth="90px" />
+			<text id="number2" label="number2: " value="3" minlength="1" maxlength="3" keypress="number" size="5" style="margin-left: 5px; font-weight: bold; font-size: 1em;" labelwidth="90px" />
+			<hr id="hr" />
+			<label id="result" label="result: " value="" style="margin-left: 5px; font-weight: bold; font-size: 1em;" />
+		</fieldset>
+		<fieldset id="fieldset2" legend="Action" style="float: left; width: 150px; height: 90px;">
+			<button id="button1" value="Addition" onclick="javascript: sendRequest('addition');" style="width: 140px" />
+			<button id="button2" value="Subtraction" onclick="javascript: sendRequest('subtraction');" style="width: 140px" />
+			<button id="button3" value="Multiplication" onclick="javascript: sendRequest('multiplication');" style="width: 140px" />
+		</fieldset>
 	</page>
 </jamp>

@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
 	<data>
 		<item src="thumbnails/debian.jpg" href="img/debian.jpg" />
 		<item src="thumbnails/opensuse.jpg" href="img/opensuse.jpg" />
 		<item src="thumbnails/mandriva.jpg" href="img/mandriva.jpg" />
 		<item src="thumbnails/linux_mint.jpg" href="img/linux_mint.jpg" />
-		<item src="thumbnails/pclinuxos.jpg" href="img/pclinuxos.jpg" />	
-		<item src="thumbnails/fedora.jpg" href="img/fedora.jpg" />	
+		<item src="thumbnails/pclinuxos.jpg" href="img/pclinuxos.jpg" />
+		<item src="thumbnails/fedora.jpg" href="img/fedora.jpg" />
 		<item src="thumbnails/sabayon.jpg" href="img/sabayon.jpg" />
-		<item src="thumbnails/gentoo.jpg" href="img/gentoo.jpg" />	
-		<item src="thumbnails/ubuntu.png" href="img/ubuntu.png" />	
+		<item src="thumbnails/gentoo.jpg" href="img/gentoo.jpg" />
+		<item src="thumbnails/ubuntu.png" href="img/ubuntu.png" />
 	</data>
 </jamp>

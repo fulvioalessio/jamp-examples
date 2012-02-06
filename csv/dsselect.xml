@@ -1,19 +1,19 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio dsselect" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn18">
+	<page id="page" title="JAMP - Esempio dsselect" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn18">
 			<rows>
-				<field fieldname="key" /> 
-				<field fieldname="nome" /> 
+				<field fieldname="key" />
+				<field fieldname="nome" />
 			</rows>
-		</ds1>
-		<ds2 typeobj="ds" conn="conn19" fieldseparator=";" >
+		</ds>
+		<ds id="ds2" conn="conn19" fieldseparator=";">
 			<rows>
-				<field fieldname="key" /> 
-				<field fieldname="nome" /> 
+				<field fieldname="key" />
+				<field fieldname="nome" />
 			</rows>
-		</ds2>
-		<dsselect1 typeobj="dsselect" label="Dati da file1.csv:\n" dsobjlist="ds1" dsitemkeylist="key" dsitemlist="nome"/>
-		<dsselect2 typeobj="dsselect" label="\nDati da file2.csv:\n" dsobjlist="ds2" dsitemkeylist="key" dsitemlist="nome"/>
+		</ds>
+		<dsselect id="dsselect1" label="Dati da file1.csv:\n" dsobjlist="ds1" dsitemkeylist="key" dsitemlist="nome" />
+		<dsselect id="dsselect2" label="\nDati da file2.csv:\n" dsobjlist="ds2" dsitemkeylist="key" dsitemlist="nome" />
 	</page>
 </jamp>

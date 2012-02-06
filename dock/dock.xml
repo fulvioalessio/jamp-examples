@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio menu dock" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="dock" dskey="id" />
-		<dock1 typeobj="dock" dsobj="ds1" valign="top" align="center" />	
-<!-- 		<dock2 typeobj="dock" dsobj="ds1" valign="bottom" align="right" /> -->
+	<page id="page" title="JAMP - Esempio menu dock" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="dock" dskey="id" />
+		<dock id="dock1" dsobj="ds1" valign="top" align="center" />
 	</page>
 </jamp>

@@ -1,16 +1,16 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio text" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="dock" dskey="id"/>
-		<tabs1 typeobj="tabs" width="770px" height="520px" selected="tab1" align="left">
-			<tab1 typeobj="tab" label="ANAGRAFICA">	
-				<text1 typeobj="text" labelwidth="150px" label="Text Semplice:" value="valoretext"/>	
-				<text2 typeobj="text" labelwidth="150px" label="Text con DS:" dsobj="ds1" dsitem="name" />	
-				<text3 typeobj="text" labelwidth="150px" label="Password:" value="password" password="true" />	
-				<text40 typeobj="text" labelwidth="150px" label="Clicca sulla Data:" format="date|IT|dd/mm/yyyy HH:ii:ss|IT|dd/mm/yyyy HH:ii:ss" value="$$DATETIME$$" />	
-				<text41 typeobj="text" labelwidth="150px" label="Clicca sulla Data:" format="date|IT|dd/mm/yyyy|IT|dd/mm/yyyy" value="$$DATE$$" />
-				<text5 typeobj="text" labelwidth="150px" label="Upload:" fileupload="true" />
-			</tab1>
-		</tabs1>
+	<page id="page" title="JAMP - Esempio text" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="dock" dskey="id" />
+		<tabs id="tabs1" width="770px" height="520px" selected="tab1" align="left">
+			<tab id="tab1" label="ANAGRAFICA">
+				<text id="text1" labelwidth="150px" label="Text Semplice:" value="valoretext" />
+				<text id="text2" labelwidth="150px" label="Text con DS:" dsobj="ds1" dsitem="name" />
+				<text id="text3" labelwidth="150px" label="Password:" value="password" password="true" />
+				<text id="text40" labelwidth="150px" label="Clicca sulla Data:" format="date|IT|dd/mm/yyyy HH:ii:ss|IT|dd/mm/yyyy HH:ii:ss" value="$$DATETIME$$" />
+				<text id="text41" labelwidth="150px" label="Clicca sulla Data:" format="date|IT|dd/mm/yyyy|IT|dd/mm/yyyy" value="$$DATE$$" />
+				<text id="text5" labelwidth="150px" label="Upload:" fileupload="true" />
+			</tab>
+		</tabs>
 	</page>
 </jamp>

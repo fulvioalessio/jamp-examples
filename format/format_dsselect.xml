@@ -1,9 +1,9 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio sulla formattazione dei dati" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="es1_marca" dskey="key" dsrefresh="ds2"/>
-		<select1 typeobj="dsselect" dsobjlist="ds1" dsitemlist="marca" dsitemkeylist="key" label="\nTrasforma tutti i caratteri alfabetici in maiuscolo:\n" format="string|upper"/>
-		<select2 typeobj="dsselect" label="\nCambia il formato delle date da yyyy-mm-dd a dd/mm/yyyy:\n" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy">
+	<page id="page" title="JAMP - Esempio sulla formattazione dei dati" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="es1_marca" dskey="key" dsrefresh="ds2" />
+		<dsselect id="select1" dsobjlist="ds1" dsitemlist="marca" dsitemkeylist="key" label="\nTrasforma tutti i caratteri alfabetici in maiuscolo:\n" format="string|upper" />
+		<dsselect id="select2" label="\nCambia il formato delle date da yyyy-mm-dd a dd/mm/yyyy:\n" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy">
 			<options>
 				<opt optionvalue="" />
 				<opt optionvalue="2010-12-01" />
@@ -17,6 +17,6 @@
 				<opt optionvalue="2010-04-01" />
 				<opt optionvalue="2010-03-01" />
 			</options>
-		</select2>
+		</dsselect>
 	</page>
 </jamp>

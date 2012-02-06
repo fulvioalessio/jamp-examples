@@ -1,7 +1,7 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio sulla formattazione dei dati" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dsorder="DENOMINAZIONE_COMUNE" dslimit="20" />
-		<dscombo1 typeobj="dscombo" label="\nTrasforma tutti i caratteri alfabetici in minuscolo:\n" dsobjlist="ds1" dsitemlist="DENOMINAZIONE_COMUNE" dsitemkeylist="CAB" dssearch="`DENOMINAZIONE_COMUNE` LIKE '$$VALUE$$%'" style="width: 200px;" format="string|lower" />
+	<page id="page" title="JAMP - Esempio sulla formattazione dei dati" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dsorder="DENOMINAZIONE_COMUNE" dslimit="20" />
+		<dscombo id="dscombo1" label="\nTrasforma tutti i caratteri alfabetici in minuscolo:\n" dsobjlist="ds1" dsitemlist="DENOMINAZIONE_COMUNE" dsitemkeylist="CAB" dssearch="`DENOMINAZIONE_COMUNE` LIKE '$$VALUE$$%'" style="width: 200px;" format="string|lower" />
 	</page>
 </jamp>

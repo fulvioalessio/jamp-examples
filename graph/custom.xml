@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Grafici Custom" out="html" icon="../../favicon.ico" loaddata="true">
-		<graphic1 typeobj="graphic" />
+	<page id="page" title="JAMP - Grafici Custom" out="html" icon="../../favicon.ico" loaddata="true">
+		<graphic id="graphic1" />
 	</page>
 </jamp>

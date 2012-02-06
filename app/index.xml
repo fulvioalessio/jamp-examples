@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JApp" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="es2_login" dskey="key" event="none" encpwd="md5" load="false" />
-		<title typeobj="div" class="header1">
-			<label_title typeobj="label" value="JApp"/>
-		</title>			
-		<version typeobj="div" class="header2">			
-			<label_version typeobj="label" value="Versione: 2.0"/>
-		</version>
-		<login typeobj="div" class="login">
-		  <img1 typeobj="img" src="./img/sms.png" align="left"/>
-			<user typeobj="text" label="\nUtente:(admin,system)\n" maxlength="20" size="20" dsitem="username" onkeypress="REGEXP.nextFocus(event, 'pwd', 13);" />
-			<pwd typeobj="text" label="\nPassword:(admin,system)\n" maxlength="20" size="20" password="true" dsitem="password" onkeypress="REGEXP.actionClick(event, 'button', 13);" />
-			<button typeobj="button" value="Accedi" onclick="AJAX.login('ds1', 'user', 'pwd');"/>
-		</login>
-		<info typeobj="div" class="login_footer" value="© 2008-2011 Alyx Association. GPL3v"/>
+	<page id="page" title="JApp" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="es2_login" dskey="key" event="none" encpwd="md5" load="false" />
+		<div id="title" class="header1">
+			<label id="label_title" value="JApp" />
+		</div>
+		<div id="version" class="header2">
+			<label id="label_version" value="Versione: 2.0" />
+		</div>
+		<div id="login" class="login">
+			<img id="img1" src="./img/sms.png" align="left" />
+			<text id="user" label="\nUtente:(admin,system)\n" maxlength="20" size="20" dsitem="username" onkeypress="REGEXP.nextFocus(event, 'pwd', 13);" />
+			<text id="pwd" label="\nPassword:(admin,system)\n" maxlength="20" size="20" password="true" dsitem="password" onkeypress="REGEXP.actionClick(event, 'button', 13);" />
+			<button id="button" value="Accedi" onclick="AJAX.login('ds1', 'user', 'pwd');" />
+		</div>
+		<div id="info" class="login_footer" value="© 2008-2011 Alyx Association. GPL3v" />
 	</page>
 </jamp>

@@ -1,9 +1,9 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio google maps, mappa semplice" icon="../../favicon.ico" loaddata="true">
-		<label typeobj="label" label="Clicca sulla mappa per visualizzare le coordinate\n" />
-		<lat typeobj="text" label="Latitudine:" value="" />		
-		<lng typeobj="text" label="Longitudine:" value="" />
-		<map typeobj="map" style="width: 70%; height: 480px; float:left; border: 1px solid black;" address="Roma" />
+	<page id="page" title="JAMP - Esempio google maps, mappa semplice" icon="../../favicon.ico" loaddata="true">
+		<label id="label" label="Clicca sulla mappa per visualizzare le coordinate\n" />
+		<text id="lat" label="Latitudine:" value="" />
+		<text id="lng" label="Longitudine:" value="" />
+		<map id="map" style="width: 70%; height: 480px; float:left; border: 1px solid black;" address="Roma" />
 	</page>
 </jamp>

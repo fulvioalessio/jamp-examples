@@ -1,12 +1,12 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio tree collegata a una fonte ftp" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn9" scope="base" dskey="path">
+	<page id="page" title="JAMP - Esempio tree collegata a una fonte ftp" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn9" scope="base" dskey="path">
 			<hierarchy>
-				<root1 base="/jamp.alyx.it/jamp/template" alias="ftp1" justthese="perms,number,owner,group,size,datetime,md5" /> 
-				<root2 base="/jamp.alyx.it/jamp/class" alias="ftp2" justthese="perms,number,owner,group,size,datetime,md5" /> 
-			</hierarchy>		
-		</ds1>
-		<tree2 typeobj="tree" dsobj="ds1" refresh="brance" width="300px" height="autosize" /> 
+				<root1 base="/jamp.alyx.it/jamp/template" alias="ftp1" justthese="perms,number,owner,group,size,datetime,md5" />
+				<root2 base="/jamp.alyx.it/jamp/class" alias="ftp2" justthese="perms,number,owner,group,size,datetime,md5" />
+			</hierarchy>
+		</ds>
+		<tree id="tree2" dsobj="ds1" refresh="brance" width="300px" height="autosize" />
 	</page>
 </jamp>

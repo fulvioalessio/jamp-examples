@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP" icon="../../favicon.ico" loaddata="true">
-		<radio1 typeobj="radio" label="Mattino" labelwidth="100px" align="right" value="1" name="flag" checked="true" />
-		<br1 typeobj="br" />
-		<radio2 typeobj="radio" label="Pomeriggio" labelwidth="100px" align="right" value="2" name="flag" />
-		<br2 typeobj="br" />
-		<radio3 typeobj="radio" label="Sera" labelwidth="100px" align="right" value="3" name="flag" />
+	<page id="page" title="JAMP" icon="../../favicon.ico" loaddata="true">
+		<radio id="radio1" label="Mattino" labelwidth="100px" align="right" value="1" name="flag" checked="true" />
+		<br id="br1" />
+		<radio id="radio2" label="Pomeriggio" labelwidth="100px" align="right" value="2" name="flag" />
+		<br id="br2" />
+		<radio id="radio3" label="Sera" labelwidth="100px" align="right" value="3" name="flag" />
 	</page>
 </jamp>

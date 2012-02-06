@@ -1,6 +1,6 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio Video SWF" icon="../../favicon.ico" loaddata="true">
-		<video typeobj="video" width="640" height="320" src="http://jamp.alyx.it/video/video.swf"/>
+	<page id="page" title="JAMP - Esempio Video SWF" icon="../../favicon.ico" loaddata="true">
+		<video id="video" width="640" height="320" src="http://jamp.alyx.it/video/video.swf" />
 	</page>
 </jamp>

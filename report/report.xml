@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio Report" out="pdf" loaddata="true" orientation="L">
-		<ds1 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="50" />
-		<header typeobj="header">	
-			<hd_title typeobj="label" label="$$PAGE_HEADER$$" align="center" style="font-family: Arial; font-size: 22; font-weight: bold; width: 0;"/>
+	<page id="page" title="JAMP - Esempio Report" out="pdf" loaddata="true" orientation="L">
+		<ds id="ds1" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="50" />
+		<header id="header">
+			<label id="hd_title" label="$$PAGE_HEADER$$" align="center" style="font-family: Arial; font-size: 22; font-weight: bold; width: 0;" />
 		</header>
-		<image1 typeobj="img" src="../resource/logo.jpeg" style="top: 5; left: 10;"/> 
-		<hd1 typeobj="label" label="$$REPORT_HEADER$$" align="center" style="font-family: Arial; font-size: 22; font-weight: bold; width: 0; top: 30;" />
-		<a typeobj="a" label="\nsito jamp: " text="http://jamp.alyx.it" href="http://jamp.alyx.it" style="left:30; font-family: Arial; font-size: 22;" />	
-		<gridds1 typeobj="gridds" dsobj="ds1" width="500" height="500">				
-			<coloumn>	
-				<col objtype="label" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" size="50" />
-				<col objtype="label" itemlabel="CAB" dsitem="CAB" size="15" />
-				<col objtype="a" itemlabel="A" size="30" text="JAMP" href="http://jamp.alyx.it" />	
-			</coloumn>	
-		</gridds1>
-		<ft1 typeobj="label" label="$$REPORT_FOOTER$$" align="center" style="font-family: Arial; font-size: 22; font-weight: bold; width: 0;"/> 
-		<footer typeobj="footer" top="-15">	
-			<foo1 typeobj="label" label="$$PAGE_FOOTER$$" align="center" style="font-family: Arial; font-size: 10; font-weight: bold; width: 0;"/>
+		<img id="image1" src="../resource/logo.jpeg" style="top: 5; left: 10;" />
+		<label id="hd1" label="$$REPORT_HEADER$$" align="center" style="font-family: Arial; font-size: 22; font-weight: bold; width: 0; top: 30;" />
+		<a id="a" label="\nsito jamp: " text="http://jamp.alyx.it" href="http://jamp.alyx.it" style="left:30; font-family: Arial; font-size: 22;" />
+		<gridds id="gridds1" dsobj="ds1" width="500" height="500">
+			<coloumn>
+				<label itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" size="50" />
+				<label itemlabel="CAB" dsitem="CAB" size="15" />
+				<a itemlabel="A" size="30" text="JAMP" href="http://jamp.alyx.it" />
+			</coloumn>
+		</gridds>
+		<label id="ft1" label="$$REPORT_FOOTER$$" align="center" style="font-family: Arial; font-size: 22; font-weight: bold; width: 0;" />
+		<footer id="footer" top="-15">
+			<label id="foo1" label="$$PAGE_FOOTER$$" align="center" style="font-family: Arial; font-size: 10; font-weight: bold; width: 0;" />
 		</footer>
 	</page>
 </jamp>

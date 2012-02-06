@@ -1,28 +1,24 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio Autosize 6" icon="../../favicon.ico" loaddata="true">
-		<tabs1 typeobj="tabs" width="autosize" height="autosize" selected="tab1" align="left">
-            <tab1 typeobj="tab" label="STRUCTURE">
-				<divTop typeobj="div" width="autosize" height="autosize">
-					<gridds1 typeobj="gridds" width="autosize" height="autosize">
-					</gridds1>
-				</divTop>	
- 				<split typeobj="splitbar" type="horizontal" />
-				<divBottom typeobj="div" width="autosize" height="200px">
-					<tabs2 typeobj="tabs" width="autosize" height="autosize" selected="tab21" align="left">
-						<tab21 typeobj="tab" label="INDICES">
-							<gridds21 typeobj="gridds" width="autosize" height="autosize">
-							</gridds21>
-						</tab21>
-						<tab22 typeobj="tab" label="FOREIGN KEYS">
-							<gridds23 typeobj="gridds" width="autosize" height="autosize">
-							</gridds23>
-						</tab22>
-					</tabs2>
-				</divBottom>
-				</tab1>
-				<tab2 typeobj="tab" label="DATA">
-				</tab2>
-        </tabs1>
+	<page id="page" title="JAMP - Esempio Autosize 6" icon="../../favicon.ico" loaddata="true">
+		<tabs id="tabs1" width="autosize" height="autosize" selected="tab1" align="left">
+			<tab id="tab1" label="STRUCTURE">
+				<div id="divTop" width="autosize" height="autosize">
+					<gridds id="gridds1" width="autosize" height="autosize" />
+				</div>
+				<splitbar id="split" type="horizontal" />
+				<div id="divBottom" width="autosize" height="200px">
+					<tabs id="tabs2" width="autosize" height="autosize" selected="tab21" align="left">
+						<tab id="tab21" label="INDICES">
+							<gridds id="gridds21" width="autosize" height="autosize" />
+						</tab>
+						<tab id="tab22" label="FOREIGN KEYS">
+							<gridds id="gridds23" width="autosize" height="autosize" />
+						</tab>
+					</tabs>
+				</div>
+			</tab>
+			<tab id="tab2" label="DATA" />
+		</tabs>
 	</page>
 </jamp>

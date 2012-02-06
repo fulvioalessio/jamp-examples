@@ -1,46 +1,46 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio Autosize 5" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="10"/>
-		<dsnav1 typeobj="dsnav" dsobj="ds1" btNew="false" objprint="gridds1"/>
-		<divTOP typeobj="div" width="autosize" height="autosize">
-			<tabs1 typeobj="tabs" width="autosize" height="autosize" selected="tab1" align="left">
-				<tab1 typeobj="tab" label="TAB1">
-					<divSX typeobj="div" width="150px" height="autosize" style="float:left; overflow:hidden;">
-						<winSX typeobj="window" width="autosize" height="autosize" label="Finestra" expanded="none">
-						<labelSX typeobj="label" value="jas sdasdl asdjas dasdljasjdjasdsad  sadyayiyiy dyuias sdhdahjkas asdas asdasdasdas asdas asdassd"/>
-						</winSX>
-					</divSX>
-					<divCENTER typeobj="div" height="autosize" width="autosize_center" style="float:left; overflow:hidden;">
-						<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">
-							<coloumn>   
-								<col objtype="label" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px"/>
-								<col objtype="text" itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px"/>
+	<page id="page" title="JAMP - Esempio Autosize 5" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="10" />
+		<dsnav id="dsnav1" dsobj="ds1" btNew="false" objprint="gridds1" />
+		<div id="divTOP" width="autosize" height="autosize">
+			<tabs id="tabs1" width="autosize" height="autosize" selected="tab1" align="left">
+				<tab id="tab1" label="TAB1">
+					<div id="divSX" width="150px" height="autosize" style="float:left; overflow:hidden;">
+						<window id="winSX" width="autosize" height="autosize" label="Finestra" expanded="none">
+							<label id="labelSX" value="jas sdasdl asdjas dasdljasjdjasdsad  sadyayiyiy dyuias sdhdahjkas asdas asdasdasdas asdas asdassd" />
+						</window>
+					</div>
+					<div id="divCENTER" height="autosize" width="autosize_center" style="float:left; overflow:hidden;">
+						<gridds id="gridds1" dsobj="ds1" width="autosize" height="autosize">
+							<coloumn>
+								<label itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px" />
+								<text itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px" />
 							</coloumn>
-						</gridds1>
-					</divCENTER>
-					<divDX typeobj="div" width="150px" height="autosize" style="float:right; overflow:hidden;">
-						<winDX typeobj="window" width="autosize" height="autosize" label="Finestra" expanded="none">
-							<labelDX typeobj="label" value="jas sdasdl asdjas dasdljasjdjasdsad  sadyayiyiy dyuias sdhdahjkas asdas asdasdasdas asdas asdassd"/>
-						</winDX>
-					</divDX>
-				</tab1>
-				<tab2 typeobj="tab" label="TAB2">
-					<gridds2 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">
-						<coloumn>   
-							<col objtype="label" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px"/>
-							<col objtype="text" itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px"/>
-							<col objtype="label" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px"/>
-							<col objtype="text" itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px"/>
-							<col objtype="label" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px"/>
-							<col objtype="text" itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px"/>
-							<col objtype="label" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px"/>
-							<col objtype="text" itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px"/>
+						</gridds>
+					</div>
+					<div id="divDX" width="150px" height="autosize" style="float:right; overflow:hidden;">
+						<window id="winDX" width="autosize" height="autosize" label="Finestra" expanded="none">
+							<label id="labelDX" value="jas sdasdl asdjas dasdljasjdjasdsad  sadyayiyiy dyuias sdhdahjkas asdas asdasdasdas asdas asdassd" />
+						</window>
+					</div>
+				</tab>
+				<tab id="tab2" label="TAB2">
+					<gridds id="gridds2" dsobj="ds1" width="autosize" height="autosize">
+						<coloumn>
+							<label itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px" />
+							<text itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px" />
+							<label itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px" />
+							<text itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px" />
+							<label itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px" />
+							<text itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px" />
+							<label itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px" />
+							<text itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px" />
 						</coloumn>
-					</gridds2>
-				</tab2>
-			</tabs1>
-		</divTOP>
-		<status typeobj="div" style="position: absolute; background-color:#EFEDDE; height:16px; width:100%; left:0px; top:100%; margin-top: -16px;  font-weight:bold;" value="Loading Page" />
+					</gridds>
+				</tab>
+			</tabs>
+		</div>
+		<div id="status" style="position: absolute; background-color:#EFEDDE; height:16px; width:100%; left:0px; top:100%; margin-top: -16px;  font-weight:bold;" value="Loading Page" />
 	</page>
 </jamp>

@@ -1,9 +1,9 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio stile tree" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn1" dskey="path" dsparentkey="dirpath" dsname="filename" scope="base" base="../.." alias="jamp" justthese="type,dirpath,path,filename"  />
-		<tree1 typeobj="tree" dsobj="ds1" refresh="brance" checkbox="tristate" width="160px" height="300px" />
-		<tree2 typeobj="tree" dsobj="ds1" template="vista" refresh="brance" checkbox="tristate" width="160px" height="300px" />
-		<tree3 typeobj="tree" dsobj="ds1" template="office" refresh="brance" checkbox="tristate" width="160px" height="300px" />
+	<page id="page" title="JAMP - Esempio stile tree" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn1" dskey="path" dsparentkey="dirpath" dsname="filename" scope="base" base="../.." alias="jamp" justthese="type,dirpath,path,filename" />
+		<tree id="tree1" dsobj="ds1" refresh="brance" checkbox="tristate" width="160px" height="300px" />
+		<tree id="tree2" dsobj="ds1" template="vista" refresh="brance" checkbox="tristate" width="160px" height="300px" />
+		<tree id="tree3" dsobj="ds1" template="office" refresh="brance" checkbox="tristate" width="160px" height="300px" />
 	</page>
 </jamp>
