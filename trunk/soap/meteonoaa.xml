@@ -1,10 +1,10 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio SOAP - Meteo NOAA" icon="../../favicon.ico" loaddata="true">
-	<city typeobj="dsselect" label="Città: " onchange="AJAX.request('POST', 'meteonoaa.php', 'data=getMeteo&amp;latlon='+this.value, false, true);"/>
-	<day typeobj="label"/>
-	<max typeobj="label"/>
-	<min typeobj="label"/>
-	<div1 typeobj="div"/>
+	<page id="page" title="JAMP - Esempio SOAP - Meteo NOAA" icon="../../favicon.ico" loaddata="true">
+		<dsselect id="city" label="Città: " onchange="AJAX.request('POST', 'meteonoaa.php', 'data=getMeteo&amp;latlon='+this.value, false, true);" />
+		<label id="day" />
+		<label id="max" />
+		<label id="min" />
+		<div id="div1" />
 	</page>
 </jamp>

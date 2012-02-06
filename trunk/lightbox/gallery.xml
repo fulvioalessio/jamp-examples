@@ -1,11 +1,11 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio galleria lightbox" icon="../../favicon.ico" loaddata="true">
-		<lightbox typeobj="lightbox" width="700" height="autosize" theme="grey" >
-			<a1 typeobj="a" href="../resource/tux/picture1.jpg" rel="lightshow[picture]" text="Picture 1" />
-			<a2 typeobj="a" href="../resource/tux/picture2.jpg" rel="lightshow[picture]" text="Picture 2" />
-			<a3 typeobj="a" href="../resource/tux/picture3.jpg" rel="lightshow[picture]" text="Picture 3" />
-			<a4 typeobj="a" href="../resource/tux/picture4.jpg" rel="lightshow[picture]" text="Picture 4" />
+	<page id="page" title="JAMP - Esempio galleria lightbox" icon="../../favicon.ico" loaddata="true">
+		<lightbox id="lightbox" width="700" height="autosize" theme="grey">
+			<a id="a1" href="../resource/tux/picture1.jpg" rel="lightshow[picture]" text="Picture 1" />
+			<a id="a2" href="../resource/tux/picture2.jpg" rel="lightshow[picture]" text="Picture 2" />
+			<a id="a3" href="../resource/tux/picture3.jpg" rel="lightshow[picture]" text="Picture 3" />
+			<a id="a4" href="../resource/tux/picture4.jpg" rel="lightshow[picture]" text="Picture 4" />
 		</lightbox>
 	</page>
 </jamp>

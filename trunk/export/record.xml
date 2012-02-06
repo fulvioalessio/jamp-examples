@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio importazione dati da RECORD" icon="../../favicon.ico" loaddata="false">
-		<ds1 typeobj="ds" conn="conn13" dskey="id" >		
+	<page id="page" title="JAMP - Esempio importazione dati da RECORD" icon="../../favicon.ico" loaddata="false">
+		<ds id="ds1" conn="conn13" dskey="id">
 			<record>
-				<field recname="id" reclength="5" /> 
-				<field recname="nome" reclength="20" /> 
-				<field recname="cognome" reclength="20" /> 
-				<field recname="data_nascita" reclength="10" /> 
-				<field recname="return" reclength="1" /> 
+				<field recname="id" reclength="5" />
+				<field recname="nome" reclength="20" />
+				<field recname="cognome" reclength="20" />
+				<field recname="data_nascita" reclength="10" />
+				<field recname="return" reclength="1" />
 			</record>
-		</ds1>
-		<ds2 typeobj="ds" conn="conn6" dstable="clienti" dskey="key" dssavetype="table" />
-		<import1 typeobj="import" from="ds1" to="ds2" method="error">
+		</ds>
+		<ds id="ds2" conn="conn6" dstable="clienti" dskey="key" dssavetype="table" />
+		<import id="import1" from="ds1" to="ds2" method="error">
 			<mapping>
-				<field fieldFrom="id" fieldTo="key" /> 
-				<field fieldFrom="nome" fieldTo="nome" format="string|trim" /> 
-				<field fieldFrom="cognome" fieldTo="cognome" format="string|trim" /> 
-				<field fieldFrom="data_nascita" fieldTo="data_nascita" format="date|IT|dd/mm/yyyy|EN|yyyy-mm-dd" /> 
+				<field fieldFrom="id" fieldTo="key" />
+				<field fieldFrom="nome" fieldTo="nome" format="string|trim" />
+				<field fieldFrom="cognome" fieldTo="cognome" format="string|trim" />
+				<field fieldFrom="data_nascita" fieldTo="data_nascita" format="date|IT|dd/mm/yyyy|EN|yyyy-mm-dd" />
 			</mapping>
-		</import1>
+		</import>
 	</page>
 </jamp>

@@ -1,19 +1,19 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio Xgridds" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dssavetype="row" dstable="Anagrafica" dsorder="Cognome" dskey="IDAssistito" focusnew="gridds1_1_$" />
-		<dsnav1 typeobj="dsnav" dsobj="ds1" objprint="gridds1" />
-		<gridds1 typeobj="xgridds" dsobj="ds1" width="autosize" height="autosize">
-			<body>			
-				<col objtype="text" dsitem="Prot_Amm" label="Prot Amm:" maxlength="5" size="5" labelwidth="110px" />
-				<col objtype="text" dsitem="Cognome" label="Cognome:" maxlength="40" size="20" labelwidth="110px" />
-				<col objtype="text" dsitem="Nome" label="Nome:" maxlength="40" size="20" labelwidth="110px" />
-				<col objtype="text" dsitem="SecondoNome" label="Secondo Nome:" maxlength="30" size="20" labelwidth="110px" />
-				<col objtype="text" dsitem="CodiceFiscale" label="Codice fiscale:" maxlength="16" size="20" labelwidth="110px" />
-				<col objtype="text" dsitem="DataNascita" label="Data di nascita:" maxlength="12" size="12" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy" labelwidth="110px" />
-				<col objtype="text" dsitem="Citta" label="Città di nascita:" maxlength="40" size="20" labelwidth="110px" />
-				<col objtype="dsselect" dsitem="sesso" label="Sesso:" labelwidth="110px" optiontext="M,F" optionvalue="1,2" />
+	<page id="page" title="JAMP - Esempio Xgridds" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dssavetype="row" dstable="Anagrafica" dsorder="Cognome" dskey="IDAssistito" focusnew="gridds1_1_$" />
+		<dsnav id="dsnav1" dsobj="ds1" objprint="gridds1" />
+		<xgridds id="gridds1" dsobj="ds1" width="autosize" height="autosize">
+			<body>
+				<text dsitem="Prot_Amm" label="Prot Amm:" maxlength="5" size="5" labelwidth="110px" />
+				<text dsitem="Cognome" label="Cognome:" maxlength="40" size="20" labelwidth="110px" />
+				<text dsitem="Nome" label="Nome:" maxlength="40" size="20" labelwidth="110px" />
+				<text dsitem="SecondoNome" label="Secondo Nome:" maxlength="30" size="20" labelwidth="110px" />
+				<text dsitem="CodiceFiscale" label="Codice fiscale:" maxlength="16" size="20" labelwidth="110px" />
+				<text dsitem="DataNascita" label="Data di nascita:" maxlength="12" size="12" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy" labelwidth="110px" />
+				<text dsitem="Citta" label="Città di nascita:" maxlength="40" size="20" labelwidth="110px" />
+				<dsselect dsitem="sesso" label="Sesso:" labelwidth="110px" optiontext="M,F" optionvalue="1,2" />
 			</body>
-		</gridds1>
+		</xgridds>
 	</page>
 </jamp>

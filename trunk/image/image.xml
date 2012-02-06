@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio image" loaddata="true" icon="../../favicon.ico" out="html">
-		<ds1 typeobj="ds" conn="conn12" scope="onelevel" dskey="key" base="/jamp/data" />
-		<image1 typeobj="image" dsobj="ds1" dsitem="logo" border="1" label="IMG 16x16:" labelwidth="150px" />
-		<image2 typeobj="image" dsobj="ds1" dsitem="logo" border="1" label="IMG 32x32:" labelwidth="150px" width="32px" height="32px"/>
-		<image3 typeobj="image" dsobj="ds1" dsitem="logo" border="1" label="IMG 64x64:" labelwidth="150px" width="64px" height="64px"/>
-		<image4 typeobj="image" dsobj="ds1" dsitem="logo" border="1" label="IMG 128x128:" labelwidth="150px" width="128px" height="128px"/>
-		<image5 typeobj="image" dsobj="ds1" dsitem="logo" border="1" label="IMG 100x150:" labelwidth="150px" width="100px" height="150px"/>
+	<page id="page" title="JAMP - Esempio image" loaddata="true" icon="../../favicon.ico" out="html">
+		<ds id="ds1" conn="conn12" scope="onelevel" dskey="key" base="/jamp/data" />
+		<image id="image1" dsobj="ds1" dsitem="logo" border="1" label="IMG 16x16:" labelwidth="150px" />
+		<image id="image2" dsobj="ds1" dsitem="logo" border="1" label="IMG 32x32:" labelwidth="150px" width="32px" height="32px" />
+		<image id="image3" dsobj="ds1" dsitem="logo" border="1" label="IMG 64x64:" labelwidth="150px" width="64px" height="64px" />
+		<image id="image4" dsobj="ds1" dsitem="logo" border="1" label="IMG 128x128:" labelwidth="150px" width="128px" height="128px" />
+		<image id="image5" dsobj="ds1" dsitem="logo" border="1" label="IMG 100x150:" labelwidth="150px" width="100px" height="150px" />
 	</page>
 </jamp>

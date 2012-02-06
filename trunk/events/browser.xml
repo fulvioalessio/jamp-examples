@@ -1,13 +1,13 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio per il riconoscimento del browser" icon="../../favicon.ico">
-		<label1 typeobj="label" labelwidth="200px" label="Internet Explorer" />
-		<label2 typeobj="label" labelwidth="200px" label="Opera" />
-		<label3 typeobj="label" labelwidth="200px" label="Safari" />
-		<label4 typeobj="label" labelwidth="200px" label="Firefox" />
-		<label5 typeobj="label" labelwidth="200px" label="Chrome" />
-		<label6 typeobj="label" labelwidth="200px" label="Gecko" />
-		<label7 typeobj="label" labelwidth="200px" label="KHTML" />
-		<label8 typeobj="label" labelwidth="200px" label="Versione" />
+	<page id="page" title="JAMP - Esempio per il riconoscimento del browser" icon="../../favicon.ico">
+		<label id="label1" labelwidth="200px" label="Internet Explorer" />
+		<label id="label2" labelwidth="200px" label="Opera" />
+		<label id="label3" labelwidth="200px" label="Safari" />
+		<label id="label4" labelwidth="200px" label="Firefox" />
+		<label id="label5" labelwidth="200px" label="Chrome" />
+		<label id="label6" labelwidth="200px" label="Gecko" />
+		<label id="label7" labelwidth="200px" label="KHTML" />
+		<label id="label8" labelwidth="200px" label="Versione" />
 	</page>
 </jamp>

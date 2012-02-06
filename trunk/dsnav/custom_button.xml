@@ -1,20 +1,20 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio dsnav per la navigazione dei dati" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="10" />
-		<dsnav1 typeobj="dsnav" dsobj="ds1" objprint="gridds1" btNew="false" btSave="false" btCancel="false" btReload="false" btPage="false" btNav="false" btTotal="false" btDelete="false" btPrint="false">
+	<page id="page" title="JAMP - Esempio dsnav per la navigazione dei dati" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="10" />
+		<dsnav id="dsnav1" dsobj="ds1" objprint="gridds1" btNew="false" btSave="false" btCancel="false" btReload="false" btPage="false" btNav="false" btTotal="false" btDelete="false" btPrint="false">
 			<button>
-				<bt onclick="alert('primary');" image="../resource/images/primary.png" title="Primary"/>
-				<bt onclick="alert('unique');" image="../resource/images/unique.png" title="Unique"/>
-				<bt onclick="alert('index');" image="../resource/images/index.png" title="Index"/>
-				<bt onclick="alert('fulltext');" image="../resource/images/text.png" title="Full Text"/>
+				<bt onclick="alert('primary');" image="../resource/images/primary.png" title="Primary" />
+				<bt onclick="alert('unique');" image="../resource/images/unique.png" title="Unique" />
+				<bt onclick="alert('index');" image="../resource/images/index.png" title="Index" />
+				<bt onclick="alert('fulltext');" image="../resource/images/text.png" title="Full Text" />
 			</button>
-		</dsnav1>
-		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">
-			<coloumn>   
-				<col objtype="label" itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px" />
-				<col objtype="text" itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px" />
+		</dsnav>
+		<gridds id="gridds1" dsobj="ds1" width="autosize" height="autosize">
+			<coloumn>
+				<label itemlabel="COMUNE" dsitem="DENOMINAZIONE_COMUNE" colwidth="200px" />
+				<text itemlabel="CAB" dsitem="CAB" order="false" minlength="5" maxlength="5" colwidth="200px" />
 			</coloumn>
-		</gridds1>
+		</gridds>
 	</page>
 </jamp>

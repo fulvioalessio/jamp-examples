@@ -1,34 +1,34 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - AJAX synchronous e  asynchronous" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="15" />
-		<ds2 typeobj="ds" conn="conn6" dstable="dock" dskey="id" />
-		<ds3 typeobj="ds" conn="conn6" dsorder="Cognome" dstable="Anagrafica" dskey="IDAssistito" />
-		<fieldset1 typeobj="fieldset" legend="AJAX Request" style="width: 520px; height: 25px;">
-			<ajax typeobj="label" value="AJAX.request('POST', 'request.php', data, sync, xml);" style="color: red;font-weight: bold;" />
-		</fieldset1>
-		<fieldset2 typeobj="fieldset" legend="Send Request" style="float: left; width: 300px; height: 150px;">
-			<sync typeobj="radio" label="synchronous" name="sync" value="true" checked="true" />
-			<async typeobj="radio" label="asynchronous\n\n" name="sync" value="false" />
-			<xml typeobj="radio" label="xml" name="xml" value="true" checked="true" />
-			<noxml typeobj="radio" label="noxml\n\n" name="xml" value="false" />
-			<type1 typeobj="radio" label="loadall" name="request" value="loadall" checked="true" />
-			<type2 typeobj="radio" label="load" name="request" value="load" />
-			<type3 typeobj="radio" label="custom\n\n" name="request" value="custom" />
-			<div typeobj="div" style="display: none">
-				<getds1 typeobj="radio" label="ds1" name="datasource" value="ds1" />
-				<getds2 typeobj="radio" label="ds2" name="datasource" value="ds2" />
-				<getds1ds2 typeobj="radio" label="ds1,ds2" name="datasource" value="ds1,ds2" />
-				<getallds typeobj="radio" label="allds(for custom request)\n\n" name="datasource" value="" checked="true" />
+	<page id="page" title="JAMP - AJAX synchronous e  asynchronous" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="15" />
+		<ds id="ds2" conn="conn6" dstable="dock" dskey="id" />
+		<ds id="ds3" conn="conn6" dsorder="Cognome" dstable="Anagrafica" dskey="IDAssistito" />
+		<fieldset id="fieldset1" legend="AJAX Request" style="width: 520px; height: 25px;">
+			<label id="ajax" value="AJAX.request('POST', 'request.php', data, sync, xml);" style="color: red;font-weight: bold;" />
+		</fieldset>
+		<fieldset id="fieldset2" legend="Send Request" style="float: left; width: 300px; height: 150px;">
+			<radio id="sync" label="synchronous" name="sync" value="true" checked="true" />
+			<radio id="async" label="asynchronous\n\n" name="sync" value="false" />
+			<radio id="xml" label="xml" name="xml" value="true" checked="true" />
+			<radio id="noxml" label="noxml\n\n" name="xml" value="false" />
+			<radio id="type1" label="loadall" name="request" value="loadall" checked="true" />
+			<radio id="type2" label="load" name="request" value="load" />
+			<radio id="type3" label="custom\n\n" name="request" value="custom" />
+			<div id="div" style="display: none">
+				<radio id="getds1" label="ds1" name="datasource" value="ds1" />
+				<radio id="getds2" label="ds2" name="datasource" value="ds2" />
+				<radio id="getds1ds2" label="ds1,ds2" name="datasource" value="ds1,ds2" />
+				<radio id="getallds" label="allds(for custom request)\n\n" name="datasource" value="" checked="true" />
 			</div>
-			<button1 typeobj="button" value="send request" onclick="javascript: sendRequest();" style="width: 200px" />
-		</fieldset2>
-		<fieldset3 typeobj="fieldset" legend="Server Side" style="width: 200px; height: 150px;">
-			<txtdata typeobj="label" label="data: " value=""  labelwidth="90px" />
-			<txtdsobjname typeobj="label" label="dsobjname: " value=""  labelwidth="90px" />
-		</fieldset3>
-		<fieldset4 typeobj="fieldset" legend="Response" style="float: left; width: 520px; height: 250px;">
-			<text typeobj="textarea" width="autosize" height="autosize"/>
-		</fieldset4>
+			<button id="button1" value="send request" onclick="javascript: sendRequest();" style="width: 200px" />
+		</fieldset>
+		<fieldset id="fieldset3" legend="Server Side" style="width: 200px; height: 150px;">
+			<label id="txtdata" label="data: " value="" labelwidth="90px" />
+			<label id="txtdsobjname" label="dsobjname: " value="" labelwidth="90px" />
+		</fieldset>
+		<fieldset id="fieldset4" legend="Response" style="float: left; width: 520px; height: 250px;">
+			<textarea id="text" width="autosize" height="autosize" />
+		</fieldset>
 	</page>
 </jamp>

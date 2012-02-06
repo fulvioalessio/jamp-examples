@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Collisioni" loaddata="true" icon="../../favicon.ico" onmousemove="
-	ANIMATE.collision('obj1', 'opacity:1;color:#00f0f0', '80', event);"
-	>
-		<label1 typeobj="label" value="Avvicina il mouse al testo.\n\n"/>
-		<obj1 typeobj="label" value="TEXT TEXT TEXT" style="opacity:0.5;filter:alpha(opacity=50);font-size:20px"/>
+	<page id="page" title="JAMP - Collisioni" loaddata="true" icon="../../favicon.ico" onmousemove="  ANIMATE.collision('obj1', 'opacity:1;color:#00f0f0', '80', event);">
+		<label id="label1" value="Avvicina il mouse al testo.\n\n" />
+		<label id="obj1" value="TEXT TEXT TEXT" style="opacity:0.5;filter:alpha(opacity=50);font-size:20px" />
 	</page>
 </jamp>
-

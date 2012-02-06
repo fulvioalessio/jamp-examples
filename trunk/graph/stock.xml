@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Grafico Stock" out="html" icon="../../favicon.ico" loaddata="true">
-		<graphic4 typeobj="graphic" width="600" height="300" scale="textlin">
+	<page id="page" title="JAMP - Grafico Stock" out="html" icon="../../favicon.ico" loaddata="true">
+		<graphic id="graphic4" width="600" height="300" scale="textlin">
 			<parameter>
-				<plot objtype="plot" shadow="true" frame="true" />
-				<title objtype="title" title="stock" font="FF_FONT1,FS_BOLD" margin="3" />
-				<xaxis1 objtype="xaxis" title="asse x" font="FF_FONT1,FS_BOLD" />
-				<yaxis1 objtype="yaxis" title="asse y" font="FF_FONT1,FS_BOLD" />
-				<ygrid1 objtype="ygrid" color="red@0.5" fill="true,#EFEFEF@0.5,#BBCCFF@0.5" />				
-				<xgrid1 objtype="xgrid" color="red@0.5" />				
-				<stock1 objtype="stock" data="34,42,27,45,55,25,14,59,15,40,12,47,62,38,25,65,38,49,32,64" linewidth="20" />
+				<plot shadow="true" frame="true" />
+				<title title="stock" font="FF_FONT1,FS_BOLD" margin="3" />
+				<xaxis title="asse x" font="FF_FONT1,FS_BOLD" />
+				<yaxis title="asse y" font="FF_FONT1,FS_BOLD" />
+				<ygrid color="red@0.5" fill="true,#EFEFEF@0.5,#BBCCFF@0.5" />
+				<xgrid color="red@0.5" />
+				<stock data="34,42,27,45,55,25,14,59,15,40,12,47,62,38,25,65,38,49,32,64" linewidth="20" />
 			</parameter>
-		</graphic4>
+		</graphic>
 	</page>
 </jamp>

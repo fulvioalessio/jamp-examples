@@ -1,8 +1,8 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio iframe lightbox" icon="../../favicon.ico" loaddata="true">
-		<lightbox typeobj="lightbox" width="700" height="autosize" theme="blue">
-			<a typeobj="a" href="../format/format_text.php" rel="lightframe" rev="width: 600px; height: 400px;" text="iFrame" />
+	<page id="page" title="JAMP - Esempio iframe lightbox" icon="../../favicon.ico" loaddata="true">
+		<lightbox id="lightbox" width="700" height="autosize" theme="blue">
+			<a id="a" href="../format/format_text.php" rel="lightframe" rev="width: 600px; height: 400px;" text="iFrame" />
 		</lightbox>
 	</page>
 </jamp>

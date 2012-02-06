@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Grafico polare" out="html" icon="../../favicon.ico" loaddata="true">
-		<graphic6 typeobj="graphic" width="500" height="500" scale="log">
+	<page id="page" title="JAMP - Grafico polare" out="html" icon="../../favicon.ico" loaddata="true">
+		<graphic id="graphic6" width="500" height="500" scale="log">
 			<parameter>
-				<plot objtype="plot" shadow="true" frame="true" xaxis="true" yaxis="true" />
-				<title objtype="title" title="polar" font="FF_FONT1,FS_BOLD" margin="3" />
-				<polar objtype="polar" data="0,1,10,2,30,25,40,60,50,110,60,160,70,210,75,230,80,260,85,270,90,480,95,270,100,260,105,230,110,210,120,160,130,110,140,60,
-	      150,25,170,2,180,1" color="orange" />
+				<plot shadow="true" frame="true" xaxis="true" yaxis="true" />
+				<title title="polar" font="FF_FONT1,FS_BOLD" margin="3" />
+				<polar data="0,1,10,2,30,25,40,60,50,110,60,160,70,210,75,230,80,260,85,270,90,480,95,270,100,260,105,230,110,210,120,160,130,110,140,60,        150,25,170,2,180,1" color="orange" />
 			</parameter>
-		</graphic6>
+		</graphic>
 	</page>
 </jamp>

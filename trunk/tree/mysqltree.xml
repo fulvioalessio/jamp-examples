@@ -1,8 +1,7 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio tree collegata ad una tabella mysql" icon="../../favicon.ico" loaddata="true">
-<!-- 		<ds1 typeobj="ds" conn="conn6" dskey="id" scope="base" base="../.." alias="jamp" /> -->
-		<ds1 typeobj="ds" conn="conn6" dstable="tree" dsname="text" dskey="id" dsparentkey="id_parent" dswhere="id_parent=0" />
-		<tree1 typeobj="tree" dsobj="ds1" refresh="brance" width="300px" height="autosize" />
+	<page id="page" title="JAMP - Esempio tree collegata ad una tabella mysql" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="tree" dsname="text" dskey="id" dsparentkey="id_parent" dswhere="id_parent=0" />
+		<tree id="tree1" dsobj="ds1" refresh="brance" width="300px" height="autosize" />
 	</page>
 </jamp>

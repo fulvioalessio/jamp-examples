@@ -1,16 +1,16 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio dsselect" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="dock" dskey="id"/>
-		<select typeobj="xmlpage" src="select.xml" />	
-		<list typeobj="xmlpage" src="list.xml" />	
-		<br typeobj="br" row="2" />
-		<fieldset typeobj="fieldset">	
-			<nav typeobj="xmlpage" src="nav.xml" />		
-			<field typeobj="xmlpage" src="field.xml" />		
+	<page id="page" title="JAMP - Esempio dsselect" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="dock" dskey="id" />
+		<xmlpage id="select" src="select.xml" />
+		<xmlpage id="list" src="list.xml" />
+		<br id="br" row="2" />
+		<fieldset id="fieldset">
+			<xmlpage id="nav" src="nav.xml" />
+			<xmlpage id="field" src="field.xml" />
 		</fieldset>
-		<multipleselect typeobj="xmlpage" src="multipleselect.xml" />	
-		<multiplelist typeobj="xmlpage" src="multiplelist.xml" />
-		<dsgrid typeobj="xmlpage" src="dsselectgrid.xml" />
+		<xmlpage id="multipleselect" src="multipleselect.xml" />
+		<xmlpage id="multiplelist" src="multiplelist.xml" />
+		<xmlpage id="dsgrid" src="dsselectgrid.xml" />
 	</page>
 </jamp>

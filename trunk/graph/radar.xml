@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Grafico Radar" out="html" icon="../../favicon.ico" loaddata="true">
-		<graphic7 typeobj="graphic" width="300" height="300" scale="lin">
+	<page id="page" title="JAMP - Grafico Radar" out="html" icon="../../favicon.ico" loaddata="true">
+		<graphic id="graphic7" width="300" height="300" scale="lin">
 			<parameter>
-				<plot objtype="plot" shadow="true" color="white" center="0.5,0.55" />
-				<title objtype="title" title="Quality result" titles="One,Two,Three,Four,Five,Sex,Seven,Eight,Nine,Ten" font="FF_FONT1,FS_BOLD" margin="3" />
-				<legend1 objtype="legend" pos="0.02,0.15" shadow="darkgray@0.5" fillcolor="lightblue@0.3" />				
-				<radar objtype="radar" data="12,35,20,30,33,15,37" legend="Goal" color="red,lightred" fillcolor="lightblue" linewight="2" />
-				<axis objtype="axis" font="FF_FONT1,FS_BOLD" weight="2" />
+				<plot shadow="true" color="white" center="0.5,0.55" />
+				<title title="Quality result" titles="One,Two,Three,Four,Five,Sex,Seven,Eight,Nine,Ten" font="FF_FONT1,FS_BOLD" margin="3" />
+				<legend pos="0.02,0.15" shadow="darkgray@0.5" fillcolor="lightblue@0.3" />
+				<radar data="12,35,20,30,33,15,37" legend="Goal" color="red,lightred" fillcolor="lightblue" linewight="2" />
+				<axis font="FF_FONT1,FS_BOLD" weight="2" />
 			</parameter>
-		</graphic7>
+		</graphic>
 	</page>
 </jamp>

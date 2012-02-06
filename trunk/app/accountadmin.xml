@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JApp - Gestione Account Amministratori" loaddata="true">
-		<xmlpage typeobj="xmlpage" src="intestazione.xml" />
-		<ds1 typeobj="ds" conn="conn6" dstable="es2_account" dsorder="username" dswhere="`group`='2'" dslimit="20" focusnew="gridds1_1_$" dskey="key"/>
-		<ds2 typeobj="ds" conn="conn6" dstable="es2_client" dsorder="name" dskey="key" dslimit="20" loadall="false"/>
-		<dsnav1 typeobj="dsnav" dsobj="ds1" label="Utente:" dssearch="`group`='2' and `username` LIKE '$$VALUE$$%'"/>
-		<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">					
-			<coloumn>	
-				<col objtype="text" dsitem="username" itemlabel="Utente" maxlength="20" minlength="4" colwidth="100px"/>			
-				<col objtype="text" dsitem="cn" itemlabel="Nome Completo" maxlength="100" colwidth="200px"/>	
-				<col objtype="text" dsitem="mail" itemlabel="E-Mail" maxlength="255" colwidth="200px" blur="email" minlength="1"/>
-				<col objtype="dscombo" dsitem="idclient" itemlabel="Cliente" dsitemlist="name" dsitemkeylist="key" dsobjlist="ds2" dssearch="`name` LIKE '%$$VALUE$$%'" colwidth="200px"/>
-				<col objtype="button" value="AZZERA" itemlabel="PASSWORD" size="15" onclick="ResetPWD(this.row)" />
-			</coloumn>	
-		</gridds1>				
+	<page id="page" title="JApp - Gestione Account Amministratori" loaddata="true">
+		<xmlpage id="xmlpage" src="intestazione.xml" />
+		<ds id="ds1" conn="conn6" dstable="es2_account" dsorder="username" dswhere="`group`='2'" dslimit="20" focusnew="gridds1_1_$" dskey="key" />
+		<ds id="ds2" conn="conn6" dstable="es2_client" dsorder="name" dskey="key" dslimit="20" loadall="false" />
+		<dsnav id="dsnav1" dsobj="ds1" label="Utente:" dssearch="`group`='2' and `username` LIKE '$$VALUE$$%'" />
+		<gridds id="gridds1" dsobj="ds1" width="autosize" height="autosize">
+			<coloumn>
+				<text dsitem="username" itemlabel="Utente" maxlength="20" minlength="4" colwidth="100px" />
+				<text dsitem="cn" itemlabel="Nome Completo" maxlength="100" colwidth="200px" />
+				<text dsitem="mail" itemlabel="E-Mail" maxlength="255" colwidth="200px" blur="email" minlength="1" />
+				<dscombo dsitem="idclient" itemlabel="Cliente" dsitemlist="name" dsitemkeylist="key" dsobjlist="ds2" dssearch="`name` LIKE '%$$VALUE$$%'" colwidth="200px" />
+				<button value="AZZERA" itemlabel="PASSWORD" size="15" onclick="ResetPWD(this.row)" />
+			</coloumn>
+		</gridds>
 	</page>
 </jamp>

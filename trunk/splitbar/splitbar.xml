@@ -1,19 +1,19 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio splitbar 1" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn1" dskey="path" scope="base" base="../.." alias="jamp" dsname="filename" justthese="type,dirpath,path,filename" />
-		<divSX typeobj="div" width="300px" height="autosize" style="float:left;">
-			<tree1 typeobj="tree" dsobj="ds1" refresh="always" width="autosize" height="autosize" />
-		</divSX>
-  		<split4 typeobj="splitbar" type="vertical"/> 
- 		<divDX typeobj="div" width="autosize" height="autosize" style="float:left;">
-			<gridds1 typeobj="gridds" dsobj="ds1" width="autosize" height="autosize">
+	<page id="page" title="JAMP - Esempio splitbar 1" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn1" dskey="path" scope="base" base="../.." alias="jamp" dsname="filename" justthese="type,dirpath,path,filename" />
+		<div id="divSX" width="300px" height="autosize" style="float:left;">
+			<tree id="tree1" dsobj="ds1" refresh="always" width="autosize" height="autosize" />
+		</div>
+		<splitbar id="split4" type="vertical" />
+		<div id="divDX" width="autosize" height="autosize" style="float:left;">
+			<gridds id="gridds1" dsobj="ds1" width="autosize" height="autosize">
 				<coloumn>
-					<col objtype="label" itemlabel="Path" dsitem="path" order="false" colwidth="250px" />
-					<col objtype="text" itemlabel="Nome" dsitem="filename" order="false"/>
-					<col objtype="label" itemlabel="Tipo" dsitem="type" order="false"/>
+					<label itemlabel="Path" dsitem="path" order="false" colwidth="250px" />
+					<text itemlabel="Nome" dsitem="filename" order="false" />
+					<label itemlabel="Tipo" dsitem="type" order="false" />
 				</coloumn>
-			</gridds1>
-		</divDX>
+			</gridds>
+		</div>
 	</page>
 </jamp>

@@ -1,45 +1,45 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio d'uso delle espressioni regolari" icon="../../favicon.ico" loaddata="true">
-		  <ds1 typeobj="ds" conn="conn6" dsorder="Cognome" dstable="Anagrafica" dskey="IDAssistito" focusnew="text1" dslimit="1" />
-		  <tabs1 typeobj="tabs" width="autosize" height="600px" selected="tab1" align="left" >
-			<tab1 typeobj="tab" label="Espressioni regolari(SUL SINGOLO CARATTERE)" >
-				<digit_number typeobj="text" label="\nSolo caratteri numerici:\n" keypress="number" size="50" />
-				<digit_nonumber typeobj="text" label="\nEscluso caratteri numerici:\n" keypress="nonumber" size="50" />
-				<digit_alphanumeric typeobj="text" label="\nSolo caratteri alphanumerici:\n" keypress="alphanumeric" size="50" />
-				<digit_noalphanumeric typeobj="text" label="\nEscluso caratteri alphanumerici:\n" keypress="noalphanumeric" size="50" />
-				<digit_alphabetic typeobj="text" label="\nSolo caratteri alfabetici:\n" keypress="alphabetic" size="50" />
-				<digit_loweralphabetic typeobj="text" label="\nSolo caratteri alfabetici minuscoli:\n" keypress="loweralphabetic" size="50" />
-				<digit_upperalphabetic typeobj="text" label="\nSolo caratteri alfabetici maiuscoli:\n" keypress="upperalphabetic" size="50" />
-				<digit_decimal typeobj="text" label="\nSolo caratteri decimali(separatori miglia e decine compresi):\n" keypress="decimal" size="50" />
-				<digit_free typeobj="text" label="\nEspessione regolare libera(esempio: solo lettere dalla a alla g):\n" keypress="[a-g]" size="50" />
-			</tab1>
-			<tab2 typeobj="tab" label="Espressioni regolari(SULLA STRINGA)" >
-				<word_number typeobj="text" label="\nSolo caratteri numerici:\n" blur="number" size="50" />
-				<word_decimal typeobj="text" label="\nSolo caratteri decimali:\n" blur="decimal" size="50" />
-				<word_ip typeobj="text" label="\nIndirizzo IP:\n" blur="ip" size="50" />
-				<word_email typeobj="text" label="\nIndirizzo e-mail:\n" blur="email" size="50" />
-				<word_cf typeobj="text" label="\nCodice fiscale:\n" blur="cf" size="50" />
-				<word_complete typeobj="text" label="\nMulti controllo(alfanumerici, codice fiscale, minimo 16, massimo 16):\n" blur="cf" keypress="alphanumeric" minlength="16" maxlength="16" size="50" />
-				<word_free typeobj="text" label="\nEspressione regolare libera(esempio: solo numeri da 0 a 4):\n" blur="^[0-4]{0,}$" size="50" />
-			</tab2>
-			<tab3 typeobj="tab" label="Espressioni regolari(SUL SALVATAGGIO STRINGA)" >
-				<dsnav1 typeobj="dsnav" dsobj="ds1" objprint="tabs1" style="height: 30px"/>
-				<text6 typeobj="text" dsobj="ds1" dsitem="Cognome" label="Cognome(*):" send="^[a-zA-Z]{1,30}$" maxlength="30" size="20" labelwidth="110px" />
-				<text4 typeobj="text" dsobj="ds1" dsitem="Nome" label="Nome(*):" send="^[a-zA-Z]{1,30}$" maxlength="30" size="20" labelwidth="110px" />
-				<text5 typeobj="text" dsobj="ds1" dsitem="SecondoNome" label="Secondo Nome:" maxlength="30" size="20" labelwidth="110px" />
-				<text7 typeobj="text" dsobj="ds1" dsitem="CodiceFiscale" send="cf" label="Codice fiscale(**):" maxlength="16" size="20" labelwidth="110px" />
-				<text8 typeobj="text" dsobj="ds1" dsitem="DataNascita" label="Data di nascita:" maxlength="12" size="12" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy" labelwidth="110px" />
-				<textcitta typeobj="text" dsobj="ds1" dsitem="Citta" label="Città di nascita:" maxlength="40" size="20" labelwidth="110px" />
-				<dsselect1 typeobj="dsselect" dsobj="ds1" dsitem="sesso" label="Sesso:" labelwidth="110px" >
-					 <options>
-						<opt1 optiontext="M" optionvalue="1"/>
-						<opt2 optiontext="F" optionvalue="2"/>
-					 </options>
-				</dsselect1>
-				<label1 typeobj="label" value="(*)  Campi obbligatori" />
-				<label2 typeobj="label" value="(**) Campo obbligatori con controllo validità" />
-		  </tab3>
-		</tabs1>
+	<page id="page" title="JAMP - Esempio d'uso delle espressioni regolari" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dsorder="Cognome" dstable="Anagrafica" dskey="IDAssistito" focusnew="text1" dslimit="1" />
+		<tabs id="tabs1" width="autosize" height="600px" selected="tab1" align="left">
+			<tab id="tab1" label="Espressioni regolari(SUL SINGOLO CARATTERE)">
+				<text id="digit_number" label="\nSolo caratteri numerici:\n" keypress="number" size="50" />
+				<text id="digit_nonumber" label="\nEscluso caratteri numerici:\n" keypress="nonumber" size="50" />
+				<text id="digit_alphanumeric" label="\nSolo caratteri alphanumerici:\n" keypress="alphanumeric" size="50" />
+				<text id="digit_noalphanumeric" label="\nEscluso caratteri alphanumerici:\n" keypress="noalphanumeric" size="50" />
+				<text id="digit_alphabetic" label="\nSolo caratteri alfabetici:\n" keypress="alphabetic" size="50" />
+				<text id="digit_loweralphabetic" label="\nSolo caratteri alfabetici minuscoli:\n" keypress="loweralphabetic" size="50" />
+				<text id="digit_upperalphabetic" label="\nSolo caratteri alfabetici maiuscoli:\n" keypress="upperalphabetic" size="50" />
+				<text id="digit_decimal" label="\nSolo caratteri decimali(separatori miglia e decine compresi):\n" keypress="decimal" size="50" />
+				<text id="digit_free" label="\nEspessione regolare libera(esempio: solo lettere dalla a alla g):\n" keypress="[a-g]" size="50" />
+			</tab>
+			<tab id="tab2" label="Espressioni regolari(SULLA STRINGA)">
+				<text id="word_number" label="\nSolo caratteri numerici:\n" blur="number" size="50" />
+				<text id="word_decimal" label="\nSolo caratteri decimali:\n" blur="decimal" size="50" />
+				<text id="word_ip" label="\nIndirizzo IP:\n" blur="ip" size="50" />
+				<text id="word_email" label="\nIndirizzo e-mail:\n" blur="email" size="50" />
+				<text id="word_cf" label="\nCodice fiscale:\n" blur="cf" size="50" />
+				<text id="word_complete" label="\nMulti controllo(alfanumerici, codice fiscale, minimo 16, massimo 16):\n" blur="cf" keypress="alphanumeric" minlength="16" maxlength="16" size="50" />
+				<text id="word_free" label="\nEspressione regolare libera(esempio: solo numeri da 0 a 4):\n" blur="^[0-4]{0,}$" size="50" />
+			</tab>
+			<tab id="tab3" label="Espressioni regolari(SUL SALVATAGGIO STRINGA)">
+				<dsnav id="dsnav1" dsobj="ds1" objprint="tabs1" style="height: 30px" />
+				<text id="text6" dsobj="ds1" dsitem="Cognome" label="Cognome(*):" send="^[a-zA-Z]{1,30}$" maxlength="30" size="20" labelwidth="110px" />
+				<text id="text4" dsobj="ds1" dsitem="Nome" label="Nome(*):" send="^[a-zA-Z]{1,30}$" maxlength="30" size="20" labelwidth="110px" />
+				<text id="text5" dsobj="ds1" dsitem="SecondoNome" label="Secondo Nome:" maxlength="30" size="20" labelwidth="110px" />
+				<text id="text7" dsobj="ds1" dsitem="CodiceFiscale" send="cf" label="Codice fiscale(**):" maxlength="16" size="20" labelwidth="110px" />
+				<text id="text8" dsobj="ds1" dsitem="DataNascita" label="Data di nascita:" maxlength="12" size="12" format="date|EN|yyyy-mm-dd|IT|dd/mm/yyyy" labelwidth="110px" />
+				<text id="textcitta" dsobj="ds1" dsitem="Citta" label="Città di nascita:" maxlength="40" size="20" labelwidth="110px" />
+				<dsselect id="dsselect1" dsobj="ds1" dsitem="sesso" label="Sesso:" labelwidth="110px">
+					<options>
+						<opt1 optiontext="M" optionvalue="1" />
+						<opt2 optiontext="F" optionvalue="2" />
+					</options>
+				</dsselect>
+				<label id="label1" value="(*)  Campi obbligatori" />
+				<label id="label2" value="(**) Campo obbligatori con controllo validità" />
+			</tab>
+		</tabs>
 	</page>
 </jamp>

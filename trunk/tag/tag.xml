@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio sull'uso dei tag" icon="../../favicon.ico">
-		<title1 typeobj="label" value="JFatt Ver. 1.0" style="margin-left: 5px; font-weight: bold; font-size: 2em;"/>
-		<title2 typeobj="label" value="$$TITOLO$$" style="font-weight: bold; font-size: 1.5em; color : #0fa234;"/>
-		<user1 typeobj="label" label="\nTest1: " value="$$DATE$$" style="font-size: 1em;" />
-		<user2 typeobj="label" label="\nTest2: " value="$$TIME$$ " style="font-size: 1em;"/>
-		<user3 typeobj="label" label="\nTest3: " value="Il tuo indirizzo ip è: $$IP$$" style="font-weight: bold; font-size: 1em;"/>
+	<page id="page" title="JAMP - Esempio sull'uso dei tag" icon="../../favicon.ico">
+		<label id="title1" value="JFatt Ver. 1.0" style="margin-left: 5px; font-weight: bold; font-size: 2em;" />
+		<label id="title2" value="$$TITOLO$$" style="font-weight: bold; font-size: 1.5em; color : #0fa234;" />
+		<label id="user1" label="\nTest1: " value="$$DATE$$" style="font-size: 1em;" />
+		<label id="user2" label="\nTest2: " value="$$TIME$$ " style="font-size: 1em;" />
+		<label id="user3" label="\nTest3: " value="Il tuo indirizzo ip è: $$IP$$" style="font-weight: bold; font-size: 1em;" />
 	</page>
 </jamp>

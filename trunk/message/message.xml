@@ -1,13 +1,13 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio Messaggi" icon="../../favicon.ico" loaddata="false">
-		<label1 typeobj="label" value="Messaggi di sistema:\n" style="font-size:12px"/>
-		<bt1 typeobj="button" value="Messaggio HTML" onclick="Message1();"/>	
-		<bt2 typeobj="button" value="Messaggio GHOST" onclick="Message2();" label="\n"/>	
-		<bt3 typeobj="button" value="Messaggio GHOST descrizione" onclick="Message3();" label="\n"/>	
-		<bt4 typeobj="button" value="Messaggio GHOST HTML" onclick="Message4();" label="\n"/>	
-		<bt5 typeobj="button" value="Errore JavaScript" onclick="Message5();" label="\n"/>	
-		<bt6 typeobj="button" value="Errore XML" onclick="Message6();" label="\n"/>	
-		<bt7 typeobj="button" value="Errore HTML" onclick="Message7();" label="\n"/>	
+	<page id="page" title="JAMP - Esempio Messaggi" icon="../../favicon.ico" loaddata="false">
+		<label id="label1" value="Messaggi di sistema:\n" style="font-size:12px" />
+		<button id="bt1" value="Messaggio HTML" onclick="Message1();" />
+		<button id="bt2" value="Messaggio GHOST" onclick="Message2();" label="\n" />
+		<button id="bt3" value="Messaggio GHOST descrizione" onclick="Message3();" label="\n" />
+		<button id="bt4" value="Messaggio GHOST HTML" onclick="Message4();" label="\n" />
+		<button id="bt5" value="Errore JavaScript" onclick="Message5();" label="\n" />
+		<button id="bt6" value="Errore XML" onclick="Message6();" label="\n" />
+		<button id="bt7" value="Errore HTML" onclick="Message7();" label="\n" />
 	</page>
 </jamp>

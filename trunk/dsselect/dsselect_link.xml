@@ -1,14 +1,14 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio dsselect con iframe" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="es1_marca" dskey="key" dsrefresh="ds2"/>
-		<ds2 typeobj="ds" conn="conn6" dstable="es1_modello" dskey="key" dsrefresh="ds3" dsreferences="ds1" referenceskey="key" foreignkey="idmarca"/>
-		<ds3 typeobj="ds" conn="conn6" dstable="es1_pezzo" dskey="key" dsreferences="ds2" referenceskey="key" foreignkey="idmodello"/>
-		<select1 typeobj="dsselect" label= "Marca: " nav="true" dsobjlist="ds1" dsitemlist="marca" dsitemkeylist="key"/>	
-		<select2 typeobj="dsselect" label= "Modello: " nav="true" dsobjlist="ds2" dsitemlist="modello" dsitemkeylist="key"/>	
-		<select3 typeobj="dsselect" label= "Pezzo: " nav="true" dsobjlist="ds3" dsitemlist="pezzo" dsitemkeylist="key"/>
-		<button1 typeobj="button" value="Mostra Scheda" onclick="scheda();"/>
-		<label1 typeobj="label" value="\nDescrizione:\n" />
-		<iframe typeobj="iframe" width="autosize" height="autosize" />
+	<page id="page" title="JAMP - Esempio dsselect con iframe" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="es1_marca" dskey="key" dsrefresh="ds2" />
+		<ds id="ds2" conn="conn6" dstable="es1_modello" dskey="key" dsrefresh="ds3" dsreferences="ds1" referenceskey="key" foreignkey="idmarca" />
+		<ds id="ds3" conn="conn6" dstable="es1_pezzo" dskey="key" dsreferences="ds2" referenceskey="key" foreignkey="idmodello" />
+		<dsselect id="select1" label="Marca: " nav="true" dsobjlist="ds1" dsitemlist="marca" dsitemkeylist="key" />
+		<dsselect id="select2" label="Modello: " nav="true" dsobjlist="ds2" dsitemlist="modello" dsitemkeylist="key" />
+		<dsselect id="select3" label="Pezzo: " nav="true" dsobjlist="ds3" dsitemlist="pezzo" dsitemkeylist="key" />
+		<button id="button1" value="Mostra Scheda" onclick="scheda();" />
+		<label id="label1" value="\nDescrizione:\n" />
+		<iframe id="iframe" width="autosize" height="autosize" />
 	</page>
 </jamp>

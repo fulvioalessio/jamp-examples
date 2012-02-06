@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-   <page typeobj="page">
-      <tab3 typeobj="tab" label="TRE">
-      </tab3>
-   </page>
-</jamp> 
+	<page id="page">
+		<tab id="tab3" label="TRE" />
+	</page>
+</jamp>

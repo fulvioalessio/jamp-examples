@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Grafico a torta" out="html" icon="../../favicon.ico" loaddata="true">
-		<graphic8 typeobj="graphic" scale="textlin" width="600" height="500">
+	<page id="page" title="JAMP - Grafico a torta" out="html" icon="../../favicon.ico" loaddata="true">
+		<graphic id="graphic8" scale="textlin" width="600" height="500">
 			<parameter>
-				<plot objtype="plot" shadow="true" frame="true" xaxis="true" yaxis="true"  /> 
-				<title objtype="title" title="Multiple - Pie plot" font="FF_FONT1,FS_BOLD" margin="3" />
-				<pie objtype="pie" data="40,21,17,14,23" center="0.25,0.22" size="0.13" title="2001" legend="Jan,Feb,Mar,Apr,May" font="FF_FONT0" />
-				<pie objtype="pie" data="40,21,17,14,23" center="0.65,0.22" size="0.13" title="2002" font="FF_FONT0" explode="true" />
-				<pie objtype="pie" data="40,21,17,14,23" center="0.25,0.7" size="0.13" title="2003" font="FF_FONT0" pie3d="true" angle="60"/>
-				<pie objtype="pie" data="19,12,4,3,3,12,3,3,5,6,7,8,8,1,7,2,2" center="0.65,0.7" size="0.2" title="2004" font="FF_FONT1,FS_NORMAL,9" guideline="true" guidelinesadjust="0.14" labeltype="PIE_VALUE_PER" format="%2.1f%%" />
+				<plot shadow="true" frame="true" xaxis="true" yaxis="true" />
+				<title title="Multiple - Pie plot" font="FF_FONT1,FS_BOLD" margin="3" />
+				<pie data="40,21,17,14,23" center="0.25,0.22" size="0.13" title="2001" legend="Jan,Feb,Mar,Apr,May" font="FF_FONT0" />
+				<pie data="40,21,17,14,23" center="0.65,0.22" size="0.13" title="2002" font="FF_FONT0" explode="true" />
+				<pie data="40,21,17,14,23" center="0.25,0.7" size="0.13" title="2003" font="FF_FONT0" pie3d="true" angle="60" />
+				<pie data="19,12,4,3,3,12,3,3,5,6,7,8,8,1,7,2,2" center="0.65,0.7" size="0.2" title="2004" font="FF_FONT1,FS_NORMAL,9" guideline="true" guidelinesadjust="0.14" labeltype="PIE_VALUE_PER" format="%2.1f%%" />
 			</parameter>
-		</graphic8>		
+		</graphic>
 	</page>
 </jamp>

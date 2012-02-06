@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Effetto Animazione Window" loaddata="true" icon="../../favicon.ico" onload="ANIMATE.animate('obj1', 'opacity:1', '2000','', 'default');">
-		<obj1 typeobj="img" src="./../resource/logo.jpeg" style="opacity:0;filter:alpha(opacity=0);"/>
+	<page id="page" title="JAMP - Effetto Animazione Window" loaddata="true" icon="../../favicon.ico" onload="ANIMATE.animate('obj1', 'opacity:1', '2000','', 'default');">
+		<img id="obj1" src="./../resource/logo.jpeg" style="opacity:0;filter:alpha(opacity=0);" />
 	</page>
 </jamp>
-

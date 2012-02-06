@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio Report" out="pdf" loaddata="true">
-		<ds1 typeobj="ds" conn="conn1" dskey="path" scope="onelevel" base="./../resource/flag" dslimit="10" justthese="dirpath,path,filename" />
-		<img1 typeobj="img" src="../resource/logo.jpeg" style="top: 5; left: 10;"/> 
-		<hd1 typeobj="label" label="REPORT HEADER" align="center" style="font-family: Arial; font-size: 22; font-weight: bold; width: 0;top:5;height: 30" />
-		<header typeobj="header">
-			<hd2 typeobj="label" label="PAGE HEADER:" value="TITLE" align="center" labelstyle="left: 0;top:25;font-family: Arial; font-size: 22; font-weight: bold; color: #0000FF; width: 0" style="left: 80px;top:25;font-family: Arial; font-size: 22; color: #FF0000;width: 0" labelalign="left" />
+	<page id="page" title="JAMP - Esempio Report" out="pdf" loaddata="true">
+		<ds id="ds1" conn="conn1" dskey="path" scope="onelevel" base="./../resource/flag" dslimit="10" justthese="dirpath,path,filename" />
+		<img id="img1" src="../resource/logo.jpeg" style="top: 5; left: 10;" />
+		<label id="hd1" label="REPORT HEADER" align="center" style="font-family: Arial; font-size: 22; font-weight: bold; width: 0;top:5;height: 30" />
+		<header id="header">
+			<label id="hd2" label="PAGE HEADER:" value="TITLE" align="center" labelstyle="left: 0;top:25;font-family: Arial; font-size: 22; font-weight: bold; color: #0000FF; width: 0" style="left: 80px;top:25;font-family: Arial; font-size: 22; color: #FF0000;width: 0" labelalign="left" />
 		</header>
-		<gridds1 typeobj="gridds" dsobj="ds1" width="500" height="500">
+		<gridds id="gridds1" dsobj="ds1" width="500" height="500">
 			<coloumn>
-				<col objtype="label" itemlabel="Path" dsitem="path" size="50" />
-				<col objtype="image" itemlabel="Immagine" dsitem="path" size="60" directory="" />
-				<col objtype="label" itemlabel="Nome" dsitem="filename" size="60" />
-				<col objtype="image" itemlabel="Immagine" dsitem="filename" size="60" directory="../resource/flag/" style="width: 16; height: 16;" />
+				<label itemlabel="Path" dsitem="path" size="50" />
+				<image itemlabel="Immagine" dsitem="path" size="60" directory="" />
+				<label itemlabel="Nome" dsitem="filename" size="60" />
+				<image itemlabel="Immagine" dsitem="filename" size="60" directory="../resource/flag/" style="width: 16; height: 16;" />
 			</coloumn>
-		</gridds1>
-		<ft1 typeobj="label" label="REPORT FOOTER" align="center" style="font-family: Arial; font-size: 22; font-weight: bold; width: 0;"/> 
-		<footer typeobj="footer" top="-15">	
-			<foo1 typeobj="label" label="FOOTER PAGE" align="center" style="font-family: Arial; font-size: 10; font-weight: bold; width: 0;"/>
+		</gridds>
+		<label id="ft1" label="REPORT FOOTER" align="center" style="font-family: Arial; font-size: 22; font-weight: bold; width: 0;" />
+		<footer id="footer" top="-15">
+			<label id="foo1" label="FOOTER PAGE" align="center" style="font-family: Arial; font-size: 10; font-weight: bold; width: 0;" />
 		</footer>
 	</page>
 </jamp>

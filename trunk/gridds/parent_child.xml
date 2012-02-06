@@ -1,20 +1,20 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Esempio gridds relazionate" icon="../../favicon.ico" loaddata="true">
-		<dsgiornate typeobj="ds" conn="conn6" dstable="giornate" dskey="id" dsrefresh="dspartite" dslimit="10"  />	
-		<dspartite typeobj="ds" conn="conn6" dstable="partite" dskey="id" dsreferences="dsgiornate" referenceskey="id" foreignkey="idgiornata" />
-		<dsnav1 typeobj="dsnav" dsobj="dsgiornate" btNew="false" objprint="gridds1" />
-		<gridds1 typeobj="gridds" dsobj="dsgiornate" width="autosize" height="250px">
+	<page id="page" title="JAMP - Esempio gridds relazionate" icon="../../favicon.ico" loaddata="true">
+		<ds id="dsgiornate" conn="conn6" dstable="giornate" dskey="id" dsrefresh="dspartite" dslimit="10" />
+		<ds id="dspartite" conn="conn6" dstable="partite" dskey="id" dsreferences="dsgiornate" referenceskey="id" foreignkey="idgiornata" />
+		<dsnav id="dsnav1" dsobj="dsgiornate" btNew="false" objprint="gridds1" />
+		<gridds id="gridds1" dsobj="dsgiornate" width="autosize" height="250px">
 			<coloumn>
-				<col objtype="label" itemlabel="DATA" dsitem="data_giornata" colalign="center" colwidth="100px" />
-				<col objtype="text" itemlabel="GIORNATA" dsitem="descrizione" order="false" colwidth="300px" colalign="center" />
+				<label itemlabel="DATA" dsitem="data_giornata" colalign="center" colwidth="100px" />
+				<text itemlabel="GIORNATA" dsitem="descrizione" order="false" colwidth="300px" colalign="center" />
 			</coloumn>
-		</gridds1>
-		<dsnav2 typeobj="dsnav" dsobj="dspartite" btNew="false" objprint="gridds2" btPage="false" />
-		<gridds2 typeobj="gridds" dsobj="dspartite" width="autosize" height="250px">
+		</gridds>
+		<dsnav id="dsnav2" dsobj="dspartite" btNew="false" objprint="gridds2" btPage="false" />
+		<gridds id="gridds2" dsobj="dspartite" width="autosize" height="250px">
 			<coloumn>
-				<col objtype="label" itemlabel="PARTITE" dsitem="descrizione" order="false" colwidth="300px" colalign="center"/>
-			</coloumn> 
-		</gridds2>
+				<label itemlabel="PARTITE" dsitem="descrizione" order="false" colwidth="300px" colalign="center" />
+			</coloumn>
+		</gridds>
 	</page>
 </jamp>

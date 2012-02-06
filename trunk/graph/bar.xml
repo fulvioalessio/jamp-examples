@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Istogramma raggruppato" out="html" icon="../../favicon.ico" loaddata="true" style="margin: 10px">
-		<graphic0 typeobj="graphic" width="600" height="300" scale="textlin">
+	<page id="page" title="JAMP - Istogramma raggruppato" out="html" icon="../../favicon.ico" loaddata="true" style="margin: 10px">
+		<graphic id="graphic0" width="600" height="300" scale="textlin">
 			<parameter>
-				<plot objtype="plot" shadow="false" frame="false" margin="40,10,30,10" groupbar="true" plotwidth="0.5"  />
-				<title objtype="title" title="bar" font="FF_FONT1,FS_BOLD" margin="3" />
-				<subtitle objtype="subtitle" title="groupbar" font="FF_FONT1,FS_BOLD" margin="3" />
-				<ygrid1 objtype="ygrid" color="gray" fill="true,#DDDDDD@0.5,#BBBBBB@0.5" linestyle="dashed" />
-				<xgrid1 objtype="xgrid" color="gray" linestyle="dashed" />		
-				<bar1 objtype="bar" data="30,22,8,10,15,24" fillcolor="orange" shadow="orange@0.4" fillgradient="#440000,#FF9090,GRAD_LEFT_REFLECTION" />
-				<bar2 objtype="bar" data="18,2,1,7,5,4" fillcolor="blue" shadow="brown@0.4" />				
+				<plot shadow="false" frame="false" margin="40,10,30,10" groupbar="true" plotwidth="0.5" />
+				<title title="bar" font="FF_FONT1,FS_BOLD" margin="3" />
+				<subtitle title="groupbar" font="FF_FONT1,FS_BOLD" margin="3" />
+				<ygrid color="gray" fill="true,#DDDDDD@0.5,#BBBBBB@0.5" linestyle="dashed" />
+				<xgrid color="gray" linestyle="dashed" />
+				<bar data="30,22,8,10,15,24" fillcolor="orange" shadow="orange@0.4" fillgradient="#440000,#FF9090,GRAD_LEFT_REFLECTION" />
+				<bar data="18,2,1,7,5,4" fillcolor="blue" shadow="brown@0.4" />
 			</parameter>
-		</graphic0>
+		</graphic>
 	</page>
 </jamp>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="jdbadmin" loaddata="true">
-		<dsGrid typeobj="ds" conn="conn6" dslimit="20" dssavetype="row" loadall="false"/>
-		<divSQL typeobj="div" height="50%" width="autosize">
-			<button1 typeobj="button" value="execute" onclick="javascript: execute();" />
-			<textSQL typeobj="textarea" label="\n" width="autosize" height="autosize" editor-lang="sql"/>
-		</divSQL>
-		<split1 typeobj="splitbar" type="horizontal"/>
-		<divGrid typeobj="div" width="autosize" height="autosize">
-			<dsnav2 typeobj="dsnav" dsobj="dsGrid" objprint="gridds2" btNew="false" btSave="false" btCancel="false" btDelete="false" btReload="false" />
-			<gridds2 typeobj="gridds" dsobj="dsGrid" width="autosize" height="autosize" order="true"/>
-		</divGrid>
+	<page id="page" title="jdbadmin" loaddata="true">
+		<ds id="dsGrid" conn="conn6" dslimit="20" dssavetype="row" loadall="false" />
+		<div id="divSQL" height="50%" width="autosize">
+			<button id="button1" value="execute" onclick="javascript: execute();" />
+			<textarea id="textSQL" label="\n" width="autosize" height="autosize" editor-lang="sql" />
+		</div>
+		<splitbar id="split1" type="horizontal" />
+		<div id="divGrid" width="autosize" height="autosize">
+			<dsnav id="dsnav2" dsobj="dsGrid" objprint="gridds2" btNew="false" btSave="false" btCancel="false" btDelete="false" btReload="false" />
+			<gridds id="gridds2" dsobj="dsGrid" width="autosize" height="autosize" order="true" />
+		</div>
 	</page>
 </jamp>

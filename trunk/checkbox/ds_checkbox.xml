@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JPresenze" icon="../../favicon.ico" loaddata="true">
-		<ds1 typeobj="ds" conn="conn6" dstable="checkbox" dskey="id" />
-		<dsnav1 typeobj="dsnav" btNew="false" btCancel="false" btDelete="false" dsobj="ds1" />
-		<label typeobj="label" dsobj="ds1" dsitem="giorno" label="Giorno\n" />
-		<checkbox1 typeobj="checkbox" dsobj="ds1" dsitem="mattino" label="Mattino" labelwidth="100px" labelalign="right" tristate="0" uncheck="1" check="2"  />
-		<br1 typeobj="br" />
-		<checkbox2 typeobj="checkbox" dsobj="ds1" dsitem="pomeriggio" label="Pomeriggio" labelwidth="100px" labelalign="right" tristate="0" uncheck="1" check="2" />
-		<br2 typeobj="br" />
-		<checkbox3 typeobj="checkbox" dsobj="ds1" dsitem="sera" label="Sera" labelwidth="100px" labelalign="right" tristate="0" uncheck="1" check="2"  />
+	<page id="page" title="JPresenze" icon="../../favicon.ico" loaddata="true">
+		<ds id="ds1" conn="conn6" dstable="checkbox" dskey="id" />
+		<dsnav id="dsnav1" btNew="false" btCancel="false" btDelete="false" dsobj="ds1" />
+		<label id="label" dsobj="ds1" dsitem="giorno" label="Giorno\n" />
+		<checkbox id="checkbox1" dsobj="ds1" dsitem="mattino" label="Mattino" labelwidth="100px" labelalign="right" tristate="0" uncheck="1" check="2" />
+		<br id="br1" />
+		<checkbox id="checkbox2" dsobj="ds1" dsitem="pomeriggio" label="Pomeriggio" labelwidth="100px" labelalign="right" tristate="0" uncheck="1" check="2" />
+		<br id="br2" />
+		<checkbox id="checkbox3" dsobj="ds1" dsitem="sera" label="Sera" labelwidth="100px" labelalign="right" tristate="0" uncheck="1" check="2" />
 	</page>
 </jamp>

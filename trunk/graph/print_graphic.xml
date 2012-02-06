@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="JAMP - Grafico Pdf" out="pdf" icon="../../favicon.ico" loaddata="true">
-		<graphic1 typeobj="graphic" style="top: 20px; left: 50px;" width="500" height="400" scale="textlin">
+	<page id="page" title="JAMP - Grafico Pdf" out="pdf" icon="../../favicon.ico" loaddata="true">
+		<graphic id="graphic1" style="top: 20px; left: 50px;" width="500" height="400" scale="textlin">
 			<parameter>
-				<plot objtype="plot" shadow="true" frame="true" bgimage="../resource/stship.jpg" margin="40,10,30,10" plotwidth="0.4" />
-				<title objtype="title" title="title pdf graph" font="FF_FONT1,FS_BOLD" margin="3" />
-				<subtitle objtype="subtitle" title="subtitle pdf grapf" font="FF_FONT1,FS_BOLD" margin="3" />
-				<xaxis1 objtype="xaxis" title="asse x" font="FF_FONT1" />
-				<yaxis1 objtype="yaxis" title="asse y" font="FF_FONT1" />				
-				<legend1 objtype="legend" pos="0.02,0.15" shadow="darkgray@0.5" fillcolor="lightblue@0.3" />				
-				<bar1 objtype="bar" data="9,21,13,9,15,14" fillcolor="orange" shadow="orange@0.4" legend="Legenda 1" />
-				<bar2 objtype="bar" data="18,2,1,7,5,4" fillcolor="green" shadow="brown@0.4" legend="Legenda 2" />				
+				<plot shadow="true" frame="true" bgimage="../resource/stship.jpg" margin="40,10,30,10" plotwidth="0.4" />
+				<title title="title pdf graph" font="FF_FONT1,FS_BOLD" margin="3" />
+				<subtitle title="subtitle pdf grapf" font="FF_FONT1,FS_BOLD" margin="3" />
+				<xaxis title="asse x" font="FF_FONT1" />
+				<yaxis title="asse y" font="FF_FONT1" />
+				<legend pos="0.02,0.15" shadow="darkgray@0.5" fillcolor="lightblue@0.3" />
+				<bar data="9,21,13,9,15,14" fillcolor="orange" shadow="orange@0.4" legend="Legenda 1" />
+				<bar data="18,2,1,7,5,4" fillcolor="green" shadow="brown@0.4" legend="Legenda 2" />
 			</parameter>
-		</graphic1>
+		</graphic>
 	</page>
 </jamp>

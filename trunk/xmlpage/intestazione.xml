@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page">
-		<dsmenu typeobj="ds" conn="conn6" dstable="menu"/>
-		<divint typeobj="div">			
-			<user1 typeobj="img" src="../resource/images/exit.png" align="left" alt="USCITA" href="index.php?logout" />
-			<txtresize typeobj="txtresize" style="float: left"/>
-			<jmenu1 typeobj="jmenu" dsobj="dsmenu" />
-				<title1 typeobj="label" value="JAMP: " style="margin-left: 5px; font-weight: bold; font-size: 2em;"/>
-				<title2 typeobj="label" value="Intestazione" style="font-weight: bold; font-size: 1.5em; color : #0fa234;"/>
-				<user2 typeobj="label" label=" Utente Connesso: demo" align="right" />
-		</divint>	
-		<brint typeobj="br" />
+	<page id="page">
+		<ds id="dsmenu" conn="conn6" dstable="menu" />
+		<div id="divint">
+			<img id="user1" src="../resource/images/exit.png" align="left" alt="USCITA" href="index.php?logout" />
+			<txtresize id="txtresize" style="float: left" />
+			<jmenu id="jmenu1" dsobj="dsmenu" />
+			<label id="title1" value="JAMP: " style="margin-left: 5px; font-weight: bold; font-size: 2em;" />
+			<label id="title2" value="Intestazione" style="font-weight: bold; font-size: 1.5em; color : #0fa234;" />
+			<label id="user2" label=" Utente Connesso: demo" align="right" />
+		</div>
+		<br id="brint" />
 	</page>
 </jamp>

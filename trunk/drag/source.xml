@@ -1,16 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="Finestra">
-		<finestra1 typeobj="div" width="500" height="500" style="border:1px solid silver; position: relative;" drag="true">
-		  <titolo_finestra1 typeobj="div" width="500" height="30" style="font-size: 20px;color: white;background-color: blue;">
-				<txtTitolo1 typeobj="label" value="TITLE 1"/>
-			</titolo_finestra1>
-			<logoJamp1 typeobj="img" src="images/jamp.gif" border="0" width="148px" height="95px"/>
-		</finestra1>
-		<finestra2 typeobj="div" width="500" height="500" style="border:1px solid silver; position: relative;" drag="true">
-			<titolo_finestra2 typeobj="div" width="500" height="30" style="font-size: 20px;color: white;background-color: blue;">
-				<txtTitolo2 typeobj="label" value="TITLE 2"/>
-			</titolo_finestra2>
-			<logoJamp2 typeobj="img" src="images/jamp.gif" border="0" width="148px" height="95px"/>
-		</finestra2>
+	<page id="page" title="Finestra">
+		<div id="finestra1" width="500" height="500" style="border:1px solid silver; position: relative;" drag="true">
+			<div id="titolo_finestra1" width="500" height="30" style="font-size: 20px;color: white;background-color: blue;">
+				<label id="txtTitolo1" value="TITLE 1" />
+			</div>
+			<img id="logoJamp1" src="images/jamp.gif" border="0" width="148px" height="95px" />
+		</div>
+		<div id="finestra2" width="500" height="500" style="border:1px solid silver; position: relative;" drag="true">
+			<div id="titolo_finestra2" width="500" height="30" style="font-size: 20px;color: white;background-color: blue;">
+				<label id="txtTitolo2" value="TITLE 2" />
+			</div>
+			<img id="logoJamp2" src="images/jamp.gif" border="0" width="148px" height="95px" />
+		</div>
 	</page>
 </jamp>

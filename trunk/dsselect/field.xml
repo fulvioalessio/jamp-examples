@@ -1,8 +1,8 @@
-<?xml version="1.0"  encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <jamp>
-	<page typeobj="page" title="jamp" loaddata="true">
-		<text1 typeobj="text" dsobj="ds1" dsitem="id" label="\nid:\n" size="50"/>
-		<text2 typeobj="text" dsobj="ds1" dsitem="name" label="\nname:\n" size="50"/>
-		<text3 typeobj="text" dsobj="ds1" dsitem="alt" label="\nalt:\n" size="50"/>
+	<page id="page" title="jamp" loaddata="true">
+		<text id="text1" dsobj="ds1" dsitem="id" label="\nid:\n" size="50" />
+		<text id="text2" dsobj="ds1" dsitem="name" label="\nname:\n" size="50" />
+		<text id="text3" dsobj="ds1" dsitem="alt" label="\nalt:\n" size="50" />
 	</page>
 </jamp>
