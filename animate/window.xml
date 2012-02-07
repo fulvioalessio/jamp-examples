@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="JAMP - Esempio Oggetto" loaddata="true" icon="../../favicon.ico">
 		<window id="window1" width="600px" height="300px" expanded="false" label="Effetto: Default Duration: 1000 ms" duration="1000" />

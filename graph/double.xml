@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="JAMP - Grafici sovrapposti" icon="../../favicon.ico" out="html" loaddata="true">
 		<graphic id="graphic5" width="600" height="300" scale="linlin">

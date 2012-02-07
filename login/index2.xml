@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="JApp - Home" icon="../../favicon.ico" loaddata="true">
 		<div id="div1" style="width : 100%; height : 50px; position: absolute; top: 50%; margin-top: -25px; margin-left: -2px; text-align:center;">

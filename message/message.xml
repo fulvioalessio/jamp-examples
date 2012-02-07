@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="JAMP - Esempio Messaggi" icon="../../favicon.ico" loaddata="false">
 		<label id="label1" value="Messaggi di sistema:\n" style="font-size:12px" />

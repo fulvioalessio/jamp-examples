@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="JAMP - Collisioni" loaddata="true" icon="../../favicon.ico" style="background-color:white" onmousemove="  ANIMATE.collision('obj1', 'opacity:1;height:100;top:55px', '80', event);  ANIMATE.collision('obj2', 'opacity:1;height:100;top:55px', '80', event);  ANIMATE.collision('obj3', 'opacity:1;height:100;top:55px', '80', event);  ANIMATE.collision('obj4', 'opacity:1;height:100;top:55px', '80', event);  ANIMATE.collision('obj5', 'opacity:1;height:100;top:55px', '80', event);  ANIMATE.collision('obj6', 'opacity:1;height:100;top:55px', '80', event);  ANIMATE.collision('obj7', 'opacity:1;height:100;top:55px', '80', event);  ANIMATE.collision('obj8', 'opacity:1;height:100;top:55px', '80', event);  ANIMATE.collision('obj9', 'opacity:1;height:100;top:55px', '80', event);  ANIMATE.collision('obj10', 'opacity:1;height:100;top:55px', '80', event);  ">
 		<label id="label1" value="Avvicina il mouse all'immagine.\n\n" />

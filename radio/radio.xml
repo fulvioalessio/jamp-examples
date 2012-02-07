@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="JAMP" icon="../../favicon.ico" loaddata="true">
 		<radio id="radio1" label="Mattino" labelwidth="100px" align="right" value="1" name="flag" checked="true" />

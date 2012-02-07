@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="JAMP - Grafico lineare" out="html" icon="../../favicon.ico" loaddata="true">
 		<graphic id="graphic3" width="600" height="400" scale="linlin">
