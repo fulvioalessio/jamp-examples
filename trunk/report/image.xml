@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="JAMP - Esempio Report" out="pdf" loaddata="true">
 		<ds id="ds1" conn="conn1" dskey="path" scope="onelevel" base="./../resource/flag" dslimit="10" justthese="dirpath,path,filename" />

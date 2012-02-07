@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="JAMP - Esempio gridds con dati in JOIN" icon="../../favicon.ico" loaddata="true">
 		<ds id="dsgiornate" conn="conn6" selecteditems="data_giornata,giornate.descrizione,partite.descrizione AS partite" dstable="giornate,partite" dswhere="(giornate.id=partite.idgiornata)" joinsave="giornate" dskey="id" dslimit="10" />

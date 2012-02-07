@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="jamp" loaddata="true">
 		<dsselect id="dsselect5" dsobjlist="ds1" dsitemlist="name" dsitemkeylist="id" value="1" label="\n\nSelezione multipla da dsitemlist:" multiple="multiple" />

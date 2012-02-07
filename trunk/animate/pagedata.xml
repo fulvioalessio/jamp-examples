@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="JAMP - Effetto Fade Pagina Con Dati" loaddata="true" icon="../../favicon.ico" style="opacity:0;filter:alpha(opacity=0);" onload="ANIMATE.animate('page', 'opacity:1', '1000','', 'default');">
 		<ds id="ds1" conn="conn6" dstable="CAB-COMUNE" dskey="ID" dslimit="15" />

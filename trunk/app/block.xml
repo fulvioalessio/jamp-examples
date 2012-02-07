@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE jamp PUBLIC "jamp" "http://jamp.alyx.it/jamp.dtd">
 <jamp>
 	<page id="page" title="JAmp - Accesso Negato">
 		<div id="div1" style="height : 150px; top : 50%; position : absolute; width:100%; margin-left: -2px; margin-top : -50px;">
