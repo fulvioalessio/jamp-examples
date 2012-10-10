@@ -19,7 +19,7 @@ function html_load()
 	$code = "
 	function xml_error(message)
 	{
-	  alert(message);
+	  alert(message.replace(/<\/?(?!\!)[^>]*>/gi, ''));
 	  return false;
 	}
 	SYSTEMEVENT.addBeforeCustomFunction('SYSTEMEVENT','errorXML', 'xml_error');";
