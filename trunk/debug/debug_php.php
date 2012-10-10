@@ -7,11 +7,10 @@
 * @license GNU Public License
 */
 
-// require_once('./../../plugin/FirePHPCore/fb.php');
-require_once('./../../plugin/FirePHPCore/FirePHP.class.php');
+require_once(dirname(__FILE__).'/../../jamp/plugin/FirePHPCore/FirePHP.class.php');
 ob_start();
 $firephp = FirePHP::getInstance(true);
- 
+
 
 require_once("../require.inc.php");
 $system = new ClsSystem(true);
