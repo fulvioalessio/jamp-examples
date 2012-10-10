@@ -74,8 +74,9 @@ function data_load()
 
 function custom()
 {
-	global $event;
+	global $event, $xml;
 	$data = $_POST['data'];
+	$xml->getElementsByTagName('ds');
 	$dsobjname = (isset($_POST['dsobjname'])) ? $_POST['dsobjname'] : "";
 	$code  = "\n$('txtdata').innerHTML = '<b>$data<\/b>';";
 	$code .= "\n$('txtdsobjname').innerHTML = '<b>$dsobjname<\/b>';";
