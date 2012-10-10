@@ -7,11 +7,11 @@
 		<xgridds id="gridds1" dsobj="ds1" width="550px" height="450px" cellheight="130px">
 			<body>
 				<image dsitem="foto" readonly="true" width="150" height="112" style="margin-top:10px" onclick="Dialog('zoom', 1, 'zoom_'+$('ds1').DSresult[$('ds1').DSpos]['foto'], 520, 400);" />
-				<label dsitem="titolo" style="display:inline-block;width:350px;height:20px;position:relative;left:170px;top:-110px;color:#005A9B;font-size:13px;font-weight:bold;" />
-				<label dsitem="comune" style="display:inline-block;width:250px;height:0px;position:relative;left:170px;top:-110px;color:#000000;font-size:12px;font-weight:bold;" />
-				<label dsitem="descrizione" style="display:inline-block;width:350px;height:0px;position:relative;left:170px;top:-108px;color:#000000;font-size:12px;" />
-				<label value="€." style="display:inline-block;width:350px;height:0px;position:relative;left:170px;top:-102px;color:#000000;font-size:12px;font-weight:bold" />
-				<label dsitem="prezzo" style="display:inline-block;width:300px;height:0px;position:relative;left:185px;top:-119px;color:#000000;font-size:12px;font-weight:bold" format="number|EN|,0.00|IT|.0" />
+				<divlabel dsitem="titolo" style="width:350px;position:relative;left:170px;top:-110px;color:#005A9B;font-size:13px;font-weight:bold;" />
+				<divlabel dsitem="comune" style="width:250px;position:relative;left:170px;top:-107px;color:#000000;font-size:12px;font-weight:bold;" />
+				<divlabel dsitem="descrizione" style="width:350px;height:40px;position:relative;left:170px;top:-104px;color:#000000;font-size:12px;" />
+				<divlabel value="€." style="width:5px;position:relative;float:left;left:170px;top:-83px;color:#000000;font-size:12px;font-weight:bold" />
+				<divlabel dsitem="prezzo" style="width:300px;position:relative;left:185px;top:-83px;color:#000000;font-size:12px;font-weight:bold" format="number|EN|,0.00|IT|.0" />
 			</body>
 		</xgridds>
 		<lightbox id="zoom" />
