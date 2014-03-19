@@ -3,6 +3,11 @@
 <jamp>
 	<page id="page" title="JAMP - Esempio xmlpage" icon="../../favicon.ico" loaddata="true">
 		<xmlpage id="xmlpage" src="intestazione.xml" />
+		<dsnav id="dsnav" dsobj="ds1" btNew="false" btCancel="true" btDelete="false" btReload="false" btPrint="false" label="Ricerca:" dssearch="'$$VALUE$$'">
+		<button>
+        	 <bt title="$$PIPPO$$" image="$$PIPPO$$/flag/Austria.jpg" onclick="clear();" />
+		</button>		
+		</dsnav>
 		<tabs id="tabs1" selected="tab11">
 			<tab id="tab11" label="CARTELLA 1" />
 			<tab id="tab12" label="CARTELLA 2" />

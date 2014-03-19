@@ -12,4 +12,9 @@ $system = new ClsSystem(true);
 $xml 	 = new ClsXML("xmlpage.xml");
 $event = new ClsEvent($xml);
 $event->managerRequest();
+
+function html_before_load()
+{
+	$_POST['$$PIPPO$$'] = "../resource";
+}
 ?>
