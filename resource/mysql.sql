@@ -5,10 +5,6 @@
 -- @license GNU Public License
 -- Date: 12/05/2010 20:03:22 
 
--- Export Database jamp
-CREATE DATABASE `jamp`;
-USE `jamp`;
-
 -- Export Table: Anagrafica 
 CREATE TABLE `Anagrafica` (
   `IDAssistito` int(11) NOT NULL auto_increment,
@@ -9130,14 +9126,14 @@ INSERT INTO `tree` (`id`,`id_parent`,`text`,`image`,`url`) VALUES
 ('24','23','Allegato 5/P','./../../template/appl/16x16/apps/acroread.png','print_allegato2.php'),
 ('25','23','Allegato 5/P','./../../template/appl/16x16/apps/acroread.png','print_allegato1.php');
 
-CREATE TABLE `jamp`.`progressbar` (
+CREATE TABLE `progressbar` (
 `id` INT NOT NULL AUTO_INCREMENT ,
 `label` VARCHAR( 50 ) NOT NULL ,
 `percent` INT( 2 ) NOT NULL ,
 PRIMARY KEY ( `id` )
 ) ENGINE = MYISAM ;
 
-INSERT INTO `jamp`.`progressbar` (`id` ,`label` ,`percent`)
+INSERT INTO `progressbar` (`id` ,`label` ,`percent`)
 VALUES (NULL , 'Percentuale 1', '25'), 
 (NULL , 'Percentuale 2', '50'),
 (NULL , 'Percentuale 3', '75'),
